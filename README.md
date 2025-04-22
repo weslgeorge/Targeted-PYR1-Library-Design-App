@@ -50,6 +50,14 @@ The general workflow for designing to generate PYR1 mutant libraries is as follo
 
   <!-- Right side: image -->
   <div>
+    <img src="www/subset-mutationmatrix.png" alt="Mutation matrix example" style="height: auto; width: 300px;">
+  </div>
+
+</div>
+
+
+  <!-- Right side: image -->
+  <div>
     <img src="subset-mutationmatrix.png" alt="Mutation matrix example" style="height: auto; width: 300px;">
   </div>
 
