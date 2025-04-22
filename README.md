@@ -12,7 +12,7 @@ Then install the required packages with the following code in the console.
 install.packages("shiny", "shinyjs", "doParallel", "spatstat.utils", "bioseq", "DT","tidyverse","openxlsx")
 ```
 
-Then open the app.R file and click on Run in the top right in Rstudio or by using the following code in your R consol while in the cloned directory.
+Then open the app.R file and click on Run in the top right in Rstudio or by using the following code in your R console while in the cloned directory.
 
 ```{Run app}
 shiny::runApp()
@@ -22,9 +22,9 @@ shiny::runApp()
 
 The general workflow for designing to generate PYR1 mutant libraries is as follows. 
 
-### Mutation matrix generation
+### Sequence profile generation
 
-  First target small molecule interactors are identified, and similarly structured compounds are found in the PAIR data. This can be done with external chemical clustering methods, or by using programs like [Chemminetools](https://chemminetools.ucr.edu/) to cluster a target compound with the PAIR data SMILES. Identified similar small molecules used to inform the library will be selected in the `Amino Acid Input Generation` tab to generate a mutation matrix that informs the app what mutations at what positions in PYR1 to allow in the library. Mutational matrices can be made manually and uploaded in the sidebar using the `Desired mutation matrix file CSV` upload button, as well as made in the `Amino Acid Input Generation` tab. See the `Mutation matrix` sheet of the `Oligo summary data` download button for a template of the file, new rows can be added as long as the proper WT amino acid and position are added.
+  First target small molecule interactors are identified, and similarly structured compounds are found in the PAIR data. This can be done with external chemical clustering methods, or by using programs like [Chemminetools](https://chemminetools.ucr.edu/) to cluster a target compound with the PAIR data SMILES. Identified similar small molecules used to inform the library will be selected in the `Amino Acid Input Generation` tab to generate a sequence profile that informs the app what mutations at what positions in PYR1 to allow in the library. Selecting desired small molecules will filter for biosensor mutations that were identified in biosensors for the selected small molecules that then populate the sequence profile. Sequence profiles can be made manually and uploaded in the sidebar using the `Sequence profile CSV` upload button, as well as made in the `Sequence profile generation` tab. See the `Sequence profile` sheet of the `Oligo summary data` download button for a template of the file, new rows can be added as long as the proper WT amino acid and position are added. 
 
 ### Library parameter selection
 
@@ -36,8 +36,7 @@ The general workflow for designing to generate PYR1 mutant libraries is as follo
 
 ### Downloading files 
 
-  Finally make sure to download both the `Oligos.fasta` file and `Oligo summary data` file in the from the sidebar once all tabs have been opened and the library is to your liking. The oligos fasta file will generate a list of oligos that can be submitted to Twist bioscience orders and have the naming convention of >LIBRARY\_`input library name`\_PYR1\_`PYR1 type`\_FRAG\_`Block number`\_mutation1:mutation2:mutation3:mutation4_PRI\_`barcode primers`. The `Oligo summary data` will download an excel file that contains sheets including the mutation matrix used to generate the library, oligo summary information, and a table of the oligos and the barcodes used. 
-
+  Finally make sure to download both the `Oligos.fasta` file and `Oligo summary data` file in the from the sidebar once all tabs have been opened and the library is to your liking. The oligos fasta file will generate a list of oligos that can be submitted to Twist bioscience orders and have the naming convention of >LIBRARY\_`input library name`\_PYR1\_`PYR1 type`\_FRAG\_`Block number`\_mutation1:mutation2:mutation3:mutation4_PRI\_`barcode primers`. The `Oligo summary data` will download an excel file that contains sheets including the sequence profile used to generate the library, oligo summary information, and a table of the oligos and the barcodes used. 
 
 ## App Citations 
 
@@ -69,6 +68,9 @@ Grateful was used to generate citations for this app
 
 Rodriguez-Sanchez F, Jackson C (2024). _grateful: Facilitate citation of R packages_.
   <https://pakillo.github.io/grateful/>.
+
+  
+
 
 
 
