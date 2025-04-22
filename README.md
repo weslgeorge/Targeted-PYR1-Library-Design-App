@@ -24,7 +24,9 @@ The general workflow for designing to generate PYR1 mutant libraries is as follo
 
 ### Mutation matrix generation
 
-  First target small molecule interactors are identified, and similarly structured compounds are found in the PAIR data. This can be done with external chemical clustering methods, or by using programs like [Chemminetools](https://chemminetools.ucr.edu/) to cluster a target compound with the PAIR data SMILES. Identified similar small molecules used to inform the library will be selected in the `Amino Acid Input Generation` tab to generate a mutation matrix that informs the app what mutations at what positions in PYR1 to allow in the library. Mutational matrices can be made manually and uploaded in the sidebar using the `Desired mutation matrix file CSV` upload button, as well as made in the `Amino Acid Input Generation` tab. See the `Mutation matrix` sheet of the `Oligo summary data` download button for a template of the file, new rows can be added as long as the proper WT amino acid and position are added. 
+  First target small molecule interactors are identified, and similarly structured compounds are found in the PAIR data. This can be done with external chemical clustering methods, or by using programs like [Chemminetools](https://chemminetools.ucr.edu/) to cluster a target compound with the PAIR data SMILES. Identified similar small molecules used to inform the library will be selected in the `Amino Acid Input Generation` tab to generate a mutation matrix that informs the app what mutations at what positions in PYR1 to allow in the library. Mutational matrices can be made manually and uploaded in the sidebar using the `Desired mutation matrix file CSV` upload button, as well as made in the `Amino Acid Input Generation` tab. See the `Mutation matrix` sheet of the `Oligo summary data` download button for a template of the file, new rows can be added as long as the proper WT amino acid and position are added.
+
+![Mutation matrix example](www/subset-mutation-matrix.png)
 
 ### Library parameter selection
 
