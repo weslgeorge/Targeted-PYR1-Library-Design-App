@@ -36,7 +36,7 @@ The general workflow for designing to generate PYR1 mutant libraries is as follo
 
 ### Downloading files 
 
-  Finally make sure to download both the `Oligos.fasta` file and `Oligo summary data` file in the from the sidebar once all tabs have been opened and the library is to your liking. The oligos fasta file will generate a list of oligos that can be submitted to Twist bioscience orders and have the naming convention of >LIBRARY_”input library name”_PYR1_”PYR1 type”_FRAG_”Block number”_mutation1:mutation2:mutation3:mutation4_PRI_”barcode primers”. The `Oligo summary data` will download an excel file that contains sheets including the mutation matrix used to generate the library, oligo summary information, and a table of the oligos and the barcodes used. 
+  Finally make sure to download both the `Oligos.fasta` file and `Oligo summary data` file in the from the sidebar once all tabs have been opened and the library is to your liking. The oligos fasta file will generate a list of oligos that can be submitted to Twist bioscience orders and have the naming convention of >LIBRARY_`input library name`_PYR1_`PYR1 type`_FRAG_`Block number`_mutation1:mutation2:mutation3:mutation4_PRI_`barcode primers`. The `Oligo summary data` will download an excel file that contains sheets including the mutation matrix used to generate the library, oligo summary information, and a table of the oligos and the barcodes used. 
 
 
 ## App Citations 
