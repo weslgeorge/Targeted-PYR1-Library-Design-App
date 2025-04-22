@@ -24,25 +24,9 @@ The general workflow for designing to generate PYR1 mutant libraries is as follo
 
 ### Mutation matrix generation
 
-<div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 20px;">
+  First target small molecule interactors are identified, and similarly structured compounds are found in the PAIR data. This can be done with external chemical clustering methods, or by using programs like [Chemminetools](https://chemminetools.ucr.edu/) to cluster a target compound with the PAIR data SMILES. Identified similar small molecules used to inform the library will be selected in the `Amino Acid Input Generation` tab to generate a mutation matrix that informs the app what mutations at what positions in PYR1 to allow in the library. Mutational matrices can be made manually and uploaded in the sidebar using the `Desired mutation matrix file CSV` upload button, as well as made in the `Amino Acid Input Generation` tab. See the `Mutation matrix` sheet of the `Oligo summary data` download button for a template of the file, new rows can be added as long as the proper WT amino acid and position are added.
 
-<!-- Left side: stacked header and paragraph -->
-<div style="flex: 1; padding-right: 20px;">
-
-<h4>Mutation matrix generation:</h4>
-
-<p>
-  First target small molecule interactors are identified, and similarly structured compounds are found in the PAIR data. This can be done with external chemical clustering methods, or by using programs like <a href="https://chemminetools.ucr.edu/">https://chemminetools.ucr.edu/</a> to cluster a target compound with the PAIR data SMILES. Identified similar small molecules used to inform the library will be selected in the <code>Amino Acid Input Generation</code> tab to generate a mutation matrix that informs the app what mutations at what positions in PYR1 to allow in the library. Mutational matrices can be made manually and uploaded in the sidebar using the <code>Desired mutation matrix file CSV</code> upload button, as well as made in the <code>Amino Acid Input Generation</code> tab. See the <code>Mutation matrix</code> sheet of the <code>Oligo summary data</code> download button for a template of the file — new rows can be added as long as the proper WT amino acid and position are added.
-</p>
-
-</div>
-
-<!-- Right side: image -->
-<div>
-<img src="www/subset-mutationmatrix.png" alt="Mutation matrix example" style="height: auto; width: 300px;">
-</div>
-
-</div>
+<img src="www/subset-mutationmatrix.png" alt="Mutation matrix example" style="float: right; width: 30%; margin-left: 20px; margin-bottom: 10px;">
 
 ### Library parameter selection
 
