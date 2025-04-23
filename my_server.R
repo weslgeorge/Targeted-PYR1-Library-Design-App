@@ -154,13 +154,6 @@ my_server <- function(input,output,session) {
         return(datatable(sensors_table_filtered,options = list(pageLength = nrow(table)),editable = F,class = 'cell-border stripe', rownames = F))
       })# end render DT
       
-      # UNNCHECKK THIS WHEN DONE TROUBLESHOOTING 10/22/24
-      # output$input_file_dt <- renderDT({
-      #   return(datatable(change_to_good_aas_format,options = list(pageLength = nrow(table)),editable = F,class = 'cell-border stripe', rownames = F))
-      # })# end render DT
-      
-      
-      
     } # end else statement
   }) # end observe event
   
@@ -2618,55 +2611,61 @@ my_server <- function(input,output,session) {
   })
   
   ##### Oligo Summary Download #####
+  
   output$oligo_summary_data_download <- downloadHandler(
     filename = function() {
       paste0("oligo_summary_data_",input$library_name,".xlsx")
     
   },
-  content = function(file) {
-    wb <- openxlsx::createWorkbook()
-    
-    amino_acid_table <- rv$data
-    colnames(amino_acid_table) <-  c("WT AA","AA Position","A","C","D","E","F","G","H","I","K","L","M","N",
-                          "P", "Q", "R", "S","T","V","W","Y")
-    openxlsx::addWorksheet(wb, "Mutation matrix")
-    openxlsx::writeData(wb, "Mutation matrix", amino_acid_table)
-    
-    block_substituions_data<- tribble(
-      ~Block, ~`1 Substitution`, ~`2 Substitutions`, ~`3 Substitutions`, ~`4 Substitutions`,
-      "Block 1", as.character(input$ssm1), as.character(input$dsm1), as.character(input$tsm1), as.character(input$qsm1),
-      "Block 2", as.character(input$ssm2), as.character(input$dsm2), as.character(input$tsm2), as.character(input$qsm2),
-      "Block 3", as.character(input$ssm3), as.character(input$dsm3), as.character(input$tsm3), as.character(input$qsm3),
-      "PYR1 Type Selected", input$pyr1_type, "", "", ""
-    )
-    
-    openxlsx::addWorksheet(wb, "Block substituions selected")
-    openxlsx::writeData(wb, "Block substituions selected", block_substituions_data)
-    
-    mutation_site_table <- mutation_site_table_df()
-    openxlsx::addWorksheet(wb, "Unique PYR1s")
-    openxlsx::writeData(wb, "Unique PYR1s", mutation_site_table)
-    
-    oligo_count_data <- count_data_table_df()
-    openxlsx::addWorksheet(wb, "Oligo counts")
-    openxlsx::writeData(wb, "Oligo counts", oligo_count_data)
-    
-    golden_gate_table_data <- golden_gate_table_df()
-    openxlsx::addWorksheet(wb, "Cloning guide")
-    openxlsx::writeData(wb, "Cloning guide", golden_gate_table_data)
-    
-    oligo_data <- barcode_data_file()
-    openxlsx::addWorksheet(wb, "Oligos")
-    openxlsx::writeData(wb, "Oligos", oligo_data)
-    
-    primer_data <- primer_summary_file()
-    openxlsx::addWorksheet(wb, "Barcoding primers")
-    openxlsx::writeData(wb, "Barcoding primers", primer_data)
-    
-    openxlsx::saveWorkbook(wb, file, overwrite = TRUE)
-  })
   
-
+    content = function(file) {
+      wb <- openxlsx::createWorkbook()
+      
+      amino_acid_table <- rv$data
+      colnames(amino_acid_table) <-  c("WT AA","AA Position","A","C","D","E","F","G","H","I","K","L","M","N",
+                                       "P", "Q", "R", "S","T","V","W","Y")
+      openxlsx::addWorksheet(wb, "Sequence profile")
+      openxlsx::writeData(wb, "Sequence profile", amino_acid_table)
+      
+      block_substituions_data<- tribble(
+        ~Block, ~`1 Substitution`, ~`2 Substitutions`, ~`3 Substitutions`, ~`4 Substitutions`,
+        "Block 1", as.character(input$ssm1), as.character(input$dsm1), as.character(input$tsm1), as.character(input$qsm1),
+        "Block 2", as.character(input$ssm2), as.character(input$dsm2), as.character(input$tsm2), as.character(input$qsm2),
+        "Block 3", as.character(input$ssm3), as.character(input$dsm3), as.character(input$tsm3), as.character(input$qsm3),
+        "PYR1 Type Selected", input$pyr1_type, "", "", ""
+      )
+      
+      openxlsx::addWorksheet(wb, "Block substituions selected")
+      openxlsx::writeData(wb, "Block substituions selected", block_substituions_data)
+      
+      mutation_site_table <- mutation_site_table_df()
+      openxlsx::addWorksheet(wb, "Unique PYR1s")
+      openxlsx::writeData(wb, "Unique PYR1s", mutation_site_table)
+      
+      oligo_count_data <- count_data_table_df()
+      openxlsx::addWorksheet(wb, "Oligo counts")
+      openxlsx::writeData(wb, "Oligo counts", oligo_count_data)
+      
+      golden_gate_table_data <- golden_gate_table_df()
+      openxlsx::addWorksheet(wb, "Cloning guide")
+      openxlsx::writeData(wb, "Cloning guide", golden_gate_table_data)
+      
+      oligo_data <- barcode_data_file()
+      openxlsx::addWorksheet(wb, "Oligos")
+      openxlsx::writeData(wb, "Oligos", oligo_data)
+      
+      primer_data <- primer_summary_file()
+      openxlsx::addWorksheet(wb, "Barcoding primers")
+      openxlsx::writeData(wb, "Barcoding primers", primer_data)
+      
+      openxlsx::saveWorkbook(wb, file, overwrite = TRUE)
+   
+  } # end conent
+  
+  
+  ) # end download handeler
+  
+  
   
 }
 
