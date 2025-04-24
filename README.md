@@ -4,7 +4,7 @@ PAIR-Design is an App that allows for the generation of oligos to make PYR1 prot
 
 ## Getting setup locally:
 
-If you want to use the PAIR-D app locally on your computer simply clone the repository into your local files.
+If you want to use the PAIR-D app locally on your computer simply clone the repository into your local files. Make sure to have R and Rstudio installed on your computer and open the app.R file using Rstudio.
 
 Then install the required packages with the following code in the console.
 
@@ -12,11 +12,13 @@ Then install the required packages with the following code in the console.
 install.packages("shiny", "shinyjs", "doParallel", "spatstat.utils", "bioseq", "DT","tidyverse","openxlsx")
 ```
 
-Then open the app.R file and click on Run in the top right in Rstudio or by using the following code in your R console while in the cloned directory.
+Then click on Run in the top right in Rstudio or by using the following code in your R console while in the cloned directory.
 
 ```{Run app}
 shiny::runApp()
 ```
+
+The app should open on the Readme tab and you can get started on generating PYR1 libraries!
 
 ## Using the PAIR-Design App
 
