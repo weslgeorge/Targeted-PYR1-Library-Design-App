@@ -5,8 +5,8 @@ library(spatstat.utils)
 # library(tibble)
 library(bioseq)
 library(DT)
-library(tidyverse)
 library(openxlsx)
+library(tidyverse)
 
 #### Read in working directory files ####
 # first load in yeast favored codons table
@@ -16,11 +16,11 @@ sensors_FDA_suppliment_df <- read.csv(file = "data_files/PAIRs_final_data - PAIR
 
 yeast_favored_codons <-   read.csv("data_files/yeast_codons.csv") %>% 
   group_by(residue) %>% 
-  arrange(residue, -freq) %>% 
+  arrange(residue, -freq) %>% # get rid of frequency column
   # pick the most frequently used codon
   slice(1) %>% 
   filter(residue!="*") %>% 
-  select(-freq) %>% # get rid of frequency column
+  dplyr::select(-freq) %>% # get rid of frequency column
   ungroup() %>% 
   tibble::column_to_rownames("residue")
 # 
@@ -35,7 +35,7 @@ barcoding_primers<-read.csv(file = "data_files/pop_experiment.xlsx - 10K_primers
   mutate(set_number = str_extract(X,"(\\d)+")) %>% 
   mutate(set_number = str_pad(set_number,width = 5,pad = "0",side = "left")) %>% 
   mutate(set_name = paste0("set",set_number)) %>% 
-  select(!c("X","set_number","validated.")) %>% 
+  dplyr::select(!c("X","set_number","validated.")) %>% 
   arrange(set_name)
 
 manual_option<- tibble(F_seq = "", R_seq ="",R_seq_rc="",F_Tm="",R_Tm="",Tm_avg="",F_Dg="",R_Dg="",Dg_avg="",set_name="Manual Entry")
@@ -47,7 +47,7 @@ constitutive_mutant_combinations_pyr1 <- read.csv(file = "data_files/1113_3665DS
 constitutive_combinations <- constitutive_mutant_combinations_pyr1 %>% # grabs just constitutive combinations in regex format
   mutate(mutation_1 = str_extract_all(Mutation,"^.*(?=_)"),mutation_2 = str_extract_all(Mutation,"(?<=_).*")) %>%
   mutate(constitutive_combination = paste0("^",mutation_1,"_",mutation_2,"_NA_NA")) %>% # use _ instead of _.* for just double mutants
-  select(constitutive_combination) 
+  dplyr::select(constitutive_combination) 
 constitutive_combinations_list <- constitutive_combinations$constitutive_combination
 
 constitutive_combinations_regex <- paste(unlist(constitutive_combinations_list), collapse = "|")
@@ -64,38 +64,8 @@ my_server <- function(input,output,session) {
   
   ######## Input generation tab #################
   
-  # clusters_allowed <- input$clusterchooser
-  
-  
   # Observe the "submit" button and create the list of selected inputs
   observeEvent(input$submit, {
-    
-    # # Output the selected items as a list
-    # output$selected_clusters <- renderPrint({
-    #   # If nothing is selected, return "No items selected"
-    #   if (length(input$cluster_choices) == 0) {
-    #     "No items selected"
-    #   } else {
-    #     # Return the selected items
-    #     selected_items <- input$cluster_choices
-    #     selected_items  # This is where the list of selected items is created
-    #   }
-    # })
-    
-    
-    
-    
-    # Output the selected items as a list
-    # output$selected_chemnames <- renderPrint({
-    #   # If nothing is selected, return "No items selected"
-    #   if (length(input$chemname_choices) == 0) {
-    #     "No items selected"
-    #   } else {
-    #     # Return the selected items
-    #     selected_items <- input$chemname_choices
-    #     selected_items  # This is where the list of selected items is created
-    #   }
-    # })
     
     if (length(input$chemname_choices) == 0 & length(input$cluster_choices) == 0) {
       # Show a warning message as a notification
@@ -143,7 +113,7 @@ my_server <- function(input,output,session) {
         mutate(wt_aa = str_extract(aa_position_mutation, "[:alpha:](?=[:digit:])")) %>%
         mutate(amino_acid_position = parse_number(aa_position_mutation)) %>%
         mutate(mut_aas = str_extract(aa_position_mutation, "(?<=[:digit:])[:alpha:]")) %>%
-        select(wt_aa, amino_acid_position, mut_aas) %>%
+        dplyr::select(wt_aa, amino_acid_position, mut_aas) %>%
         rbind(supplimenetal_row) %>%
         pivot_wider(names_from = "mut_aas",values_from = "mut_aas",names_sort  = TRUE,values_fill = c("")) %>%
         filter(amino_acid_position != "-100") %>%
@@ -196,7 +166,7 @@ my_server <- function(input,output,session) {
         mutate(wt_aa = str_extract(aa_position_mutation, "[:alpha:](?=[:digit:])")) %>%
         mutate(amino_acid_position = parse_number(aa_position_mutation)) %>%
         mutate(mut_aas = str_extract(aa_position_mutation, "(?<=[:digit:])[:alpha:]")) %>%
-        select(wt_aa, amino_acid_position, mut_aas) %>%
+        dplyr::select(wt_aa, amino_acid_position, mut_aas) %>%
         rbind(supplimenetal_row) %>%
         pivot_wider(names_from = "mut_aas",values_from = "mut_aas",names_sort  = TRUE,values_fill = c("")) %>%
         filter(amino_acid_position != "-100") %>%
@@ -386,7 +356,7 @@ my_server <- function(input,output,session) {
   pyr1_aas <-  pyr1_prot %>% #pyr1的氨基酸序列 # aa of pyr1
     str_extract_all("[A-Z*]") %>%
     as.data.frame() %>%
-    select(residues=1)
+    dplyr::select(residues=1)
   
   
   numbering <- good_aas$amino_acid_position
@@ -504,7 +474,7 @@ my_server <- function(input,output,session) {
       na.omit() %>% 
       tidyr::extract(mut, "(\\w)(\\d+)(\\w)", into=c("wt","position","mut")) %>%
       mutate(codons= yeast_favored_codons[mut,]) %>% #生成相应的密码子
-      select(position, codons) %>% 
+      dplyr::select(position, codons) %>% 
       rows_update(codons_list, ., by="position") %>% #注意position都需要class相同
       pull(codons) %>% str_c(collapse="")
     return(out)
@@ -571,34 +541,34 @@ my_server <- function(input,output,session) {
     PYR1_lib_single <- rbind(single_oligo_block1, single_oligo_block2,
                              single_oligo_block3) %>%  # binds all blocks into one file
       add_column(mut_2 = NA, mut_3 = NA,mut_4 = NA) %>% 
-      select(block, "mutation_1"=mut_1, "mutation_2"= mut_2,"mutation_3" = mut_3,"mutation_4"=mut_4,oligo,"mutant_full_length_cds"=mut_cds)
+      dplyr::select(block, "mutation_1"=mut_1, "mutation_2"= mut_2,"mutation_3" = mut_3,"mutation_4"=mut_4,oligo,"mutant_full_length_cds"=mut_cds)
   } else if(length(single_oligo_block1) < 5 & length(single_oligo_block2) >= 5 & length(single_oligo_block3) >= 5){
     PYR1_lib_single <- rbind(single_oligo_block2,
                              single_oligo_block3) %>%  # binds all blocks into one file
       add_column(mut_2 = NA, mut_3 = NA,mut_4 = NA) %>% 
-      select(block, "mutation_1"=mut_1, "mutation_2"= mut_2,"mutation_3" = mut_3,"mutation_4"=mut_4,oligo,"mutant_full_length_cds"=mut_cds)
+      dplyr::select(block, "mutation_1"=mut_1, "mutation_2"= mut_2,"mutation_3" = mut_3,"mutation_4"=mut_4,oligo,"mutant_full_length_cds"=mut_cds)
   }  else if(length(single_oligo_block1) >= 5 & length(single_oligo_block2) < 5 & length(single_oligo_block3) >= 5){
     PYR1_lib_single <- rbind(single_oligo_block1,
                              single_oligo_block3) %>%  # binds all blocks into one file
       add_column(mut_2 = NA, mut_3 = NA,mut_4 = NA) %>% 
-      select(block, "mutation_1"=mut_1, "mutation_2"= mut_2,"mutation_3" = mut_3,"mutation_4"=mut_4,oligo,"mutant_full_length_cds"=mut_cds)
+      dplyr::select(block, "mutation_1"=mut_1, "mutation_2"= mut_2,"mutation_3" = mut_3,"mutation_4"=mut_4,oligo,"mutant_full_length_cds"=mut_cds)
   } else if(length(single_oligo_block1) >= 5 & length(single_oligo_block2) >= 5 & length(single_oligo_block3) < 5){
     PYR1_lib_single <- rbind(single_oligo_block1,
                              single_oligo_block2) %>%  # binds all blocks into one file
       add_column(mut_2 = NA, mut_3 = NA,mut_4 = NA) %>% 
-      select(block, "mutation_1"=mut_1, "mutation_2"= mut_2,"mutation_3" = mut_3,"mutation_4"=mut_4,oligo,"mutant_full_length_cds"=mut_cds)
+      dplyr::select(block, "mutation_1"=mut_1, "mutation_2"= mut_2,"mutation_3" = mut_3,"mutation_4"=mut_4,oligo,"mutant_full_length_cds"=mut_cds)
   }  else if(length(single_oligo_block1) < 5 & length(single_oligo_block2) < 5 & length(single_oligo_block3) >= 5){
     PYR1_lib_single <- single_oligo_block3 %>%
       add_column(mut_2 = NA, mut_3 = NA,mut_4 = NA) %>% 
-      select(block, "mutation_1"=mut_1, "mutation_2"= mut_2,"mutation_3" = mut_3,"mutation_4"=mut_4,oligo,"mutant_full_length_cds"=mut_cds)
+      dplyr::select(block, "mutation_1"=mut_1, "mutation_2"= mut_2,"mutation_3" = mut_3,"mutation_4"=mut_4,oligo,"mutant_full_length_cds"=mut_cds)
   } else if(length(single_oligo_block1) < 5 & length(single_oligo_block2) >= 5 & length(single_oligo_block3) < 5){
     PYR1_lib_single <- single_oligo_block2 %>%
       add_column(mut_2 = NA, mut_3 = NA,mut_4 = NA) %>% 
-      select(block, "mutation_1"=mut_1, "mutation_2"= mut_2,"mutation_3" = mut_3,"mutation_4"=mut_4,oligo,"mutant_full_length_cds"=mut_cds)
+      dplyr::select(block, "mutation_1"=mut_1, "mutation_2"= mut_2,"mutation_3" = mut_3,"mutation_4"=mut_4,oligo,"mutant_full_length_cds"=mut_cds)
   } else if(length(single_oligo_block1) >= 5 & length(single_oligo_block2) < 5 & length(single_oligo_block3) < 5){
     PYR1_lib_single <- single_oligo_block1 %>%
       add_column(mut_2 = NA, mut_3 = NA,mut_4 = NA) %>% 
-      select(block, "mutation_1"=mut_1, "mutation_2"= mut_2,"mutation_3" = mut_3,"mutation_4"=mut_4,oligo,"mutant_full_length_cds"=mut_cds)
+      dplyr::select(block, "mutation_1"=mut_1, "mutation_2"= mut_2,"mutation_3" = mut_3,"mutation_4"=mut_4,oligo,"mutant_full_length_cds"=mut_cds)
   } else if(length(single_oligo_block1) < 5 & length(single_oligo_block2) < 5 & length(single_oligo_block3) < 5){
     PYR1_lib_single <- data.frame(warning = "No selected AA changes in any block")
   }
@@ -629,11 +599,11 @@ my_server <- function(input,output,session) {
     pyr1_aas <-  pyr1_prot %>% #pyr1的氨基酸序列 # aa of pyr1
       str_extract_all("[A-Z*]") %>%
       as.data.frame() %>%
-      select(residues=1)
+      dplyr::select(residues=1)
     
     # can change numbering to unique(good_aas$position)
     numbering <- good_aas$amino_acid_position
-    # can change wt aas to good_aas %>% group_by(wt_aa, position) %>% distinct(position, .keep_all = T) %>% select(wt_aas) %>% as.list()
+    # can change wt aas to good_aas %>% group_by(wt_aa, position) %>% distinct(position, .keep_all = T) %>% dplyr::select(wt_aas) %>% as.list()
     wt_aas <- good_aas$wt_aa
     
     good_aas_block_specifyer <- good_aas %>%
@@ -754,7 +724,7 @@ my_server <- function(input,output,session) {
         #拆分为三个部分w = word；d+means 数字
         #每次只读取一行，所以一次就是2个突变
         mutate(codons= yeast_favored_codons[mut,]) %>% #生成相应的密码子
-        select(position, codons) %>% 
+        dplyr::select(position, codons) %>% 
         rows_update(codons_list, ., by="position") %>% #注意position都需要class相同
         pull(codons) %>% str_c(collapse="")
       return(out)
@@ -813,34 +783,34 @@ my_server <- function(input,output,session) {
       PYR1_lib_double <- rbind(double_oligo_block1, double_oligo_block2,
                                double_oligo_block3) %>%  # binds all blocks into one file
         add_column(mut_3 = NA,mut_4 = NA) %>% 
-        select(block, "mutation_1"=mut_1, "mutation_2"= mut_2,"mutation_3" = mut_3,"mutation_4"=mut_4,oligo,"mutant_full_length_cds"=mut_cds)
+        dplyr::select(block, "mutation_1"=mut_1, "mutation_2"= mut_2,"mutation_3" = mut_3,"mutation_4"=mut_4,oligo,"mutant_full_length_cds"=mut_cds)
     } else if(length(double_oligo_block1) < 5 & length(double_oligo_block2) >= 5 & length(double_oligo_block3) >= 5){
       PYR1_lib_double <- rbind(double_oligo_block2,
                                double_oligo_block3) %>%  # binds all blocks into one file
         add_column(mut_3 = NA,mut_4 = NA) %>%          
-        select(block, "mutation_1"=mut_1, "mutation_2"= mut_2,"mutation_3" = mut_3,"mutation_4"=mut_4,oligo,"mutant_full_length_cds"=mut_cds)
+        dplyr::select(block, "mutation_1"=mut_1, "mutation_2"= mut_2,"mutation_3" = mut_3,"mutation_4"=mut_4,oligo,"mutant_full_length_cds"=mut_cds)
     }  else if(length(double_oligo_block1) >= 5 & length(double_oligo_block2) < 5 & length(double_oligo_block3) >= 5){
       PYR1_lib_double <- rbind(double_oligo_block1,
                                double_oligo_block3) %>%  # binds all blocks into one file
         add_column(mut_3 = NA,mut_4 = NA) %>%          
-        select(block, "mutation_1"=mut_1, "mutation_2"= mut_2,"mutation_3" = mut_3,"mutation_4"=mut_4,oligo,"mutant_full_length_cds"=mut_cds)
+        dplyr::select(block, "mutation_1"=mut_1, "mutation_2"= mut_2,"mutation_3" = mut_3,"mutation_4"=mut_4,oligo,"mutant_full_length_cds"=mut_cds)
     } else if(length(double_oligo_block1) >= 5 & length(double_oligo_block2) >= 5 & length(double_oligo_block3) < 5){
       PYR1_lib_double <- rbind(double_oligo_block1,
                                double_oligo_block2) %>%  # binds all blocks into one file
         add_column(mut_3 = NA,mut_4 = NA) %>%          
-        select(block, "mutation_1"=mut_1, "mutation_2"= mut_2,"mutation_3" = mut_3,"mutation_4"=mut_4,oligo,"mutant_full_length_cds"=mut_cds)
+        dplyr::select(block, "mutation_1"=mut_1, "mutation_2"= mut_2,"mutation_3" = mut_3,"mutation_4"=mut_4,oligo,"mutant_full_length_cds"=mut_cds)
     }  else if(length(double_oligo_block1) < 5 & length(double_oligo_block2) < 5 & length(double_oligo_block3) >= 5){
       PYR1_lib_double <- double_oligo_block3 %>%
         add_column(mut_3 = NA,mut_4 = NA) %>%       
-        select(block, "mutation_1"=mut_1, "mutation_2"= mut_2,"mutation_3" = mut_3,"mutation_4"=mut_4,oligo,"mutant_full_length_cds"=mut_cds)
+        dplyr::select(block, "mutation_1"=mut_1, "mutation_2"= mut_2,"mutation_3" = mut_3,"mutation_4"=mut_4,oligo,"mutant_full_length_cds"=mut_cds)
     } else if(length(double_oligo_block1) < 5 & length(double_oligo_block2) >= 5 & length(double_oligo_block3) < 5){
       PYR1_lib_double <- double_oligo_block2 %>%
         add_column(mut_3 = NA,mut_4 = NA) %>%          
-        select(block, "mutation_1"=mut_1, "mutation_2"= mut_2,"mutation_3" = mut_3,"mutation_4"=mut_4,oligo,"mutant_full_length_cds"=mut_cds)
+        dplyr::select(block, "mutation_1"=mut_1, "mutation_2"= mut_2,"mutation_3" = mut_3,"mutation_4"=mut_4,oligo,"mutant_full_length_cds"=mut_cds)
     } else if(length(double_oligo_block1) >= 5 & length(double_oligo_block2) < 5 & length(double_oligo_block3) < 5){
       PYR1_lib_double <- double_oligo_block1 %>%
         add_column(mut_3 = NA,mut_4 = NA) %>%          
-        select(block, "mutation_1"=mut_1, "mutation_2"= mut_2,"mutation_3" = mut_3,"mutation_4"=mut_4,oligo,"mutant_full_length_cds"=mut_cds)
+        dplyr::select(block, "mutation_1"=mut_1, "mutation_2"= mut_2,"mutation_3" = mut_3,"mutation_4"=mut_4,oligo,"mutant_full_length_cds"=mut_cds)
     } else if(length(double_oligo_block1) < 5 & length(double_oligo_block2) < 5 & length(double_oligo_block3) < 5){
       PYR1_lib_double <- data.frame(warning = "No selected AA changes in any block")
     }
@@ -870,11 +840,11 @@ my_server <- function(input,output,session) {
     pyr1_aas <-  pyr1_prot %>% #pyr1的氨基酸序列 # aa of pyr1
       str_extract_all("[A-Z*]") %>%
       as.data.frame() %>%
-      select(residues=1)
+      dplyr::select(residues=1)
     
     # can change numbering to unique(good_aas$position)
     numbering <- good_aas$amino_acid_position
-    # can change wt aas to good_aas %>% group_by(wt_aa, position) %>% distinct(position, .keep_all = T) %>% select(wt_aas) %>% as.list()
+    # can change wt aas to good_aas %>% group_by(wt_aa, position) %>% distinct(position, .keep_all = T) %>% dplyr::select(wt_aas) %>% as.list()
     wt_aas <- good_aas$wt_aa
     
     good_aas_block_specifyer <- good_aas %>%
@@ -898,7 +868,7 @@ my_server <- function(input,output,session) {
         #拆分为三个部分w = word；d+means 数字
         #每次只读取一行，所以一次就是三个突变
         mutate(codons= yeast_favored_codons[mut,]) %>% #生成相应的密码子
-        select(position, codons) %>% 
+        dplyr::select(position, codons) %>% 
         rows_update(codons_list, ., by="position") %>% #注意position都需要class相同
         pull(codons) %>% str_c(collapse="")
       return(out)
@@ -1096,34 +1066,34 @@ my_server <- function(input,output,session) {
       PYR1_lib_triple <- rbind(triple_oligo_block1, triple_oligo_block2,
                                triple_oligo_block3) %>%  # binds all blocks into one file
         add_column(mut_4 = NA) %>%
-        select(block, "mutation_1"=mut_1, "mutation_2"= mut_2,"mutation_3" = mut_3,"mutation_4"=mut_4,oligo,"mutant_full_length_cds"=mut_cds)
+        dplyr::select(block, "mutation_1"=mut_1, "mutation_2"= mut_2,"mutation_3" = mut_3,"mutation_4"=mut_4,oligo,"mutant_full_length_cds"=mut_cds)
     } else if(length(triple_oligo_block1) < 5 & length(triple_oligo_block2) >= 5 & length(triple_oligo_block3) >= 5){
       PYR1_lib_triple <- rbind(triple_oligo_block2,
                                triple_oligo_block3) %>%  # binds all blocks into one file
         add_column(mut_4 = NA) %>%
-        select(block, "mutation_1"=mut_1, "mutation_2"= mut_2,"mutation_3" = mut_3,"mutation_4"=mut_4,oligo,"mutant_full_length_cds"=mut_cds)
+        dplyr::select(block, "mutation_1"=mut_1, "mutation_2"= mut_2,"mutation_3" = mut_3,"mutation_4"=mut_4,oligo,"mutant_full_length_cds"=mut_cds)
     }  else if(length(triple_oligo_block1) >= 5 & length(triple_oligo_block2) < 5 & length(triple_oligo_block3) >= 5){
       PYR1_lib_triple <- rbind(triple_oligo_block1,
                                triple_oligo_block3) %>%  # binds all blocks into one file
         add_column(mut_4 = NA) %>%
-        select(block, "mutation_1"=mut_1, "mutation_2"= mut_2,"mutation_3" = mut_3,"mutation_4"=mut_4,oligo,"mutant_full_length_cds"=mut_cds)
+        dplyr::select(block, "mutation_1"=mut_1, "mutation_2"= mut_2,"mutation_3" = mut_3,"mutation_4"=mut_4,oligo,"mutant_full_length_cds"=mut_cds)
     } else if(length(triple_oligo_block1) >= 5 & length(triple_oligo_block2) >= 5 & length(triple_oligo_block3) < 5){
       PYR1_lib_triple <- rbind(triple_oligo_block1,
                                triple_oligo_block2) %>%  # binds all blocks into one file
         add_column(mut_4 = NA) %>%
-        select(block, "mutation_1"=mut_1, "mutation_2"= mut_2,"mutation_3" = mut_3,"mutation_4"=mut_4,oligo,"mutant_full_length_cds"=mut_cds)
+        dplyr::select(block, "mutation_1"=mut_1, "mutation_2"= mut_2,"mutation_3" = mut_3,"mutation_4"=mut_4,oligo,"mutant_full_length_cds"=mut_cds)
     }  else if(length(triple_oligo_block1) < 5 & length(triple_oligo_block2) < 5 & length(triple_oligo_block3) >= 5){
       PYR1_lib_triple <- triple_oligo_block3 %>%
         add_column(mut_4 = NA) %>% 
-        select(block, "mutation_1"=mut_1, "mutation_2"= mut_2,"mutation_3" = mut_3,"mutation_4"=mut_4,oligo,"mutant_full_length_cds"=mut_cds)
+        dplyr::select(block, "mutation_1"=mut_1, "mutation_2"= mut_2,"mutation_3" = mut_3,"mutation_4"=mut_4,oligo,"mutant_full_length_cds"=mut_cds)
     } else if(length(triple_oligo_block1) < 5 & length(triple_oligo_block2) >= 5 & length(triple_oligo_block3) < 5){
       PYR1_lib_triple <- triple_oligo_block2 %>%
         add_column(mut_4 = NA) %>%
-        select(block, "mutation_1"=mut_1, "mutation_2"= mut_2,"mutation_3" = mut_3,"mutation_4"=mut_4,oligo,"mutant_full_length_cds"=mut_cds)
+        dplyr::select(block, "mutation_1"=mut_1, "mutation_2"= mut_2,"mutation_3" = mut_3,"mutation_4"=mut_4,oligo,"mutant_full_length_cds"=mut_cds)
     } else if(length(triple_oligo_block1) >= 5 & length(triple_oligo_block2) < 5 & length(triple_oligo_block3) < 5){
       PYR1_lib_triple <- triple_oligo_block1 %>%
         add_column(mut_4 = NA) %>%
-        select(block, "mutation_1"=mut_1, "mutation_2"= mut_2,"mutation_3" = mut_3,"mutation_4"=mut_4,oligo,"mutant_full_length_cds"=mut_cds)
+        dplyr::select(block, "mutation_1"=mut_1, "mutation_2"= mut_2,"mutation_3" = mut_3,"mutation_4"=mut_4,oligo,"mutant_full_length_cds"=mut_cds)
     } else if(length(triple_oligo_block1) < 5 & length(triple_oligo_block2) < 5 & length(triple_oligo_block3) < 5){
       PYR1_lib_triple <- data.frame(warning = "No selected AA changes in any block")
     }
@@ -1155,11 +1125,11 @@ my_server <- function(input,output,session) {
     pyr1_aas <-  pyr1_prot %>% #pyr1的氨基酸序列 # aa of pyr1
       str_extract_all("[A-Z*]") %>%
       as.data.frame() %>%
-      select(residues=1)
+      dplyr::select(residues=1)
     
     # can change numbering to unique(good_aas$position)
     numbering <- good_aas$amino_acid_position
-    # can change wt aas to good_aas %>% group_by(wt_aa, position) %>% distinct(position, .keep_all = T) %>% select(wt_aas) %>% as.list()
+    # can change wt aas to good_aas %>% group_by(wt_aa, position) %>% distinct(position, .keep_all = T) %>% dplyr::select(wt_aas) %>% as.list()
     wt_aas <- good_aas$wt_aa
     
     good_aas_block_specifyer <- good_aas %>%
@@ -1183,7 +1153,7 @@ my_server <- function(input,output,session) {
         #拆分为三个部分w = word；d+means 数字
         #每次只读取一行，所以一次就是三个突变
         mutate(codons= yeast_favored_codons[mut,]) %>% #生成相应的密码子
-        select(position, codons) %>% 
+        dplyr::select(position, codons) %>% 
         rows_update(codons_list, ., by="position") %>% #注意position都需要class相同
         pull(codons) %>% str_c(collapse="")
       return(out)
@@ -1407,28 +1377,28 @@ my_server <- function(input,output,session) {
     if (length(quadruple_oligo_block1) >= 5 & length(quadruple_oligo_block2) >= 5 & length(quadruple_oligo_block3) >= 5){
       PYR1_lib_quadruple <- rbind(quadruple_oligo_block1, quadruple_oligo_block2,
                                quadruple_oligo_block3) %>%  # binds all blocks into one file
-        select(block, "mutation_1"=mut_1, "mutation_2" = mut_2,"mutation_3"=mut_3,"mutation_4"=mut_4,oligo,"mutant_full_length_cds"=mut_cds)
+        dplyr::select(block, "mutation_1"=mut_1, "mutation_2" = mut_2,"mutation_3"=mut_3,"mutation_4"=mut_4,oligo,"mutant_full_length_cds"=mut_cds)
     } else if(length(quadruple_oligo_block1) < 5 & length(quadruple_oligo_block2) >= 5 & length(quadruple_oligo_block3) >= 5){
       PYR1_lib_quadruple <- rbind(quadruple_oligo_block2,
                                quadruple_oligo_block3) %>%  # binds all blocks into one file
-        select(block, "mutation_1"=mut_1, "mutation_2" = mut_2,"mutation_3"=mut_3,"mutation_4"=mut_4,oligo,"mutant_full_length_cds"=mut_cds)
+        dplyr::select(block, "mutation_1"=mut_1, "mutation_2" = mut_2,"mutation_3"=mut_3,"mutation_4"=mut_4,oligo,"mutant_full_length_cds"=mut_cds)
     }  else if(length(quadruple_oligo_block1) >= 5 & length(quadruple_oligo_block2) < 5 & length(quadruple_oligo_block3) >= 5){
       PYR1_lib_quadruple <- rbind(quadruple_oligo_block1,
                                quadruple_oligo_block3) %>%  # binds all blocks into one file
-        select(block, "mutation_1"=mut_1, "mutation_2" = mut_2,"mutation_3"=mut_3,"mutation_4"=mut_4,oligo,"mutant_full_length_cds"=mut_cds)
+        dplyr::select(block, "mutation_1"=mut_1, "mutation_2" = mut_2,"mutation_3"=mut_3,"mutation_4"=mut_4,oligo,"mutant_full_length_cds"=mut_cds)
     } else if(length(quadruple_oligo_block1) >= 5 & length(quadruple_oligo_block2) >= 5 & length(quadruple_oligo_block3) < 5){
       PYR1_lib_quadruple <- rbind(quadruple_oligo_block1,
                                quadruple_oligo_block2) %>%  # binds all blocks into one file
-        select(block, "mutation_1"=mut_1, "mutation_2" = mut_2,"mutation_3"=mut_3,"mutation_4"=mut_4,oligo,"mutant_full_length_cds"=mut_cds)
+        dplyr::select(block, "mutation_1"=mut_1, "mutation_2" = mut_2,"mutation_3"=mut_3,"mutation_4"=mut_4,oligo,"mutant_full_length_cds"=mut_cds)
     }  else if(length(quadruple_oligo_block1) < 5 & length(quadruple_oligo_block2) < 5 & length(quadruple_oligo_block3) >= 5){
       PYR1_lib_quadruple <- quadruple_oligo_block3 %>%
-        select(block, "mutation_1"=mut_1, "mutation_2" = mut_2,"mutation_3"=mut_3,"mutation_4"=mut_4,oligo,"mutant_full_length_cds"=mut_cds)
+        dplyr::select(block, "mutation_1"=mut_1, "mutation_2" = mut_2,"mutation_3"=mut_3,"mutation_4"=mut_4,oligo,"mutant_full_length_cds"=mut_cds)
     } else if(length(quadruple_oligo_block1) < 5 & length(quadruple_oligo_block2) >= 5 & length(quadruple_oligo_block3) < 5){
       PYR1_lib_quadruple <- quadruple_oligo_block2 %>%
-        select(block, "mutation_1"=mut_1, "mutation_2" = mut_2,"mutation_3"=mut_3,"mutation_4"=mut_4,oligo,"mutant_full_length_cds"=mut_cds)
+        dplyr::select(block, "mutation_1"=mut_1, "mutation_2" = mut_2,"mutation_3"=mut_3,"mutation_4"=mut_4,oligo,"mutant_full_length_cds"=mut_cds)
     } else if(length(quadruple_oligo_block1) >= 5 & length(quadruple_oligo_block2) < 5 & length(quadruple_oligo_block3) < 5){
       PYR1_lib_quadruple <- quadruple_oligo_block1 %>%
-        select(block, "mutation_1"=mut_1, "mutation_2" = mut_2,"mutation_3"=mut_3,"mutation_4"=mut_4,oligo,"mutant_full_length_cds"=mut_cds)
+        dplyr::select(block, "mutation_1"=mut_1, "mutation_2" = mut_2,"mutation_3"=mut_3,"mutation_4"=mut_4,oligo,"mutant_full_length_cds"=mut_cds)
     } else if(length(quadruple_oligo_block1) < 5 & length(quadruple_oligo_block2) < 5 & length(quadruple_oligo_block3) < 5){
       PYR1_lib_quadruple <- data.frame(warning = "No selected AA changes in any block")
     }
@@ -1455,7 +1425,7 @@ my_server <- function(input,output,session) {
         mutate(oligo = case_when(block == "block1"~ str_sub(mutant_full_length_cds, as.numeric(box_block1_start) ,as.numeric(box_block1_end) ),
                                  block == "block2"~ str_sub(mutant_full_length_cds, as.numeric(box_block2_start) ,as.numeric(box_block2_end) ),
                                  block == "block3"~ str_sub(mutant_full_length_cds, as.numeric(box_block3_start) ,as.numeric(box_block3_end) ))) %>% 
-        select(`site_mutations_in_block`, block,mutation_1,mutation_2,mutation_3,mutation_4,oligo,mutant_full_length_cds)
+        dplyr::select(`site_mutations_in_block`, block,mutation_1,mutation_2,mutation_3,mutation_4,oligo,mutant_full_length_cds)
       
     }
     if(length(lib_tab_1) <= 1 & length(lib_tab_2) > 1 & length(lib_tab_3) > 1 & length(lib_tab_4)>1){
@@ -1467,7 +1437,7 @@ my_server <- function(input,output,session) {
         mutate(oligo = case_when(block == "block1"~ str_sub(mutant_full_length_cds, as.numeric(box_block1_start) ,as.numeric(box_block1_end) ),
                                  block == "block2"~ str_sub(mutant_full_length_cds, as.numeric(box_block2_start) ,as.numeric(box_block2_end) ),
                                  block == "block3"~ str_sub(mutant_full_length_cds, as.numeric(box_block3_start) ,as.numeric(box_block3_end) ))) %>%
-        select(`site_mutations_in_block`, block,mutation_1,mutation_2,mutation_3,mutation_4,oligo,mutant_full_length_cds)
+        dplyr::select(`site_mutations_in_block`, block,mutation_1,mutation_2,mutation_3,mutation_4,oligo,mutant_full_length_cds)
       
     }
     if(length(lib_tab_1) > 1 & length(lib_tab_2) <= 1 & length(lib_tab_3) > 1 & length(lib_tab_4)>1){
@@ -1479,7 +1449,7 @@ my_server <- function(input,output,session) {
         mutate(oligo = case_when(block == "block1"~ str_sub(mutant_full_length_cds, as.numeric(box_block1_start) ,as.numeric(box_block1_end) ),
                                  block == "block2"~ str_sub(mutant_full_length_cds, as.numeric(box_block2_start) ,as.numeric(box_block2_end) ),
                                  block == "block3"~ str_sub(mutant_full_length_cds, as.numeric(box_block3_start) ,as.numeric(box_block3_end) ))) %>%
-        select(`site_mutations_in_block`, block,mutation_1,mutation_2,mutation_3,mutation_4,oligo,mutant_full_length_cds)
+        dplyr::select(`site_mutations_in_block`, block,mutation_1,mutation_2,mutation_3,mutation_4,oligo,mutant_full_length_cds)
       
     }
     if(length(lib_tab_1) > 1 & length(lib_tab_2) > 1 & length(lib_tab_3) <= 1 & length(lib_tab_4)>1){
@@ -1491,7 +1461,7 @@ my_server <- function(input,output,session) {
         mutate(oligo = case_when(block == "block1"~ str_sub(mutant_full_length_cds, as.numeric(box_block1_start) ,as.numeric(box_block1_end) ),
                                  block == "block2"~ str_sub(mutant_full_length_cds, as.numeric(box_block2_start) ,as.numeric(box_block2_end) ),
                                  block == "block3"~ str_sub(mutant_full_length_cds, as.numeric(box_block3_start) ,as.numeric(box_block3_end) ))) %>%
-        select(`site_mutations_in_block`, block,mutation_1,mutation_2,mutation_3,mutation_4,oligo,mutant_full_length_cds)
+        dplyr::select(`site_mutations_in_block`, block,mutation_1,mutation_2,mutation_3,mutation_4,oligo,mutant_full_length_cds)
       
     }
     if(length(lib_tab_1) <= 1 & length(lib_tab_2) <= 1 & length(lib_tab_3) > 1 & length(lib_tab_4)>1){
@@ -1503,7 +1473,7 @@ my_server <- function(input,output,session) {
         mutate(oligo = case_when(block == "block1"~ str_sub(mutant_full_length_cds, as.numeric(box_block1_start) ,as.numeric(box_block1_end) ),
                                  block == "block2"~ str_sub(mutant_full_length_cds, as.numeric(box_block2_start) ,as.numeric(box_block2_end) ),
                                  block == "block3"~ str_sub(mutant_full_length_cds, as.numeric(box_block3_start) ,as.numeric(box_block3_end) ))) %>%
-        select(`site_mutations_in_block`, block,mutation_1,mutation_2,mutation_3,mutation_4,oligo,mutant_full_length_cds)
+        dplyr::select(`site_mutations_in_block`, block,mutation_1,mutation_2,mutation_3,mutation_4,oligo,mutant_full_length_cds)
       
     }
     if(length(lib_tab_1) <= 1 & length(lib_tab_2) > 1 & length(lib_tab_3) <= 1 & length(lib_tab_4)>1){
@@ -1515,7 +1485,7 @@ my_server <- function(input,output,session) {
         mutate(oligo = case_when(block == "block1"~ str_sub(mutant_full_length_cds, as.numeric(box_block1_start) ,as.numeric(box_block1_end) ),
                                  block == "block2"~ str_sub(mutant_full_length_cds, as.numeric(box_block2_start) ,as.numeric(box_block2_end) ),
                                  block == "block3"~ str_sub(mutant_full_length_cds, as.numeric(box_block3_start) ,as.numeric(box_block3_end) ))) %>%
-        select(`site_mutations_in_block`, block,mutation_1,mutation_2,mutation_3,mutation_4,oligo,mutant_full_length_cds)
+        dplyr::select(`site_mutations_in_block`, block,mutation_1,mutation_2,mutation_3,mutation_4,oligo,mutant_full_length_cds)
       
     }
     if(length(lib_tab_1) > 1 & length(lib_tab_2) <= 1 & length(lib_tab_3) <= 1 & length(lib_tab_4)>1){
@@ -1527,7 +1497,7 @@ my_server <- function(input,output,session) {
         mutate(oligo = case_when(block == "block1"~ str_sub(mutant_full_length_cds, as.numeric(box_block1_start) ,as.numeric(box_block1_end) ),
                                  block == "block2"~ str_sub(mutant_full_length_cds, as.numeric(box_block2_start) ,as.numeric(box_block2_end) ),
                                  block == "block3"~ str_sub(mutant_full_length_cds, as.numeric(box_block3_start) ,as.numeric(box_block3_end) ))) %>%
-        select(`site_mutations_in_block`, block,mutation_1,mutation_2,mutation_3,mutation_4,oligo,mutant_full_length_cds)
+        dplyr::select(`site_mutations_in_block`, block,mutation_1,mutation_2,mutation_3,mutation_4,oligo,mutant_full_length_cds)
       
     }
     if(length(lib_tab_1) > 1 & length(lib_tab_2) > 1 & length(lib_tab_3) > 1 & length(lib_tab_4)<=1){
@@ -1539,7 +1509,7 @@ my_server <- function(input,output,session) {
         mutate(oligo = case_when(block == "block1"~ str_sub(mutant_full_length_cds, as.numeric(box_block1_start) ,as.numeric(box_block1_end) ),
                                  block == "block2"~ str_sub(mutant_full_length_cds, as.numeric(box_block2_start) ,as.numeric(box_block2_end) ),
                                  block == "block3"~ str_sub(mutant_full_length_cds, as.numeric(box_block3_start) ,as.numeric(box_block3_end) ))) %>%
-        select(`site_mutations_in_block`, block,mutation_1,mutation_2,mutation_3,mutation_4,oligo,mutant_full_length_cds)
+        dplyr::select(`site_mutations_in_block`, block,mutation_1,mutation_2,mutation_3,mutation_4,oligo,mutant_full_length_cds)
       
     }
     if(length(lib_tab_1) <= 1 & length(lib_tab_2) > 1 & length(lib_tab_3) > 1 & length(lib_tab_4)<=1){
@@ -1551,7 +1521,7 @@ my_server <- function(input,output,session) {
         mutate(oligo = case_when(block == "block1"~ str_sub(mutant_full_length_cds, as.numeric(box_block1_start) ,as.numeric(box_block1_end) ),
                                  block == "block2"~ str_sub(mutant_full_length_cds, as.numeric(box_block2_start) ,as.numeric(box_block2_end) ),
                                  block == "block3"~ str_sub(mutant_full_length_cds, as.numeric(box_block3_start) ,as.numeric(box_block3_end) ))) %>%
-        select(`site_mutations_in_block`, block,mutation_1,mutation_2,mutation_3,mutation_4,oligo,mutant_full_length_cds)
+        dplyr::select(`site_mutations_in_block`, block,mutation_1,mutation_2,mutation_3,mutation_4,oligo,mutant_full_length_cds)
       
     }
     if(length(lib_tab_1) > 1 & length(lib_tab_2) <= 1 & length(lib_tab_3) > 1 & length(lib_tab_4)<=1){
@@ -1563,7 +1533,7 @@ my_server <- function(input,output,session) {
         mutate(oligo = case_when(block == "block1"~ str_sub(mutant_full_length_cds, as.numeric(box_block1_start) ,as.numeric(box_block1_end) ),
                                  block == "block2"~ str_sub(mutant_full_length_cds, as.numeric(box_block2_start) ,as.numeric(box_block2_end) ),
                                  block == "block3"~ str_sub(mutant_full_length_cds, as.numeric(box_block3_start) ,as.numeric(box_block3_end) ))) %>%
-        select(`site_mutations_in_block`, block,mutation_1,mutation_2,mutation_3,mutation_4,oligo,mutant_full_length_cds)
+        dplyr::select(`site_mutations_in_block`, block,mutation_1,mutation_2,mutation_3,mutation_4,oligo,mutant_full_length_cds)
       
     }
     if(length(lib_tab_1) > 1 & length(lib_tab_2) > 1 & length(lib_tab_3) <= 1 & length(lib_tab_4)<=1){
@@ -1575,7 +1545,7 @@ my_server <- function(input,output,session) {
         mutate(oligo = case_when(block == "block1"~ str_sub(mutant_full_length_cds, as.numeric(box_block1_start) ,as.numeric(box_block1_end) ),
                                  block == "block2"~ str_sub(mutant_full_length_cds, as.numeric(box_block2_start) ,as.numeric(box_block2_end) ),
                                  block == "block3"~ str_sub(mutant_full_length_cds, as.numeric(box_block3_start) ,as.numeric(box_block3_end) ))) %>%
-        select(`site_mutations_in_block`, block,mutation_1,mutation_2,mutation_3,mutation_4,oligo,mutant_full_length_cds)
+        dplyr::select(`site_mutations_in_block`, block,mutation_1,mutation_2,mutation_3,mutation_4,oligo,mutant_full_length_cds)
       
     }
     if(length(lib_tab_1) <= 1 & length(lib_tab_2) <= 1 & length(lib_tab_3) > 1 & length(lib_tab_4)<=1){
@@ -1587,7 +1557,7 @@ my_server <- function(input,output,session) {
         mutate(oligo = case_when(block == "block1"~ str_sub(mutant_full_length_cds, as.numeric(box_block1_start) ,as.numeric(box_block1_end) ),
                                  block == "block2"~ str_sub(mutant_full_length_cds, as.numeric(box_block2_start) ,as.numeric(box_block2_end) ),
                                  block == "block3"~ str_sub(mutant_full_length_cds, as.numeric(box_block3_start) ,as.numeric(box_block3_end) ))) %>%
-        select(`site_mutations_in_block`, block,mutation_1,mutation_2,mutation_3,mutation_4,oligo,mutant_full_length_cds)
+        dplyr::select(`site_mutations_in_block`, block,mutation_1,mutation_2,mutation_3,mutation_4,oligo,mutant_full_length_cds)
       
     }
     if(length(lib_tab_1) <= 1 & length(lib_tab_2) > 1 & length(lib_tab_3) <= 1 & length(lib_tab_4)<=1){
@@ -1599,7 +1569,7 @@ my_server <- function(input,output,session) {
         mutate(oligo = case_when(block == "block1"~ str_sub(mutant_full_length_cds, as.numeric(box_block1_start) ,as.numeric(box_block1_end) ),
                                  block == "block2"~ str_sub(mutant_full_length_cds, as.numeric(box_block2_start) ,as.numeric(box_block2_end) ),
                                  block == "block3"~ str_sub(mutant_full_length_cds, as.numeric(box_block3_start) ,as.numeric(box_block3_end) ))) %>%
-        select(`site_mutations_in_block`, block,mutation_1,mutation_2,mutation_3,mutation_4,oligo,mutant_full_length_cds)
+        dplyr::select(`site_mutations_in_block`, block,mutation_1,mutation_2,mutation_3,mutation_4,oligo,mutant_full_length_cds)
       
     }
     if(length(lib_tab_1) > 1 & length(lib_tab_2) <= 1 & length(lib_tab_3) <= 1 & length(lib_tab_4)<=1){
@@ -1611,7 +1581,7 @@ my_server <- function(input,output,session) {
         mutate(oligo = case_when(block == "block1"~ str_sub(mutant_full_length_cds, as.numeric(box_block1_start) ,as.numeric(box_block1_end) ),
                                  block == "block2"~ str_sub(mutant_full_length_cds, as.numeric(box_block2_start) ,as.numeric(box_block2_end) ),
                                  block == "block3"~ str_sub(mutant_full_length_cds, as.numeric(box_block3_start) ,as.numeric(box_block3_end) ))) %>% 
-        select(`site_mutations_in_block`, block,mutation_1,mutation_2,mutation_3,mutation_4,oligo,mutant_full_length_cds)
+        dplyr::select(`site_mutations_in_block`, block,mutation_1,mutation_2,mutation_3,mutation_4,oligo,mutant_full_length_cds)
       
     }
     if(length(lib_tab_1) <= 1 & length(lib_tab_2) <= 1 & length(lib_tab_3) <= 1 & length(lib_tab_4)>1){
@@ -1623,7 +1593,7 @@ my_server <- function(input,output,session) {
         mutate(oligo = case_when(block == "block1"~ str_sub(mutant_full_length_cds, as.numeric(box_block1_start) ,as.numeric(box_block1_end) ),
                                  block == "block2"~ str_sub(mutant_full_length_cds, as.numeric(box_block2_start) ,as.numeric(box_block2_end) ),
                                  block == "block3"~ str_sub(mutant_full_length_cds, as.numeric(box_block3_start) ,as.numeric(box_block3_end) ))) %>%
-        select(`site_mutations_in_block`, block,mutation_1,mutation_2,mutation_3,mutation_4,oligo,mutant_full_length_cds)
+        dplyr::select(`site_mutations_in_block`, block,mutation_1,mutation_2,mutation_3,mutation_4,oligo,mutant_full_length_cds)
       
     }
     if(length(lib_tab_1) <= 1 & length(lib_tab_2) <= 1 & length(lib_tab_3) <= 1 & length(lib_tab_4)<=1){
@@ -1667,7 +1637,7 @@ my_server <- function(input,output,session) {
     fasta_file_df <- combined_data_table_df()
     fasta_file_df <- fasta_file_df %>% 
       mutate(fasta_name = paste0(">",site_mutations_in_block,":",block,":",mutation_1,":",mutation_2,":",mutation_3,":",mutation_4)) %>% 
-      select(fasta_name, oligo) %>% 
+      dplyr::select(fasta_name, oligo) %>% 
       rowwise() %>% 
       reframe(fasta_name = c(fasta_name,oligo))
     return(fasta_file_df)
@@ -1694,7 +1664,7 @@ my_server <- function(input,output,session) {
       reframe(site_mutations_in_block,block, mutation_count_per_block = n() ) %>% 
       distinct(site_mutations_in_block,block,.keep_all = T) %>% 
       mutate(ID = paste0(site_mutations_in_block,block)) %>% 
-      select(ID, mutation_count_per_block)
+      dplyr::select(ID, mutation_count_per_block)
     return(combined_table_summary)}
   })
   
@@ -1704,9 +1674,9 @@ my_server <- function(input,output,session) {
     sum_of_oligos<-sum(table$mutation_count_per_block,na.rm=T)
     sum_of_oligos_df<-tibble(ID = "Total oligos", number_of_oligos_per_block = sum_of_oligos)
     table <- table %>% 
-      select(ID, "number_of_oligos_per_block"=mutation_count_per_block)
+      dplyr::select(ID, "number_of_oligos_per_block"=mutation_count_per_block)
     new_table <- rbind(table,sum_of_oligos_df) %>% 
-      select(`Block Type`=ID,`Count of Oligos`=number_of_oligos_per_block)
+      dplyr::select(`Block Type`=ID,`Count of Oligos`=number_of_oligos_per_block)
     return(datatable(new_table,options = list(pageLength = nrow(new_table)),editable = F,class = 'cell-border stripe', rownames = F))
   })
   
@@ -1716,9 +1686,9 @@ my_server <- function(input,output,session) {
     sum_of_oligos<-sum(table$mutation_count_per_block,na.rm=T)
     sum_of_oligos_df<-tibble(ID = "Total oligos", number_of_oligos_per_block = sum_of_oligos)
     table <- table %>% 
-      select(ID, "number_of_oligos_per_block"=mutation_count_per_block)
+      dplyr::select(ID, "number_of_oligos_per_block"=mutation_count_per_block)
     new_table <- rbind(table,sum_of_oligos_df) %>% 
-      select(`Block Type`=ID,`Count of Oligos`=number_of_oligos_per_block)
+      dplyr::select(`Block Type`=ID,`Count of Oligos`=number_of_oligos_per_block)
     
     
     total_num<-max(new_table$`Count of Oligos`,na.rm=T)
@@ -1930,7 +1900,7 @@ my_server <- function(input,output,session) {
     
     summary_of_counts_filtered <- summary_of_counts %>% # removes 0s
       filter(count != 0) %>% 
-      select(-count)
+      dplyr::select(-count)
       
     
     return(summary_of_counts_filtered)}
@@ -1947,7 +1917,7 @@ my_server <- function(input,output,session) {
     table <- mutation_site_table_df()
     total_pyr1s <- table %>% 
       filter(`Number of substituitons`=="Total Potential Unique PYR1s") %>% 
-      select(`Count of unique PYR1s`)
+      dplyr::select(`Count of unique PYR1s`)
     
     total_num<-total_pyr1s[1,1]
     return(paste0("Total PYR1s:"," ",total_num))
@@ -2467,7 +2437,7 @@ my_server <- function(input,output,session) {
     # reading pooled oligo table
     combined_table<-combined_data_table_df()
     combined_table<-combined_table %>% 
-      select(`site_mutations_in_block`, block,mutation_1,mutation_2,mutation_3,mutation_4,oligo,mutant_full_length_cds)
+      dplyr::select(`site_mutations_in_block`, block,mutation_1,mutation_2,mutation_3,mutation_4,oligo,mutant_full_length_cds)
     
     # adding BsaI sites to cleave off barcodes during golden gate reaction https://www.neb.com/en-us/products/r3733-bsai-hf-v2
 
@@ -2514,7 +2484,7 @@ my_server <- function(input,output,session) {
                                block == "block2" ~ paste0(b2f,restriction_site_forward,oligo,bsaI_reverse_compliment,b2r ),
                                block == "block3" ~ paste0(b3f,restriction_site_forward,oligo,bsaI_reverse_compliment,b3r )) # attaches barcode sequence to either side of the oligos
              ) %>%
-      select(`site_mutations_in_block`, block,oligo_barcode_set,oligo_barcode_primer_F,oligo_barcode_primer_R,mutation_1,mutation_2,mutation_3,mutation_4,oligo_translation,oligo,mutant_full_length_cds)
+      dplyr::select(`site_mutations_in_block`, block,oligo_barcode_set,oligo_barcode_primer_F,oligo_barcode_primer_R,mutation_1,mutation_2,mutation_3,mutation_4,oligo_translation,oligo,mutant_full_length_cds)
     
     
     return(combined_table_with_names)
@@ -2547,7 +2517,7 @@ my_server <- function(input,output,session) {
                                    "PYR1","_WT","_FRAG_",block,":",mutation_1,":",mutation_2,":",mutation_3,":",
                                    mutation_4,"_PRI_",str_extract(oligo_barcode_set,"set"),
                                    extract_numbers(oligo_barcode_set) )) %>%
-        select(fasta_name, oligo) %>%
+        dplyr::select(fasta_name, oligo) %>%
         rowwise() %>%
         reframe(fasta_name = c(fasta_name,oligo))
     }else if(pyr1_type == "PYR1*"){
@@ -2555,7 +2525,7 @@ my_server <- function(input,output,session) {
         mutate(fasta_name = paste0(">","LIBRARY_",library_name,"_",
                                    "PYR1","_STAR","_FRAG_",block,":",mutation_1,":",mutation_2,":",mutation_3,
                                    ":",mutation_4,"_PRI_",str_extract(oligo_barcode_set,"set"),extract_numbers(oligo_barcode_set) )) %>%
-        select(fasta_name, oligo) %>%
+        dplyr::select(fasta_name, oligo) %>%
         rowwise() %>%
         reframe(fasta_name = c(fasta_name,oligo))
     }else if(pyr1_type == "double_daggar"){
@@ -2563,7 +2533,7 @@ my_server <- function(input,output,session) {
         mutate(fasta_name = paste0(">","LIBRARY_",library_name,"_",
                                    "PYR1","_DOUBLE_DAGGAR","_FRAG_",block,":",mutation_1,":",mutation_2,":",
                                    mutation_3,":",mutation_4,"_PRI_",str_extract(oligo_barcode_set,"set",extract_numbers(oligo_barcode_set) ))) %>%
-        select(fasta_name, oligo) %>%
+        dplyr::select(fasta_name, oligo) %>%
         rowwise() %>%
         reframe(fasta_name = c(fasta_name,oligo))
     }else{
@@ -2571,7 +2541,7 @@ my_server <- function(input,output,session) {
         mutate(fasta_name = paste0(">","LIBRARY_",library_name,"_",
                                    "_FRAG_",block,":",mutation_1,":",mutation_2,":",mutation_3,":",mutation_4,
                                    "_PRI_",str_extract(oligo_barcode_set),extract_numbers(oligo_barcode_set) )) %>%
-        select(fasta_name, oligo) %>%
+        dplyr::select(fasta_name, oligo) %>%
         rowwise() %>%
         reframe(fasta_name = c(fasta_name,oligo))
     }
@@ -2594,7 +2564,7 @@ my_server <- function(input,output,session) {
     # Tm= 64.9 +41*(yG+zC-16.4)/(wA+xT+yG+zC)
     bc_df<-barcode_data_file()
     bc_primers <- bc_df %>% 
-      select(block,oligo_barcode_set,oligo_barcode_primer_F,oligo_barcode_primer_R) %>% 
+      dplyr::select(block,oligo_barcode_set,oligo_barcode_primer_F,oligo_barcode_primer_R) %>% 
       distinct(block,.keep_all = T) %>%
       add_column(restriction_site = input$restriction_site) %>% 
       add_column(notes = "") 
@@ -2632,7 +2602,7 @@ my_server <- function(input,output,session) {
         "Block 1", as.character(input$ssm1), as.character(input$dsm1), as.character(input$tsm1), as.character(input$qsm1),
         "Block 2", as.character(input$ssm2), as.character(input$dsm2), as.character(input$tsm2), as.character(input$qsm2),
         "Block 3", as.character(input$ssm3), as.character(input$dsm3), as.character(input$tsm3), as.character(input$qsm3),
-        "PYR1 Type Selected", input$pyr1_type, "", "", ""
+        "PYR1 Type selected", input$pyr1_type, "", "", ""
       )
       
       openxlsx::addWorksheet(wb, "Block substituions selected")
