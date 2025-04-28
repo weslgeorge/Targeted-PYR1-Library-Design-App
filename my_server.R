@@ -121,7 +121,7 @@ my_server <- function(input,output,session) {
       
       
       output$sensors_FDA_suppliment_df_filtered <- renderDT({
-        return(datatable(sensors_table_filtered,options = list(pageLength = nrow(table)),editable = F,class = 'cell-border stripe', rownames = F))
+        return(datatable(sensors_table_filtered,options = list(pageLength = nrow(table),scrollX = T),editable = F,class = 'cell-border stripe', rownames = F))
       })# end render DT
       
     } # end else statement
@@ -266,7 +266,12 @@ my_server <- function(input,output,session) {
       table <- rv$data
       colnames(table) <-  c("WT AA","AA Position","A","C","D","E","F","G","H","I","K","L","M","N",
                                "P", "Q", "R", "S","T","V","W","Y")
-      return(datatable(table,options = list(pageLength = nrow(table)),editable = T,class = 'cell-border stripe', rownames = F))
+      return(datatable(table,
+                       options = list(pageLength = nrow(table),
+                                      scrollX = T),
+                       editable = T,
+                       class = 'cell-border stripe',
+                       rownames = F))
   })
   
   output$input_download <- downloadHandler(
@@ -330,7 +335,12 @@ my_server <- function(input,output,session) {
 
   
   ### PYR1 Constitutive filter ###
-  pyr1_constitutive_filter <-TRUE
+  
+  pyr1_constitutive_filter_value <-reactive({
+    input$pyr1_constitutive_filter
+    })
+  
+  # pyr1_constitutive_filter <- pyr1_constitutive_filter_value()
   
 
   
@@ -1601,6 +1611,7 @@ my_server <- function(input,output,session) {
       return(warning_table)
     }
     ###### Constitutive filter ########
+    pyr1_constitutive_filter <- pyr1_constitutive_filter_value()
     if (pyr1_constitutive_filter == T){
     combined_table_filtered <- combined_table %>%
       mutate(list_of_mutations = paste0(mutation_1,"_",mutation_2,"_",mutation_3,"_",mutation_4)) %>%
@@ -2491,7 +2502,12 @@ my_server <- function(input,output,session) {
   })
   
   output$barcode_table <- renderDT({
-    table <- barcode_data_file()
+    DT::datatable(
+      barcode_data_file(),
+      escape = FALSE,
+      options = list(pageLength = 10,
+                     lengthMenu = c(10, 25, 50, 100), scrollX = T)
+    )
   })
   
   # adds download button
