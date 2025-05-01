@@ -1,10 +1,10 @@
-# PAIR-Design-App
+# Targeted-PYR1-Library-Design-App
 
-PAIR-Design is an App that allows for the generation of oligos to make PYR1 protein libraries using PAIR datasets to inform those libraries. 
+Targeted-PYR1-Library-Design-App is an App that allows for the generation of oligos to make PYR1 protein libraries using general screen datasets to inform those libraries. 
 
 ## Getting setup locally:
 
-If you want to use the PAIR-D app locally on your computer simply clone the repository into your local files. Make sure to have R and Rstudio installed on your computer and open the app.R file using Rstudio.
+If you want to use the app locally on your computer simply clone the repository into your local files. Make sure to have R and Rstudio installed on your computer and open the app.R file using Rstudio.
 
 Then install the required packages with the following code in the console.
 
@@ -20,13 +20,13 @@ shiny::runApp()
 
 The app should open on the Readme tab and you can get started on generating PYR1 libraries!
 
-## Using the PAIR-Design App
+## Using the app
 
 The general workflow for designing to generate PYR1 mutant libraries is as follows. 
 
 ### Sequence profile generation
 
-  First target small molecule interactors are identified, and similarly structured compounds are found in the PAIR data. This can be done with external chemical clustering methods, or by using programs like [Chemminetools](https://chemminetools.ucr.edu/) to cluster a target compound with the PAIR data SMILES. Identified similar small molecules used to inform the library will be selected in the `Sequence profile generation` tab to generate a sequence profile that informs the app what mutations at what positions in PYR1 to allow in the library. Selecting desired small molecules will filter for biosensor mutations that were identified in biosensors for the selected small molecules that then populate the sequence profile. Sequence profiles can be made manually and uploaded in the sidebar using the `Sequence profile CSV` upload button, as well as made in the `Sequence profile generation` tab. See the `Sequence profile` sheet of the `Oligo summary data` download button for a template of the file, new rows can be added as long as the proper WT amino acid and position are added. 
+  First target small molecule interactors are identified, and similarly structured compounds are found in the general screen data. This can be done with external chemical clustering methods, or by using programs like [Chemminetools](https://chemminetools.ucr.edu/) to cluster a target compound with the general screen data SMILES. Identified similar small molecules used to inform the library will be selected in the `Sequence profile generation` tab to generate a sequence profile that informs the app what mutations at what positions in PYR1 to allow in the library. Selecting desired small molecules will filter for biosensor mutations that were identified in biosensors for the selected small molecules that then populate the sequence profile. Sequence profiles can be made manually and uploaded in the sidebar using the `Sequence profile CSV` upload button, as well as made in the `Sequence profile generation` tab. See the `Sequence profile` sheet of the `Oligo summary data` download button for a template of the file, new rows can be added as long as the proper WT amino acid and position are added. 
 
 ### Library parameter selection
 
