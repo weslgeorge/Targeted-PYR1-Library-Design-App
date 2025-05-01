@@ -4,7 +4,7 @@ source("data_files/chooser.R")
 
 my_ui <- fluidPage(
   theme = shinythemes::shinytheme("flatly"),  # <--- Specify theme here
-  titlePanel("PAIR-D"),
+  titlePanel("Targeted-PYR1-Library-Design-App"),
   h5(""),
   sidebarLayout(
     sidebarPanel( # use to control figures
@@ -75,10 +75,10 @@ my_ui <- fluidPage(
       tabsetPanel( type = "tabs" ,
                    ##### READ ME ########
                    tabPanel("Readme",
-                            h2("Getting started with the PAIR-Design oligo generator"),
+                            h2("Getting started with the Targeted-PYR1-Library-Design-App oligo generator"),
                             h3("Description:"),
                             p("    The goal of this app is to generate oligos that can be combined into a mutant PYR1 library using designed mutations."),
-                            h3("PAIR-D Workflow:"),
+                            h3("Targeted-PYR1-Library-Design-App Workflow:"),
                             p("    The general workflow for designing to generate PYR1 mutant libraries is as follows. "),
                             div(
                               style = "display: flex; align-items: center; justify-content: space-between;",
@@ -87,7 +87,7 @@ my_ui <- fluidPage(
                               div(
                                 style = "flex: 1;",
                                 h4("Sequence profile generation:"),
-                                p("    First target small molecule interactors are identified, and similarly structured compounds are found in the PAIR data. This can be done with external chemical clustering methods, or by using programs like ",tags$a(href="https://chemminetools.ucr.edu/", "https://chemminetools.ucr.edu/")," to cluster a target compound with the PAIR data SMILES. Identified similar small molecules used to inform the library will be selected in the `Sequence profile generation` tab to generate a sequence profile that informs the app what mutations at what positions in PYR1 to allow in the library. Selecting desired small molecules will filter for biosensor mutations that were identified in biosensors for the selected small molecules that then populate the sequence profile. Sequence profiles can be made manually and uploaded in the sidebar using the `Sequence profile CSV` upload button, as well as made in the `Sequence profile generation` tab. See the `Sequence profile` sheet of the `Oligo summary data` download button for a template of the file, new rows can be added as long as the proper WT amino acid and position are added. ")
+                                p("    First target small molecule interactors are identified, and similarly structured compounds are found in the screening data. This can be done with external chemical clustering methods, or by using programs like ",tags$a(href="https://chemminetools.ucr.edu/", "https://chemminetools.ucr.edu/")," to cluster a target compound with the screening data SMILES. Identified similar small molecules used to inform the library will be selected in the `Sequence profile generation` tab to generate a sequence profile that informs the app what mutations at what positions in PYR1 to allow in the library. Selecting desired small molecules will filter for biosensor mutations that were identified in biosensors for the selected small molecules that then populate the sequence profile. Sequence profiles can be made manually and uploaded in the sidebar using the `Sequence profile CSV` upload button, as well as made in the `Sequence profile generation` tab. See the `Sequence profile` sheet of the `Oligo summary data` download button for a template of the file, new rows can be added as long as the proper WT amino acid and position are added. ")
                               ),
                               
                               # Right side: image
@@ -140,7 +140,7 @@ my_ui <- fluidPage(
                    ),
                    ###### SEQUENCE PROFILE GENERATOR TAB #######
                    tabPanel("Sequence profile generation",
-                            h3("Input Generation from PAIR data"),
+                            h3("Input generation from screen data"),
                             verbatimTextOutput("selected_clusters"),
                             p("    First make sure to have a list of desired chemicals, then use the dropdown or paste in a list of the desired chemicals to the input box to filter for biosensors binding to the small molecules listed and generating a Sequence profile for a new library."),
                             p("
@@ -157,9 +157,9 @@ my_ui <- fluidPage(
                             actionButton("submit", "Submit"),
                             p("
                               "),
-                            h4("Biosensors filtered from PAIR data"),
+                            h4("Biosensors filtered from screening data"),
                             DTOutput(outputId = "sensors_FDA_suppliment_df_filtered"),
-                            p("    The Biosensors filtered from PAIR data table shows the biosensor sequences and corresponding information filtered by the chemical(s) selected. The substitution mutations in the filtered biosensors are what inform the sequence profile below."),
+                            p("    The Biosensors filtered from screening data table shows the biosensor sequences and corresponding information filtered by the chemical(s) selected. The substitution mutations in the filtered biosensors are what inform the sequence profile below."),
                             p("
                               "),
                             h4("Sequence profile generated"),
