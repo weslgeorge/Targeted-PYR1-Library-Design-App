@@ -1,0 +1,718 @@
+﻿number,library,chem_name,act_ingr,cat,mut_lib,chem_cluster,clone,K59,V81,V83,L87,A89,S92,E94,F108,I110,L117,Y120,S122,E141,F159,A160,V163,V164,N167,1,10,100,min_conc,canonical_smiles
+565,Selleck_L1300,Alpha-Estradiol,Alpha-Estradiol,S5910,tsm,-1,124_3,,,,,,,,,,,W,,,T,,W,,,-,+,+,10,C[C@]12CC[C@@H]3c4ccc(O)cc4CC[C@H]3[C@@H]1CC[C@H]2O
+188,Selleck_L1300,Alpha-Estradiol,Alpha-Estradiol,S5910,dsm,-1,4,,,,,,,,,,,,,,T,,W,,,-,+,+,10,C[C@]12CC[C@@H]3c4ccc(O)cc4CC[C@H]3[C@@H]1CC[C@H]2O
+187,Selleck_L1300,Alpha-Estradiol,Alpha-Estradiol,S5910,dsm,-1,1,,,,,,,,,,,,,,T,,,,,-,+,+,10,C[C@]12CC[C@@H]3c4ccc(O)cc4CC[C@H]3[C@@H]1CC[C@H]2O
+566,Selleck_L1300,Alpha-Estradiol,Alpha-Estradiol,S5910,tsm,-1,124_10,,,,,,,,,,,,,,V,,W,G,,+,+,+,1,C[C@]12CC[C@@H]3c4ccc(O)cc4CC[C@H]3[C@@H]1CC[C@H]2O
+252,Selleck_L1300,S-(+)-Ketoprofen,Ketoprofen,S5192,shuffle,-1,1,,R,M,,,,,,,,,,,I,,,,,-,-,+,100,C[C@H](C(=O)O)c1cccc(C(=O)c2ccccc2)c1
+60,Selleck_L1300,Medetomidine HCl,Medetomidine,S3060,dsm,-1,1,D,,,,I,,,,,,,,,,,,,,-,-,+,100,Cc1cccc(C(C)c2c[nH]cn2)c1C
+61,Selleck_L1300,Medetomidine HCl,Medetomidine,S3060,dsm,-1,7,D,,,,,,,,,,,,,,V,,,,-,-,+,100,Cc1cccc(C(C)c2c[nH]cn2)c1C
+381,Selleck_L1300,Medetomidine HCl,Medetomidine,S3060,tsm,-1,48_1,E,L,,,F,,,,,,,,,,,,,,-,-,+,100,Cc1cccc(C(C)c2c[nH]cn2)c1C
+515,Selleck_L1300,Zucapsaicin,Zucapsaicin,S6409,tsm,-1,111_4,A,,,,,,,,,,,Q,,H,,,,,-,-,+,100,COc1cc(CNC(=O)CCCC/C=C\C(C)C)ccc1O
+156,Selleck_L1300,Zucapsaicin,Zucapsaicin,S6409,dsm,-1,2,M,,,,,,,,,,G,,,,,,,,-,-,+,100,COc1cc(CNC(=O)CCCC/C=C\C(C)C)ccc1O
+516,Selleck_L1300,Zucapsaicin,Zucapsaicin,S6409,tsm,-1,111_6,M,,,,,,,,,,S,M,,,,,,,-,-,+,100,COc1cc(CNC(=O)CCCC/C=C\C(C)C)ccc1O
+512,Selleck_L1300,Zucapsaicin,Zucapsaicin,S6409,tsm,-1,111_1,T,,,,,,,,,,A,,,,,,L,,-,-,+,100,COc1cc(CNC(=O)CCCC/C=C\C(C)C)ccc1O
+157,Selleck_L1300,Zucapsaicin,Zucapsaicin,S6409,dsm,-1,7,,Y,,,,,,,,,,,,T,,,,,-,-,+,100,COc1cc(CNC(=O)CCCC/C=C\C(C)C)ccc1O
+517,Selleck_L1300,Zucapsaicin,Zucapsaicin,S6409,tsm,-1,111_9,,,,,,,,,,,A,D,,A,,,,,-,+,+,10,COc1cc(CNC(=O)CCCC/C=C\C(C)C)ccc1O
+513,Selleck_L1300,Zucapsaicin,Zucapsaicin,S6409,tsm,-1,111_2,,,,,,,,,,,A,G,,,V,,,,-,-,+,100,COc1cc(CNC(=O)CCCC/C=C\C(C)C)ccc1O
+520,Selleck_L1300,Zucapsaicin,Zucapsaicin,S6409,tsm,-1,111_12,,,,,,,,,,,A,M,,,,,T,,-,+,+,10,COc1cc(CNC(=O)CCCC/C=C\C(C)C)ccc1O
+514,Selleck_L1300,Zucapsaicin,Zucapsaicin,S6409,tsm,-1,111_3,,,,,,,,,,,A,Q,,,I,,,,-,-,+,100,COc1cc(CNC(=O)CCCC/C=C\C(C)C)ccc1O
+155,Selleck_L1300,Zucapsaicin,Zucapsaicin,S6409,dsm,-1,1,,,,,,,,,,,A,,,,,,,,-,-,+,100,COc1cc(CNC(=O)CCCC/C=C\C(C)C)ccc1O
+518,Selleck_L1300,Zucapsaicin,Zucapsaicin,S6409,tsm,-1,111_10,,,,,,,,,,,G,,,A,,,,,-,+,+,10,COc1cc(CNC(=O)CCCC/C=C\C(C)C)ccc1O
+519,Selleck_L1300,Zucapsaicin,Zucapsaicin,S6409,tsm,-1,111_11,,,,,,,,,,,T,I,,,,,,,-,-,+,100,COc1cc(CNC(=O)CCCC/C=C\C(C)C)ccc1O
+204,LATCA,Alachlor,Alachlor,330043,dsm,1,8,,,,,,,,,,,,,,I,,,,,-,-,+,100,CCc1cccc(CC)c1N(COC)C(=O)CCl
+203,LATCA,Alachlor,Alachlor,330043,dsm,1,5,,,,,,,,,,,,,,L,,,N,,-,+,+,10,CCc1cccc(CC)c1N(COC)C(=O)CCl
+717,LATCA,Clomazone,Clomazone,46120,tsm,1,7,R,,I,,G,,,,,,,,,,,,,,nd,nd,+,nd,CC1(C)CON(Cc2ccccc2Cl)C1=O
+180,Selleck_L1300,Crotamiton,Crotamiton,S1711,dsm,1,4,,,,,,,D,,,,,,,,,,H,,-,-,+,100,C/C=C/C(=O)N(CC)c1ccccc1C
+179,Selleck_L1300,Crotamiton,Crotamiton,S1711,dsm,1,1,,,,,,,,,,,,,,I,,,,,-,-,+,100,C/C=C/C(=O)N(CC)c1ccccc1C
+181,Selleck_L1300,Crotamiton,Crotamiton,S1711,dsm,1,6,,,,,,,,,,,,,,L,M,,,,-,-,+,100,C/C=C/C(=O)N(CC)c1ccccc1C
+709,LATCA,Amiprofos Methyl,Amiprofos methyl,3992,tsm,2,8,,,,,,,,,,,,E,,I,,,H,,nd,nd,+,nd,COP(=S)(NC(C)C)Oc1ccc(C)cc1[N+](=O)[O-]
+235,LATCA,Amiprofos Methyl,Amiprofos methyl,3992,dsm,2,6,,,,,,,,,,,,Q,,M,,,,,-,+,+,10,COP(=S)(NC(C)C)Oc1ccc(C)cc1[N+](=O)[O-]
+234,LATCA,Amiprofos Methyl,Amiprofos methyl,3992,dsm,2,1,,,,,,,,,,,,,,M,,,L,,-,+,+,10,COP(=S)(NC(C)C)Oc1ccc(C)cc1[N+](=O)[O-]
+92,Selleck_L1300,Carbimazole,Carbimazole,S4048,dsm,3,2,,,,,,,D,,,,,,,K,,,,,-,-,+,100,CCOC(=O)n1ccn(C)c1=S
+409,Selleck_L1300,Carbimazole,Carbimazole,S4048,tsm,3,61_10,,,,,,,,,,M,,,,K,,,T,,-,+,+,10,CCOC(=O)n1ccn(C)c1=S
+93,Selleck_L1300,Carbimazole,Carbimazole,S4048,dsm,3,4,,,,,,,,,,,,,,K,,,M,,-,-,+,100,CCOC(=O)n1ccn(C)c1=S
+91,Selleck_L1300,Carbimazole,Carbimazole,S4048,dsm,3,1,,,,,,,,,,,,,,K,,,,,-,-,+,100,CCOC(=O)n1ccn(C)c1=S
+571,agchems,DEET Pestanal,DEET,134-62-3,tsm,3,15_5,R,,M,,,L,,,,,,,,H,,,,,-,-,+,100,CCN(CC)C(=O)c1cccc(C)c1
+569,agchems,DEET Pestanal,DEET,134-62-3,tsm,3,15_2,R,,M,,,,,,,,,M,,,,,,,-,+,+,10,CCN(CC)C(=O)c1cccc(C)c1
+643,agchems,DEET Pestanal,DEET,134-62-3,dsm,3,15_10,R,,M,,,,,,,,,,,,,,,,-,+,+,10,CCN(CC)C(=O)c1cccc(C)c1
+574,agchems,DEET Pestanal,DEET,134-62-3,tsm,3,15_8,R,,,,,,,,,,W,,,H,,,,,-,-,+,100,CCN(CC)C(=O)c1cccc(C)c1
+642,agchems,DEET Pestanal,DEET,134-62-3,dsm,3,15_9,R,,,,,,,,,,,,,H,,,,,-,-,+,100,CCN(CC)C(=O)c1cccc(C)c1
+577,agchems,DEET Pestanal,DEET,134-62-3,tsm,3,15_12,R,,,,,,,,,,,,,H,,,,,-,-,+,100,CCN(CC)C(=O)c1cccc(C)c1
+570,agchems,DEET Pestanal,DEET,134-62-3,tsm,3,15_3,,L,,F,,,,,,A,,,,,,,,,-,+,+,10,CCN(CC)C(=O)c1cccc(C)c1
+641,agchems,DEET Pestanal,DEET,134-62-3,dsm,3,15_7,,Y,,M,,,,,,,,,,,,,,,-,-,+,100,CCN(CC)C(=O)c1cccc(C)c1
+572,agchems,DEET Pestanal,DEET,134-62-3,tsm,3,15_6,,Y,,,,,,,,,,,,A,M,,,,-,-,+,100,CCN(CC)C(=O)c1cccc(C)c1
+644,agchems,DEET Pestanal,DEET,134-62-3,dsm,3,15_11,,Y,,,,,,,,,,,,A,,,,,-,-,+,100,CCN(CC)C(=O)c1cccc(C)c1
+575,agchems,DEET Pestanal,DEET,134-62-3,tsm,3,15_10,,Y,,,,,,,,,,,,A,,,,,-,-,+,100,CCN(CC)C(=O)c1cccc(C)c1
+640,agchems,DEET Pestanal,DEET,134-62-3,dsm,3,15_5,,Y,,,,,,,,,,,,V,,,,,-,-,+,100,CCN(CC)C(=O)c1cccc(C)c1
+576,agchems,DEET Pestanal,DEET,134-62-3,tsm,3,15_11,,,L,,,,,,,,,,,G,I,,,,-,-,+,100,CCN(CC)C(=O)c1cccc(C)c1
+573,agchems,DEET Pestanal,DEET,134-62-3,tsm,3,15_7,,,L,,,,,,,,,,,G,M,,,,-,-,+,100,CCN(CC)C(=O)c1cccc(C)c1
+568,agchems,DEET Pestanal,DEET,134-62-3,tsm,3,15_1,,,W,,,,,,,,,,,A,L,,,,-,-,+,100,CCN(CC)C(=O)c1cccc(C)c1
+114,Selleck_L1300,DEET,DEET,S4521,dsm,3,1,,,Y,,,,,,,,,,,A,,,,,-,-,+,100,CCN(CC)C(=O)c1cccc(C)c1
+587,agchems,Cycloate,Cycloate,1134-23-2,tsm,4,28_11,A,,F,,,,,,,G,,N,,,,,,,-,+,+,10,CCSC(=O)N(CC)C1CCCCC1
+580,agchems,Cycloate,Cycloate,1134-23-2,tsm,4,28_3,L,,L,,,,,,,D,,,,,,,,,-,+,+,10,CCSC(=O)N(CC)C1CCCCC1
+586,agchems,Cycloate,Cycloate,1134-23-2,tsm,4,28_10,N,,,M,,,,,,H,,,,,,,,,-,-,+,100,CCSC(=O)N(CC)C1CCCCC1
+585,agchems,Cycloate,Cycloate,1134-23-2,tsm,4,28_9,R,L,,,,,,,,,,,,,L,,,,-,+,+,10,CCSC(=O)N(CC)C1CCCCC1
+588,agchems,Cycloate,Cycloate,1134-23-2,tsm,4,28_12,S,,L,,,,,,,N,,,,,,,,,-,+,+,10,CCSC(=O)N(CC)C1CCCCC1
+649,agchems,Cycloate,Cycloate,1134-23-2,dsm,4,28_4,,Y,,M,,,,,,,,,,,,,,,-,-,+,100,CCSC(=O)N(CC)C1CCCCC1
+584,agchems,Cycloate,Cycloate,1134-23-2,tsm,4,28_8,,Y,,,,,,Y,,,,,,I,,,,,-,-,+,100,CCSC(=O)N(CC)C1CCCCC1
+652,agchems,Cycloate,Cycloate,1134-23-2,dsm,4,28_11,,Y,,,,,,,,,,,,V,,,,,-,-,+,100,CCSC(=O)N(CC)C1CCCCC1
+651,agchems,Cycloate,Cycloate,1134-23-2,dsm,4,28_9,,,F,,,,,,,N,,,,,,,,S,-,+,+,10,CCSC(=O)N(CC)C1CCCCC1
+579,agchems,Cycloate,Cycloate,1134-23-2,tsm,4,28_2,,,L,,,,,,,D,,Q,,,,,,,-,+,+,10,CCSC(=O)N(CC)C1CCCCC1
+581,agchems,Cycloate,Cycloate,1134-23-2,tsm,4,28_4,,,L,,,,,,,D,,,,,,,,Q,-,+,+,10,CCSC(=O)N(CC)C1CCCCC1
+582,agchems,Cycloate,Cycloate,1134-23-2,tsm,4,28_6,,,L,,,,,,,G,F,,,,,,,,-,+,+,10,CCSC(=O)N(CC)C1CCCCC1
+583,agchems,Cycloate,Cycloate,1134-23-2,tsm,4,28_7,,,L,,,,,,,H,,Q,,,,,,,-,+,+,10,CCSC(=O)N(CC)C1CCCCC1
+650,agchems,Cycloate,Cycloate,1134-23-2,dsm,4,28_7,,,L,,,,,,,N,,,,,,,,,-,+,+,10,CCSC(=O)N(CC)C1CCCCC1
+578,agchems,Cycloate,Cycloate,1134-23-2,tsm,4,28_1,,,Y,,,,,,,N,,,,,,,,D,-,+,+,10,CCSC(=O)N(CC)C1CCCCC1
+690,LATCA,Ethoprop,Ethoprop,330065,tsm,4,1,,Y,,M,,,,,,M,,,,,,,,,nd,nd,+,nd,CCCSP(=O)(OCC)SCCC
+69,Selleck_L1300,(+)-α-Lipoic acid,Lipoic acid,S3998,dsm,4,1,,,,,,L,,,,,,,,,,,,,-,-,+,100,O=C(O)CCCC[C@@H]1CCSS1
+68,Selleck_L1300,Thioctic acid,Lipoic acid,S3996,dsm,4,1,,,,,,L,,,,,,,,,,,,,-,-,+,100,O=C(O)CCCC[C@@H]1CCSS1
+401,Selleck_L1300,Valproic acid,Valproic acid,S3944,tsm,4,58_6,,L,,,,,,,R,,,,,,,,S,,-,+,+,10,CCCC(CCC)C(=O)O
+399,Selleck_L1300,Valproic acid,Valproic acid,S3944,tsm,4,58_3,,L,,,,,,,R,,,,,,,,,,-,+,+,10,CCCC(CCC)C(=O)O
+400,Selleck_L1300,Valproic acid,Valproic acid,S3944,tsm,4,58_5,,M,,,,,,,R,,,,,I,,,,,-,+,+,10,CCCC(CCC)C(=O)O
+3,Selleck_L1300,Valproic acid sodium salt (Sodium valproate),Valproic acid,S1168,dsm,4,1,,M,,,,,,,R,,,,,,,,,,-,-,+,100,CCCC(CCC)C(=O)O
+402,Selleck_L1300,Valproic acid,Valproic acid,S3944,tsm,4,58_12,,,,,,,,,R,,,,,,S,,,H,-,-,+,100,CCCC(CCC)C(=O)O
+18,Selleck_L1300,Divalproex Sodium,Valproic acid,S1703,dsm,4,1,,,,,,,,,R,,,,,,,,,,-,-,+,100,CCCC(CCC)C(=O)O
+628,agchems,Acetamiprid,Acetamiprid,135410-20-7,tsm,5,21_1,L,,,,W,,,,,,H,,,,,,,,-,-,+,100,C/C(=N\C#N)N(C)Cc1ccc(Cl)nc1
+671,agchems,Amitraz,Amitraz,S3643,dsm,6,23_5,E,,,,I,,,,,,,,,,,,,,nd,nd,+,nd,Cc1ccc(/N=C/N(C)/C=N/c2ccc(C)cc2C)c(C)c1
+629,agchems,Amitraz,Amitraz,S3643,tsm,6,23_2,,L,,,I,,,,,,,,,,,,,F,-,-,+,100,Cc1ccc(/N=C/N(C)/C=N/c2ccc(C)cc2C)c(C)c1
+669,agchems,Amitraz,Amitraz,S3643,dsm,6,23_2,,R,,,,,,,,,,Q,,,,,,,nd,nd,+,nd,Cc1ccc(/N=C/N(C)/C=N/c2ccc(C)cc2C)c(C)c1
+670,agchems,Amitraz,Amitraz,S3643,dsm,6,23_3,,,K,,,,,,,,,,,,,,,,nd,nd,+,nd,Cc1ccc(/N=C/N(C)/C=N/c2ccc(C)cc2C)c(C)c1
+380,Selleck_L1300,Istradefylline,Istradefylline,S2790,tsm,6,46_3,,,,,,,,,,,,,,T,,,,G,-,+,+,10,CCn1c(=O)c2c(nc(/C=C/c3ccc(OC)c(OC)c3)n2C)n(CC)c1=O
+625,agchems,Picoxystrobin,Picoxystrobin,117428-22-5,tsm,6,126_10,T,,,,,,,,,,,,,T,L,,,,-,+,+,10,CO/C=C(/C(=O)OC)c1ccccc1COc1cccc(C(F)(F)F)n1
+618,agchems,Picoxystrobin,Picoxystrobin,117428-22-5,tsm,6,126_3,,,A,,,,,,,,,,,T,M,,,,-,+,+,10,CO/C=C(/C(=O)OC)c1ccccc1COc1cccc(C(F)(F)F)n1
+620,agchems,Picoxystrobin,Picoxystrobin,117428-22-5,tsm,6,126_5,,,,,,,,Y,,,,,,I,,,,V,-,+,+,10,CO/C=C(/C(=O)OC)c1ccccc1COc1cccc(C(F)(F)F)n1
+623,agchems,Picoxystrobin,Picoxystrobin,117428-22-5,tsm,6,126_8,,,,,,,,,,A,,,,V,,,,G,-,+,+,10,CO/C=C(/C(=O)OC)c1ccccc1COc1cccc(C(F)(F)F)n1
+626,agchems,Picoxystrobin,Picoxystrobin,117428-22-5,tsm,6,126_11,,,,,,,,,,,,E,,A,,,,V,-,+,+,10,CO/C=C(/C(=O)OC)c1ccccc1COc1cccc(C(F)(F)F)n1
+624,agchems,Picoxystrobin,Picoxystrobin,117428-22-5,tsm,6,126_9,,,,,,,,,,,,E,,I,,,,V,-,+,+,10,CO/C=C(/C(=O)OC)c1ccccc1COc1cccc(C(F)(F)F)n1
+619,agchems,Picoxystrobin,Picoxystrobin,117428-22-5,tsm,6,126_4,,,,,,,,,,,,,,A,,,I,T,-,-,+,100,CO/C=C(/C(=O)OC)c1ccccc1COc1cccc(C(F)(F)F)n1
+621,agchems,Picoxystrobin,Picoxystrobin,117428-22-5,tsm,6,126_6,,,,,,,,,,,,,,I,I,,,G,-,+,+,10,CO/C=C(/C(=O)OC)c1ccccc1COc1cccc(C(F)(F)F)n1
+627,agchems,Picoxystrobin,Picoxystrobin,117428-22-5,tsm,6,126_12,,,,,,,,,,,,,,I,M,,,I,-,+,+,10,CO/C=C(/C(=O)OC)c1ccccc1COc1cccc(C(F)(F)F)n1
+665,agchems,Picoxystrobin,Picoxystrobin,117428-22-5,dsm,6,126_8,,,,,,,,,,,,,,I,,,,T,-,+,+,10,CO/C=C(/C(=O)OC)c1ccccc1COc1cccc(C(F)(F)F)n1
+617,agchems,Picoxystrobin,Picoxystrobin,117428-22-5,tsm,6,126_2,,,,,,,,,,,,,,S,L,,,V,-,-,+,100,CO/C=C(/C(=O)OC)c1ccccc1COc1cccc(C(F)(F)F)n1
+622,agchems,Picoxystrobin,Picoxystrobin,117428-22-5,tsm,6,126_7,,,,,,,,,,,,,,T,I,,,V,-,+,+,10,CO/C=C(/C(=O)OC)c1ccccc1COc1cccc(C(F)(F)F)n1
+666,agchems,Picoxystrobin,Picoxystrobin,117428-22-5,dsm,6,126_11,,,,,,,,,,,,,,V,,,,I,-,+,+,10,CO/C=C(/C(=O)OC)c1ccccc1COc1cccc(C(F)(F)F)n1
+664,agchems,Picoxystrobin,Picoxystrobin,117428-22-5,dsm,6,126_1,,,,,,,,,,,,,,V,,,,V,-,+,+,10,CO/C=C(/C(=O)OC)c1ccccc1COc1cccc(C(F)(F)F)n1
+592,agchems,Pyraclostrobin,Pyraclostrobin,175013-18-0,tsm,6,136_5,A,,,M,,,,,,,,,,I,,,,,+,+,+,1,COC(=O)N(OC)c1ccccc1COc1ccn(-c2ccc(Cl)cc2)n1
+598,agchems,Pyraclostrobin,Pyraclostrobin,175013-18-0,tsm,6,136_12,,,L,,,,,,,,,,,S,,,F,,-,+,+,10,COC(=O)N(OC)c1ccccc1COc1ccn(-c2ccc(Cl)cc2)n1
+593,agchems,Pyraclostrobin,Pyraclostrobin,175013-18-0,tsm,6,136_6,,,,,G,,D,,,,,,,G,,,,,-,+,+,10,COC(=O)N(OC)c1ccccc1COc1ccn(-c2ccc(Cl)cc2)n1
+591,agchems,Pyraclostrobin,Pyraclostrobin,175013-18-0,tsm,6,136_4,,,,,G,,,,,,,,,G,G,,,,+,+,+,1,COC(=O)N(OC)c1ccccc1COc1ccn(-c2ccc(Cl)cc2)n1
+597,agchems,Pyraclostrobin,Pyraclostrobin,175013-18-0,tsm,6,136_11,,,,,,,D,,,,,,,G,G,,,,-,+,+,10,COC(=O)N(OC)c1ccccc1COc1ccn(-c2ccc(Cl)cc2)n1
+594,agchems,Pyraclostrobin,Pyraclostrobin,175013-18-0,tsm,6,136_7,,,,,,,,,,,A,,,V,,,F,,-,+,+,10,COC(=O)N(OC)c1ccccc1COc1ccn(-c2ccc(Cl)cc2)n1
+590,agchems,Pyraclostrobin,Pyraclostrobin,175013-18-0,tsm,6,136_3,,,,,,,,,,,F,,,G,G,,,,-,+,+,10,COC(=O)N(OC)c1ccccc1COc1ccn(-c2ccc(Cl)cc2)n1
+596,agchems,Pyraclostrobin,Pyraclostrobin,175013-18-0,tsm,6,136_10,,,,,,,,,,,,,,A,G,,S,S,-,+,+,10,COC(=O)N(OC)c1ccccc1COc1ccn(-c2ccc(Cl)cc2)n1
+595,agchems,Pyraclostrobin,Pyraclostrobin,175013-18-0,tsm,6,136_8,,,,,,,,,,,,,,A,G,,,Q,+,+,+,1,COC(=O)N(OC)c1ccccc1COc1ccn(-c2ccc(Cl)cc2)n1
+668,agchems,Pyraclostrobin,Pyraclostrobin,175013-18-0,dsm,6,136_3,,,,,,,,,,,,,,S,G,,,,+,+,+,1,COC(=O)N(OC)c1ccccc1COc1ccn(-c2ccc(Cl)cc2)n1
+667,agchems,Pyraclostrobin,Pyraclostrobin,175013-18-0,dsm,6,136_2,,,,,,,,,,,,,,T,G,,,,-,+,+,10,COC(=O)N(OC)c1ccccc1COc1ccn(-c2ccc(Cl)cc2)n1
+589,agchems,Pyraclostrobin,Pyraclostrobin,175013-18-0,tsm,6,136_1,,,,,,,,,,,,,,T,G,,,,-,+,+,10,COC(=O)N(OC)c1ccccc1COc1ccn(-c2ccc(Cl)cc2)n1
+169,Selleck_L1300,"Voxelotor(GBT440, GTx011)",Voxelotor,S8540,dsm,6,5,,,,,,,,A,,,,K,,,,,,,+,+,+,1,CC(C)n1nccc1-c1ncccc1COc1cccc(O)c1C=O
+532,Selleck_L1300,"Voxelotor(GBT440, GTx011)",Voxelotor,S8540,tsm,6,118_1,,,,,,,,A,,,,K,,,,,,,-,+,+,10,CC(C)n1nccc1-c1ncccc1COc1cccc(O)c1C=O
+168,Selleck_L1300,"Voxelotor(GBT440, GTx011)",Voxelotor,S8540,dsm,6,3,,,,,,,,A,,,,Q,,,,,,,+,+,+,1,CC(C)n1nccc1-c1ncccc1COc1cccc(O)c1C=O
+166,Selleck_L1300,"Voxelotor(GBT440, GTx011)",Voxelotor,S8540,dsm,6,1,,,,,,,,S,,,,K,,,,,,,+,+,+,1,CC(C)n1nccc1-c1ncccc1COc1cccc(O)c1C=O
+167,Selleck_L1300,"Voxelotor(GBT440, GTx011)",Voxelotor,S8540,dsm,6,2,,,,,,,,,,,,,,K,L,,,,+,+,+,1,CC(C)n1nccc1-c1ncccc1COc1cccc(O)c1C=O
+685,LATCA,Amsacrine Hydrochloride,Amsacrine,A 9809,tsm,7,7,,Y,,,,,G,,,,M,,,,,,,,nd,nd,+,nd,COc1cc(NS(C)(=O)=O)ccc1Nc1c2ccccc2nc2ccccc12
+684,LATCA,Amsacrine Hydrochloride,Amsacrine,A 9809,tsm,7,1,,,,,,,,,A,M,,,,V,,,,,nd,nd,+,nd,COc1cc(NS(C)(=O)=O)ccc1Nc1c2ccccc2nc2ccccc12
+468,Selleck_L1300,Mebendazole,Mebendazole,1501110,tsm,7,83_6,A,,,M,,,,,,,,,,I,,,,,-,+,+,10,COC(=O)Nc1nc2ccc(C(=O)c3ccccc3)cc2[nH]1
+636,agchems,Phenmedipham,Phenmedipham,13684-63-4,dsm,7,3_8,M,,,,,,,,,,L,,,,,,,,-,-,+,100,COC(=O)Nc1cccc(OC(=O)Nc2cccc(C)c2)c1
+505,Selleck_L1300,Diclofenac Epolamine,Diclofenac,S5737,tsm,8,105_3,,T,,M,,,Q,,,,,,,,,,,,-,-,+,100,O=C(O)Cc1ccccc1Nc1c(Cl)cccc1Cl
+304,Selleck_L1300,Diclofenac Sodium,Diclofenac,1500237,tsm,8,15_11,,T,,,G,,Q,,,,,,,,,,,,-,-,+,100,O=C(O)Cc1ccccc1Nc1c(Cl)cccc1Cl
+303,Selleck_L1300,Diclofenac Sodium,Diclofenac,1500237,tsm,8,15_9,,,Y,,G,,Q,,,,,,,,,,,,-,+,+,10,O=C(O)Cc1ccccc1Nc1c(Cl)cccc1Cl
+645,agchems,Flamprop-methyl,Flamprop-methyl,52756-25-9,dsm,8,22_1,M,,,,,,D,R,,,,,,,,,,,-,+,+,10,CC(C(=O)O)N(C(=O)c1ccccc1)c1ccc(F)c(Cl)c1
+648,agchems,Flamprop-methyl,Flamprop-methyl,52756-25-9,dsm,8,22_11,,R,,,,,D,,,M,,,,,,,,,-,-,+,100,CC(C(=O)O)N(C(=O)c1ccccc1)c1ccc(F)c(Cl)c1
+646,agchems,Flamprop-methyl,Flamprop-methyl,52756-25-9,dsm,8,22_6,,,W,,,,,,,K,,,,T,,,,,-,-,+,100,CC(C(=O)O)N(C(=O)c1ccccc1)c1ccc(F)c(Cl)c1
+647,agchems,Flamprop-methyl,Flamprop-methyl,52756-25-9,dsm,8,22_10,,,,,,,,,,,,,,V,,W,G,,-,-,+,100,CC(C(=O)O)N(C(=O)c1ccccc1)c1ccc(F)c(Cl)c1
+54,Selleck_L1300,Lonidamine,Lonidamine,S2610,dsm,8,6,,R,A,,,,,,,,,,,,,,,,-,-,+,100,O=C(O)c1nn(Cc2ccc(Cl)cc2Cl)c2ccccc12
+371,Selleck_L1300,Lonidamine,Lonidamine,S2610,tsm,8,40_11,,R,H,,G,,,,,,,,,,,,,,+,+,+,1,O=C(O)c1nn(Cc2ccc(Cl)cc2Cl)c2ccccc12
+51,Selleck_L1300,Lonidamine,Lonidamine,S2610,dsm,8,2,,R,L,,,,,,,,,,,,,,,,+,+,+,1,O=C(O)c1nn(Cc2ccc(Cl)cc2Cl)c2ccccc12
+367,Selleck_L1300,Lonidamine,Lonidamine,S2610,tsm,8,40_2,,R,M,,I,,,,,,,,,,,,,,-,-,+,100,O=C(O)c1nn(Cc2ccc(Cl)cc2Cl)c2ccccc12
+53,Selleck_L1300,Lonidamine,Lonidamine,S2610,dsm,8,5,,R,M,,,,,,,,,,,,,,,,-,+,+,10,O=C(O)c1nn(Cc2ccc(Cl)cc2Cl)c2ccccc12
+372,Selleck_L1300,Lonidamine,Lonidamine,S2610,tsm,8,40_12,,R,,,I,,,,,,,,,,,,M,,-,-,+,100,O=C(O)c1nn(Cc2ccc(Cl)cc2Cl)c2ccccc12
+369,Selleck_L1300,Lonidamine,Lonidamine,S2610,tsm,8,40_6,,,H,,,,G,L,,,,,,,,,,,-,+,+,10,O=C(O)c1nn(Cc2ccc(Cl)cc2Cl)c2ccccc12
+366,Selleck_L1300,Lonidamine,Lonidamine,S2610,tsm,8,40_1,,,H,,,,,,,,T,T,,,,,,,-,+,+,10,O=C(O)c1nn(Cc2ccc(Cl)cc2Cl)c2ccccc12
+368,Selleck_L1300,Lonidamine,Lonidamine,S2610,tsm,8,40_3,,,L,M,,,M,,,,,,,,,,,,-,-,+,100,O=C(O)c1nn(Cc2ccc(Cl)cc2Cl)c2ccccc12
+370,Selleck_L1300,Lonidamine,Lonidamine,S2610,tsm,8,40_10,,,L,,,,M,,,,,,,,S,,,,-,-,+,100,O=C(O)c1nn(Cc2ccc(Cl)cc2Cl)c2ccccc12
+52,Selleck_L1300,Lonidamine,Lonidamine,S2610,dsm,8,3,,,L,,,,M,,,,,,,,,,,,-,+,+,10,O=C(O)c1nn(Cc2ccc(Cl)cc2Cl)c2ccccc12
+50,Selleck_L1300,Lonidamine,Lonidamine,S2610,dsm,8,1,,,L,,,,Q,,,,,,,,,,,,-,+,+,10,O=C(O)c1nn(Cc2ccc(Cl)cc2Cl)c2ccccc12
+59,Selleck_L1300,Niclosamide,Niclosamide,S3030,dsm,8,2,S,,,,,,,,,,,,V,,,,,,+,+,+,1,O=C(Nc1ccc([N+](=O)[O-])cc1Cl)c1cc(Cl)ccc1O
+58,Selleck_L1300,Niclosamide,Niclosamide,S3030,dsm,8,1,S,,,,,,,,,,,,,,,,,,-,+,+,10,O=C(Nc1ccc([N+](=O)[O-])cc1Cl)c1cc(Cl)ccc1O
+635,agchems,Chlorobenzilat,Chlorobenzilat,510-15-6,tsm,9,39_9,S,,,,,,,K,,,,Q,,,,,,D,-,+,+,10,CCOC(=O)C(O)(c1ccc(Cl)cc1)c1ccc(Cl)cc1
+634,agchems,Chlorobenzilat,Chlorobenzilat,510-15-6,tsm,9,39_7,,,,,F,,,,A,,,,,,,,T,,-,+,+,10,CCOC(=O)C(O)(c1ccc(Cl)cc1)c1ccc(Cl)cc1
+655,agchems,Dimoxystrobin,Dimoxystrobin,149961-52-4,dsm,10,122_7,R,,,,,,,,,,A,,,,,,,,-,+,+,10,CNC(=O)/C(=N/OC)c1ccccc1COc1cc(C)ccc1C
+605,agchems,Dimoxystrobin,Dimoxystrobin,149961-52-4,tsm,10,122_12,,,I,,,,,,,,A,,,,,,F,,+,+,+,1,CNC(=O)/C(=N/OC)c1ccccc1COc1cc(C)ccc1C
+603,agchems,Dimoxystrobin,Dimoxystrobin,149961-52-4,tsm,10,122_8,,,L,,,,,,,,T,,,,,,F,,-,-,+,100,CNC(=O)/C(=N/OC)c1ccccc1COc1cc(C)ccc1C
+654,agchems,Dimoxystrobin,Dimoxystrobin,149961-52-4,dsm,10,122_4,,,,,,,,,,,A,D,,,,,,,-,-,+,100,CNC(=O)/C(=N/OC)c1ccccc1COc1cc(C)ccc1C
+653,agchems,Dimoxystrobin,Dimoxystrobin,149961-52-4,dsm,10,122_2,,,,,,,,,,,A,E,,,,,,,-,+,+,10,CNC(=O)/C(=N/OC)c1ccccc1COc1cc(C)ccc1C
+604,agchems,Dimoxystrobin,Dimoxystrobin,149961-52-4,tsm,10,122_11,,,,,,,,,,,A,,,A,,,F,,-,-,+,100,CNC(=O)/C(=N/OC)c1ccccc1COc1cc(C)ccc1C
+656,agchems,Dimoxystrobin,Dimoxystrobin,149961-52-4,dsm,10,122_9,,,,,,,,,,,A,,,M,,,,,-,-,+,100,CNC(=O)/C(=N/OC)c1ccccc1COc1cc(C)ccc1C
+599,agchems,Dimoxystrobin,Dimoxystrobin,149961-52-4,tsm,10,122_1,,,,,,,,,,,A,,,,G,W,,,-,+,+,10,CNC(=O)/C(=N/OC)c1ccccc1COc1cc(C)ccc1C
+602,agchems,Dimoxystrobin,Dimoxystrobin,149961-52-4,tsm,10,122_5,,,,,,,,,,,A,,,,V,,,,-,+,+,10,CNC(=O)/C(=N/OC)c1ccccc1COc1cc(C)ccc1C
+657,agchems,Dimoxystrobin,Dimoxystrobin,149961-52-4,dsm,10,122_11,,,,,,,,,,,A,,,,,,,,-,-,+,100,CNC(=O)/C(=N/OC)c1ccccc1COc1cc(C)ccc1C
+600,agchems,Dimoxystrobin,Dimoxystrobin,149961-52-4,tsm,10,122_3,,,,,,,,,,,G,,,,G,,F,,-,-,+,100,CNC(=O)/C(=N/OC)c1ccccc1COc1cc(C)ccc1C
+601,agchems,Dimoxystrobin,Dimoxystrobin,149961-52-4,tsm,10,122_4,,,,,,,,,,,,,,V,N,,,I,-,+,+,10,CNC(=O)/C(=N/OC)c1ccccc1COc1cc(C)ccc1C
+611,agchems,Carpropamid,Carpropamid,104030-54-8,tsm,11,125_6,Q,,,,,,,,,H,,,,L,,,,,-,+,+,10,CC[C@]1(C(=O)NC(C)c2ccc(Cl)cc2)[C@H](C)C1(Cl)Cl
+606,agchems,Carpropamid,Carpropamid,104030-54-8,tsm,11,125_1,,Y,,,F,,,,,,A,,,,,,,,-,+,+,10,CC[C@]1(C(=O)NC(C)c2ccc(Cl)cc2)[C@H](C)C1(Cl)Cl
+612,agchems,Carpropamid,Carpropamid,104030-54-8,tsm,11,125_8,,,A,,,,,,,,A,E,,,,,,,-,+,+,10,CC[C@]1(C(=O)NC(C)c2ccc(Cl)cc2)[C@H](C)C1(Cl)Cl
+616,agchems,Carpropamid,Carpropamid,104030-54-8,tsm,11,125_12,,,A,,,,,,,,G,,,,,,L,,-,+,+,10,CC[C@]1(C(=O)NC(C)c2ccc(Cl)cc2)[C@H](C)C1(Cl)Cl
+662,agchems,Carpropamid,Carpropamid,104030-54-8,dsm,11,125_8,,,A,,,,,,,,G,,,,,,,,-,+,+,10,CC[C@]1(C(=O)NC(C)c2ccc(Cl)cc2)[C@H](C)C1(Cl)Cl
+607,agchems,Carpropamid,Carpropamid,104030-54-8,tsm,11,125_2,,,A,,,,,,,,S,,,,I,,,,-,+,+,10,CC[C@]1(C(=O)NC(C)c2ccc(Cl)cc2)[C@H](C)C1(Cl)Cl
+609,agchems,Carpropamid,Carpropamid,104030-54-8,tsm,11,125_4,,,F,,,,,,,N,S,,,H,,,,,+,+,+,1,CC[C@]1(C(=O)NC(C)c2ccc(Cl)cc2)[C@H](C)C1(Cl)Cl
+661,agchems,Carpropamid,Carpropamid,104030-54-8,dsm,11,125_7,,,H,,,,,,,,A,,,,,,,,-,+,+,10,CC[C@]1(C(=O)NC(C)c2ccc(Cl)cc2)[C@H](C)C1(Cl)Cl
+613,agchems,Carpropamid,Carpropamid,104030-54-8,tsm,11,125_9,,,H,,,,,,,,A,,,,,,,,-,+,+,10,CC[C@]1(C(=O)NC(C)c2ccc(Cl)cc2)[C@H](C)C1(Cl)Cl
+615,agchems,Carpropamid,Carpropamid,104030-54-8,tsm,11,125_11,,,H,,,,,,,,S,D,,,,,,,-,+,+,10,CC[C@]1(C(=O)NC(C)c2ccc(Cl)cc2)[C@H](C)C1(Cl)Cl
+614,agchems,Carpropamid,Carpropamid,104030-54-8,tsm,11,125_10,,,H,,,,,,,,S,,,I,,,,,-,+,+,10,CC[C@]1(C(=O)NC(C)c2ccc(Cl)cc2)[C@H](C)C1(Cl)Cl
+663,agchems,Carpropamid,Carpropamid,104030-54-8,dsm,11,125_12,,,L,,,,,,,,E,,,,,,,,-,+,+,10,CC[C@]1(C(=O)NC(C)c2ccc(Cl)cc2)[C@H](C)C1(Cl)Cl
+660,agchems,Carpropamid,Carpropamid,104030-54-8,dsm,11,125_5,,,L,,,,,,,,S,,,,,,,,+,+,+,1,CC[C@]1(C(=O)NC(C)c2ccc(Cl)cc2)[C@H](C)C1(Cl)Cl
+608,agchems,Carpropamid,Carpropamid,104030-54-8,tsm,11,125_3,,,L,,,,,,,,T,,,,,,E,,-,+,+,10,CC[C@]1(C(=O)NC(C)c2ccc(Cl)cc2)[C@H](C)C1(Cl)Cl
+610,agchems,Carpropamid,Carpropamid,104030-54-8,tsm,11,125_5,,,M,,,,,,,,S,E,,,,,,,+,+,+,1,CC[C@]1(C(=O)NC(C)c2ccc(Cl)cc2)[C@H](C)C1(Cl)Cl
+659,agchems,Carpropamid,Carpropamid,104030-54-8,dsm,11,125_2,,,M,,,,,,,,S,,,,,,,,-,+,+,10,CC[C@]1(C(=O)NC(C)c2ccc(Cl)cc2)[C@H](C)C1(Cl)Cl
+658,agchems,Carpropamid,Carpropamid,104030-54-8,dsm,11,125_1,,,M,,,,,,,,T,,,,,,,,-,+,+,10,CC[C@]1(C(=O)NC(C)c2ccc(Cl)cc2)[C@H](C)C1(Cl)Cl
+631,agchems,Flufenacet,Flufenacet,142459-58-3,tsm,12,34_4,,L,,,,,D,,,,A,,,A,L,,,,-,-,+,100,CC(C)N(C(=O)COc1nnc(C(F)(F)F)s1)c1ccc(F)cc1
+673,agchems,Flufenacet,Flufenacet,142459-58-3,dsm,12,34_2,,,A,,,,,,,,A,,,,,,,,nd,nd,+,nd,CC(C)N(C(=O)COc1nnc(C(F)(F)F)s1)c1ccc(F)cc1
+630,agchems,Flufenacet,Flufenacet,142459-58-3,tsm,12,34_3,,,Y,,,,,,,H,S,,,,,,,,-,-,+,100,CC(C)N(C(=O)COc1nnc(C(F)(F)F)s1)c1ccc(F)cc1
+632,agchems,Flufenacet,Flufenacet,142459-58-3,tsm,12,34_5,,,,,,,,Y,,,A,,,,V,,,,-,-,+,100,CC(C)N(C(=O)COc1nnc(C(F)(F)F)s1)c1ccc(F)cc1
+633,agchems,Flufenacet,Flufenacet,142459-58-3,tsm,12,34_6,,,,,,,,Y,,,G,,,,V,,,,-,-,+,100,CC(C)N(C(=O)COc1nnc(C(F)(F)F)s1)c1ccc(F)cc1
+672,agchems,Flufenacet,Flufenacet,142459-58-3,dsm,12,34_1,,,,,,,,,,,G,,,,V,,,,nd,nd,+,nd,CC(C)N(C(=O)COc1nnc(C(F)(F)F)s1)c1ccc(F)cc1
+638,agchems,Trinexapac-ethyl,Trinexapac-ethyl,95266-40-3,dsm,13,10_5_6,,,Y,,,,H,,,,,,,,,,,,-,-,+,100,CCOC(=O)C1CC(=O)C(=C(C2CC2)O)C(=O)C1
+637,agchems,Trinexapac-ethyl,Trinexapac-ethyl,95266-40-3,dsm,13,10_5_1,,,Y,,,,Q,,,,,,,,,,,,-,-,+,100,CCOC(=O)C1CC(=O)C(=C(C2CC2)O)C(=O)C1
+639,agchems,Trinexapac-ethyl,Trinexapac-ethyl,95266-40-3,dsm,13,10_5_10,,,,,,,,R,,,,,,,,,H,,-,-,+,100,CCOC(=O)C1CC(=O)C(=C(C2CC2)O)C(=O)C1
+6,Selleck_L1300,Malotilate,Malotilate,S1137,dsm,14,1,,,,,,,,,,,,,,G,V,,,,-,+,+,10,CC(C)OC(=O)C(C(=O)OC(C)C)=C1SC=CS1
+379,Selleck_L1300,Nilvadipine,Nilvadipine,S2721,tsm,14,45_1,,,L,,,,,,A,H,,,,,,,,,-,-,+,100,COC(=O)C1=C(C#N)NC(C)=C(C(=O)OC(C)C)C1c1cccc([N+](=O)[O-])c1
+290,Selleck_L1300,Nimodipine,Nimodipine,N-149,tsm,14,11_12,L,,,M,,,,,,,,,,V,,,,,-,-,+,100,COCCOC(=O)C1=C(C)NC(C)=C(C(=O)OC(C)C)C1c1cccc([N+](=O)[O-])c1
+205,LATCA,Nitrendipine,Nitrendipine,N-144,dsm,14,5,L,,,M,,,,,,,,,,,,,,,-,-,+,100,CCOC(=O)C1=C(C)NC(C)=C(C(=O)OC)C1c1cccc([N+](=O)[O-])c1
+689,LATCA,Budesonide,Budesonide,B 7777,tsm,15,1,,L,,,,,,K,,,F,,,,,,,,nd,nd,+,nd,CCCC1OC2CC3C4CCC5=CC(=O)C=CC5(C)C4C(O)CC3(C)C2(C(=O)CO)O1
+450,Selleck_L1300,Chlormadinone acetate,Chlormadinone acetate,S4593,tsm,15,77_4,,,,,F,,,,T,,,,,,,,,H,-,+,+,10,CC(=O)O[C@]1(C(C)=O)CC[C@H]2[C@@H]3C=C(Cl)C4=CC(=O)CC[C@]4(C)[C@H]3CC[C@@]21C
+453,Selleck_L1300,Chlormadinone acetate,Chlormadinone acetate,S4593,tsm,15,77_9,,,,,F,,,,W,G,,,,,,,,,-,+,+,10,CC(=O)O[C@]1(C(C)=O)CC[C@H]2[C@@H]3C=C(Cl)C4=CC(=O)CC[C@]4(C)[C@H]3CC[C@@]21C
+452,Selleck_L1300,Chlormadinone acetate,Chlormadinone acetate,S4593,tsm,15,77_6,,,,,F,,,,W,H,,,,,,,,,-,+,+,10,CC(=O)O[C@]1(C(C)=O)CC[C@H]2[C@@H]3C=C(Cl)C4=CC(=O)CC[C@]4(C)[C@H]3CC[C@@]21C
+448,Selleck_L1300,Chlormadinone acetate,Chlormadinone acetate,S4593,tsm,15,77_1,,,,,I,,,,T,,,,,,,,S,,-,+,+,10,CC(=O)O[C@]1(C(C)=O)CC[C@H]2[C@@H]3C=C(Cl)C4=CC(=O)CC[C@]4(C)[C@H]3CC[C@@]21C
+449,Selleck_L1300,Chlormadinone acetate,Chlormadinone acetate,S4593,tsm,15,77_2,,,,,I,,,,,G,,,,,,,,S,-,+,+,10,CC(=O)O[C@]1(C(C)=O)CC[C@H]2[C@@H]3C=C(Cl)C4=CC(=O)CC[C@]4(C)[C@H]3CC[C@@]21C
+454,Selleck_L1300,Chlormadinone acetate,Chlormadinone acetate,S4593,tsm,15,77_12,,,,,I,,,,,N,,,,,,,N,,-,+,+,10,CC(=O)O[C@]1(C(C)=O)CC[C@H]2[C@@H]3C=C(Cl)C4=CC(=O)CC[C@]4(C)[C@H]3CC[C@@]21C
+451,Selleck_L1300,Chlormadinone acetate,Chlormadinone acetate,S4593,tsm,15,77_5,,,,,L,,,,A,G,,,,,,,,,-,+,+,10,CC(=O)O[C@]1(C(C)=O)CC[C@H]2[C@@H]3C=C(Cl)C4=CC(=O)CC[C@]4(C)[C@H]3CC[C@@]21C
+115,Selleck_L1300,Chlormadinone acetate,Chlormadinone acetate,S4593,dsm,15,1,,,,,L,,,,W,,,,,,,,,,-,-,+,100,CC(=O)O[C@]1(C(C)=O)CC[C@H]2[C@@H]3C=C(Cl)C4=CC(=O)CC[C@]4(C)[C@H]3CC[C@@]21C
+332,Selleck_L1300,Cyproterone acetate,Cyproterone acetate,S2042,tsm,15,22_5,Q,,A,,,,,,,,,,,L,,,,,-,+,+,10,CC(=O)O[C@]1(C(C)=O)CC[C@H]2[C@@H]3C=C(Cl)C4=CC(=O)[C@@H]5C[C@@H]5[C@]4(C)[C@H]3CC[C@@]21C
+329,Selleck_L1300,Cyproterone acetate,Cyproterone acetate,S2042,tsm,15,22_1,,,,,F,,,,T,,,,,,,,E,,+,+,+,1,CC(=O)O[C@]1(C(C)=O)CC[C@H]2[C@@H]3C=C(Cl)C4=CC(=O)[C@@H]5C[C@@H]5[C@]4(C)[C@H]3CC[C@@]21C
+35,Selleck_L1300,Cyproterone acetate,Cyproterone acetate,S2042,dsm,15,1,,,,,F,,,,W,,,,,,,,,,-,+,+,10,CC(=O)O[C@]1(C(C)=O)CC[C@H]2[C@@H]3C=C(Cl)C4=CC(=O)[C@@H]5C[C@@H]5[C@]4(C)[C@H]3CC[C@@]21C
+333,Selleck_L1300,Cyproterone acetate,Cyproterone acetate,S2042,tsm,15,22_6,,,,,I,,,,A,A,,,,,,,,,-,+,+,10,CC(=O)O[C@]1(C(C)=O)CC[C@H]2[C@@H]3C=C(Cl)C4=CC(=O)[C@@H]5C[C@@H]5[C@]4(C)[C@H]3CC[C@@]21C
+334,Selleck_L1300,Cyproterone acetate,Cyproterone acetate,S2042,tsm,15,22_12,,,,,I,,,,W,N,,,,,,,,,+,+,+,1,CC(=O)O[C@]1(C(C)=O)CC[C@H]2[C@@H]3C=C(Cl)C4=CC(=O)[C@@H]5C[C@@H]5[C@]4(C)[C@H]3CC[C@@]21C
+330,Selleck_L1300,Cyproterone acetate,Cyproterone acetate,S2042,tsm,15,22_3,,,,,L,,,,W,D,,,,,,,,,-,+,+,10,CC(=O)O[C@]1(C(C)=O)CC[C@H]2[C@@H]3C=C(Cl)C4=CC(=O)[C@@H]5C[C@@H]5[C@]4(C)[C@H]3CC[C@@]21C
+331,Selleck_L1300,Cyproterone acetate,Cyproterone acetate,S2042,tsm,15,22_4,,,,,M,,,,W,,,,,,,,E,,-,+,+,10,CC(=O)O[C@]1(C(C)=O)CC[C@H]2[C@@H]3C=C(Cl)C4=CC(=O)[C@@H]5C[C@@H]5[C@]4(C)[C@H]3CC[C@@]21C
+498,Selleck_L1300,Diflucortolone valerate,Diflucortolone,S5414,tsm,15,101_10,D,,,,,,,,A,,,,,,L,,,,-,+,+,10,CCCCC(=O)OCC(=O)[C@H]1[C@H](C)C[C@H]2[C@@H]3C[C@H](F)C4=CC(=O)C=C[C@]4(C)[C@@]3(F)[C@@H](O)C[C@@]21C
+497,Selleck_L1300,Diflucortolone valerate,Diflucortolone,S5414,tsm,15,101_5,D,,,,,,,,A,,,,,,M,,,,-,+,+,10,CCCCC(=O)OCC(=O)[C@H]1[C@H](C)C[C@H]2[C@@H]3C[C@H](F)C4=CC(=O)C=C[C@]4(C)[C@@]3(F)[C@@H](O)C[C@@]21C
+496,Selleck_L1300,Diflucortolone valerate,Diflucortolone,S5414,tsm,15,101_1,D,,,,,,,,,,L,,,,L,,,,+,+,+,1,CCCCC(=O)OCC(=O)[C@H]1[C@H](C)C[C@H]2[C@@H]3C[C@H](F)C4=CC(=O)C=C[C@]4(C)[C@@]3(F)[C@@H](O)C[C@@]21C
+197,LATCA,Gedunin,Gedunin,100032,dsm,15,8,,,,,,,,A,,D,,,,I,,,,,-,+,+,10,CC(=O)OC1CC2C(C)(C)C(=O)C=CC2(C)C2CCC3(C)C(c4ccoc4)OC(=O)C4OC43C12C
+196,LATCA,Gedunin,Gedunin,100032,dsm,15,2,,,,,,,,A,,H,,,,V,,,,,-,+,+,10,CC(=O)OC1CC2C(C)(C)C(=O)C=CC2(C)C2CCC3(C)C(c4ccoc4)OC(=O)C4OC43C12C
+195,LATCA,Gedunin,Gedunin,100032,dsm,15,1,,,,,,,,A,,N,,,,V,,,,,-,+,+,10,CC(=O)OC1CC2C(C)(C)C(=O)C=CC2(C)C2CCC3(C)C(c4ccoc4)OC(=O)C4OC43C12C
+378,Selleck_L1300,Medroxyprogesterone acetate,Medroxyprogesterone,S2567,tsm,15,44_12,,,,,I,,,,A,,,,,,,,N,,-,-,+,100,CC(=O)O[C@]1(C(C)=O)CC[C@H]2[C@@H]3C[C@H](C)C4=CC(=O)CC[C@]4(C)[C@H]3CC[C@@]21C
+377,Selleck_L1300,Medroxyprogesterone acetate,Medroxyprogesterone,S2567,tsm,15,44_5,,,,,I,,,,W,,,,,,,,G,,-,-,+,100,CC(=O)O[C@]1(C(C)=O)CC[C@H]2[C@@H]3C[C@H](C)C4=CC(=O)CC[C@]4(C)[C@H]3CC[C@@]21C
+273,Selleck_L1300,Megestrol acetate,Megestrol acetate,S1304,tsm,15,3_7,,,,,I,,,,T,,,,,,,,I,,-,+,tox,10,CC(=O)O[C@]1(C(C)=O)CC[C@H]2[C@@H]3C=C(C)C4=CC(=O)CC[C@]4(C)[C@H]3CC[C@@]21C
+506,Selleck_L1300,Allopregnanolone,Allopregnanolone,S5805,tsm,16,106_12,,,,,,,,,W,,,,,V,,,,Y,+,+,+,1,CC(=O)[C@H]1CC[C@H]2[C@@H]3CC[C@H]4C[C@H](O)CC[C@]4(C)[C@H]3CC[C@]12C
+376,Selleck_L1300,Dehydroepiandrosterone (DHEA),Dehydroepiandrosterone,S2604,tsm,16,43_1,N,T,,,,,,,,,,,,I,,,,,-,-,+,100,C[C@]12CC[C@H]3[C@@H](CC=C4C[C@@H](O)CC[C@@]43C)[C@@H]1CCC2=O
+348,Selleck_L1300,Formestane,Formestane,S2208,tsm,16,29_2,,,L,,,,,,A,H,,,,,,,,,-,-,+,100,C[C@]12CC[C@H]3[C@@H](CCC4=C(O)C(=O)CC[C@@]43C)[C@@H]1CCC2=O
+349,Selleck_L1300,Formestane,Formestane,S2208,tsm,16,29_10,,,,M,,,,,,,,,,,I,H,,,-,-,+,100,C[C@]12CC[C@H]3[C@@H](CCC4=C(O)C(=O)CC[C@@]43C)[C@@H]1CCC2=O
+350,Selleck_L1300,Formestane,Formestane,S2208,tsm,16,29_12,,,,,,,,,,W,,,,N,,,N,,-,-,+,100,C[C@]12CC[C@H]3[C@@H](CCC4=C(O)C(=O)CC[C@@]43C)[C@@H]1CCC2=O
+86,Selleck_L1300,Mesterolone,Mesterolone,S3946,dsm,16,1,,,,,,,,Q,,,,,,,L,,,,-,-,+,100,C[C@H]1CC(=O)C[C@@H]2CC[C@H]3[C@@H]4CC[C@H](O)[C@@]4(C)CC[C@@H]3[C@@]12C
+87,Selleck_L1300,Mesterolone,Mesterolone,S3946,dsm,16,7,,,,,,,,S,,,,,,,L,,,,-,-,+,100,C[C@H]1CC(=O)C[C@@H]2CC[C@H]3[C@@H]4CC[C@H](O)[C@@]4(C)CC[C@@H]3[C@@]12C
+403,Selleck_L1300,Mesterolone,Mesterolone,S3946,tsm,16,59_3,,,,,,,,,,,A,,,,I,,W,,-,-,+,100,C[C@H]1CC(=O)C[C@@H]2CC[C@H]3[C@@H]4CC[C@H](O)[C@@]4(C)CC[C@@H]3[C@@]12C
+352,Selleck_L1300,Sclareol,Sclareol,S2354,tsm,16,32_7,,,,,,,,,,,F,,,,I,,E,,-,-,+,100,C=C[C@](C)(O)CC[C@@H]1[C@@]2(C)CCCC(C)(C)[C@@H]2CC[C@@]1(C)O
+263,Selleck_L1300,Vildagliptin (LAF-237),Vildagliptin,S3033,shuffle,16,1,S,,,,,,,,,,,,,,I,,W,,-,-,+,100,N#C[C@@H]1CCCN1C(=O)CNC12CC3CC(CC(O)(C3)C1)C2
+535,Selleck_L1300,3-n-Butylphathlide,3-n-Butylphathlide,S9263,tsm,17,119_6,D,,,,,,,,,,,,T,,,W,,,-,+,+,10,CCCCC1OC(=O)c2ccccc21
+534,Selleck_L1300,3-n-Butylphathlide,3-n-Butylphathlide,S9263,tsm,17,119_4,Q,L,,,,,,,,,,,,,,W,,,-,-,+,100,CCCCC1OC(=O)c2ccccc21
+538,Selleck_L1300,3-n-Butylphathlide,3-n-Butylphathlide,S9263,tsm,17,119_10,Q,,,M,,,,,,,,,,,,W,,,-,+,+,10,CCCCC1OC(=O)c2ccccc21
+536,Selleck_L1300,3-n-Butylphathlide,3-n-Butylphathlide,S9263,tsm,17,119_7,T,,,V,,,,,,,,,,,,W,,,-,-,+,100,CCCCC1OC(=O)c2ccccc21
+170,Selleck_L1300,3-n-Butylphathlide,3-n-Butylphathlide,S9263,dsm,17,1,,Y,,,,,,,,,,,,,L,,,,-,-,+,100,CCCCC1OC(=O)c2ccccc21
+171,Selleck_L1300,3-n-Butylphathlide,3-n-Butylphathlide,S9263,dsm,17,2,,Y,,,,,,,,,,,,,,,N,,-,+,+,10,CCCCC1OC(=O)c2ccccc21
+172,Selleck_L1300,3-n-Butylphathlide,3-n-Butylphathlide,S9263,dsm,17,5,,,L,,,,,,,,,,,,,,,,-,-,+,100,CCCCC1OC(=O)c2ccccc21
+537,Selleck_L1300,3-n-Butylphathlide,3-n-Butylphathlide,S9263,tsm,17,119_9,,,M,,,,,,,,,,,,,W,H,,-,+,+,10,CCCCC1OC(=O)c2ccccc21
+539,Selleck_L1300,3-n-Butylphathlide,3-n-Butylphathlide,S9263,tsm,17,119_11,,,,,,,D,,,,,D,,,,W,,,-,+,+,10,CCCCC1OC(=O)c2ccccc21
+533,Selleck_L1300,3-n-Butylphathlide,3-n-Butylphathlide,S9263,tsm,17,119_3,,,,,,,,,,,,Q,,,V,W,,,-,+,+,10,CCCCC1OC(=O)c2ccccc21
+173,Selleck_L1300,3-n-Butylphathlide,3-n-Butylphathlide,S9263,dsm,17,8,,,,,,,,,,,,,,,,H,,Y,-,-,+,100,CCCCC1OC(=O)c2ccccc21
+116,Selleck_L1300,Butylparaben,Butylparaben,S4584,dsm,17,1,V,,,,,,,,,,,,,V,,,,,-,-,+,100,CCCCOC(=O)c1ccc(O)cc1
+456,Selleck_L1300,Butylparaben,Butylparaben,S4584,tsm,17,79_6,,,,,,,,,T,,,,,V,,W,,,-,-,+,100,CCCCOC(=O)c1ccc(O)cc1
+457,Selleck_L1300,Butylparaben,Butylparaben,S4584,tsm,17,79_7,,,,,,,,,,,W,,,T,,W,,,-,-,+,100,CCCCOC(=O)c1ccc(O)cc1
+118,Selleck_L1300,Butylparaben,Butylparaben,S4584,dsm,17,8,,,,,,,,,,,,,,A,,M,,,-,+,+,10,CCCCOC(=O)c1ccc(O)cc1
+117,Selleck_L1300,Butylparaben,Butylparaben,S4584,dsm,17,7,,,,,,,,,,,,,,I,,W,,,-,+,+,10,CCCCOC(=O)c1ccc(O)cc1
+499,Selleck_L1300,Dibutyl phthalate,Dibutyl phthalate,S5377,tsm,17,102_4,,,A,,,,,,,,W,,,L,,,,,-,+,+,10,CCCCOC(=O)c1ccccc1C(=O)OCCCC
+137,Selleck_L1300,Dibutyl phthalate,Dibutyl phthalate,S5377,dsm,17,1,,,,,,,D,,,,,,,,,,H,,-,+,+,10,CCCCOC(=O)c1ccccc1C(=O)OCCCC
+106,Selleck_L1300,Ethylparaben,Ethylparaben,S4525,dsm,17,2,,,,M,,,,,,,,,,,,,,,-,-,+,100,CCOC(=O)c1ccc(O)cc1
+105,Selleck_L1300,Ethylparaben,Ethylparaben,S4525,dsm,17,1,,,,V,,,,,,,,,,,,,,,-,-,+,100,CCOC(=O)c1ccc(O)cc1
+121,Selleck_L1300,Eugenol,Eugenol,1500296,dsm,17,1,,,L,,,,,,,,,,,,,,,,-,-,+,100,C=CCc1ccc(O)c(OC)c1
+122,Selleck_L1300,Eugenol,Eugenol,1500296,dsm,17,4,,,,,,,,,,,,,,,,,L,V,-,-,+,100,C=CCc1ccc(O)c(OC)c1
+84,Selleck_L1300,Methyl 4-hydroxybenzoate,Methyl 4-hydroxybenzoate,S3985,dsm,17,1,,,,M,,,,,,,,,,,,,,,-,-,+,100,COC(=O)c1ccc(O)cc1
+194,LATCA,"Orsellinic acid, Ethyl Ester",Orsellinic acid ethyl ester,200002,dsm,17,6,R,,,,,,,,,,,,,H,,,,,-,-,+,100,CCOC(=O)c1c(C)cc(O)cc1O
+193,LATCA,"Orsellinic acid, Ethyl Ester",Orsellinic acid ethyl ester,200002,dsm,17,5,,,,,,,,,,,,,,L,M,,,,-,+,+,10,CCOC(=O)c1c(C)cc(O)cc1O
+192,LATCA,"Orsellinic acid, Ethyl Ester",Orsellinic acid ethyl ester,200002,dsm,17,1,,,,,,,,,,,,,,L,,,,H,-,+,+,10,CCOC(=O)c1c(C)cc(O)cc1O
+502,Selleck_L1300,Propylparaben,Propylparaben,S5405,tsm,17,103_7,,,I,M,,,,,,,,,,,,,,Q,-,-,+,100,CCCOC(=O)c1ccc(O)cc1
+501,Selleck_L1300,Propylparaben,Propylparaben,S5405,tsm,17,103_4,,,,M,,,,,,W,,,,,S,,,,-,-,+,100,CCCOC(=O)c1ccc(O)cc1
+503,Selleck_L1300,Propylparaben,Propylparaben,S5405,tsm,17,103_9,,,,M,,,,,,,,,,,M,,E,,-,-,+,100,CCCOC(=O)c1ccc(O)cc1
+140,Selleck_L1300,Propylparaben,Propylparaben,S5405,dsm,17,3,,,,M,,,,,,,,,,,,,,,-,-,+,100,CCCOC(=O)c1ccc(O)cc1
+141,Selleck_L1300,Propylparaben,Propylparaben,S5405,dsm,17,4,,,,V,,,,,,,,,,,,,,,-,-,+,100,CCCOC(=O)c1ccc(O)cc1
+500,Selleck_L1300,Propylparaben,Propylparaben,S5405,tsm,17,103_2,,,,,,,,,,,W,,,T,,W,,,-,-,+,100,CCCOC(=O)c1ccc(O)cc1
+138,Selleck_L1300,Propylparaben,Propylparaben,S5405,dsm,17,1,,,,,,,,,,,,,,G,V,,,,-,-,+,100,CCCOC(=O)c1ccc(O)cc1
+139,Selleck_L1300,Propylparaben,Propylparaben,S5405,dsm,17,2,,,,,,,,,,,,,,H,,,K,,-,-,+,100,CCCOC(=O)c1ccc(O)cc1
+142,Selleck_L1300,Propylparaben,Propylparaben,S5405,dsm,17,8,,,,,,,,,,,,,,T,,,,H,-,-,+,100,CCCOC(=O)c1ccc(O)cc1
+374,Selleck_L1300,Tioxolone,Tioxolone,S2603,tsm,17,41_7,D,,,,,,,,,,,,I,,V,,,,-,-,+,100,O=c1oc2cc(O)ccc2s1
+55,Selleck_L1300,Tioxolone,Tioxolone,S2603,dsm,17,1,N,,,,,,,,,,,,,,,,,,-,-,+,100,O=c1oc2cc(O)ccc2s1
+56,Selleck_L1300,Tioxolone,Tioxolone,S2603,dsm,17,4,,I,,,,,,,,,,,,,,,,,-,-,+,100,O=c1oc2cc(O)ccc2s1
+675,LATCA,Thioxolone,Tioxolone,1503094,tsm,17,4,,,I,M,,,,,,,,,,,,,,Q,nd,nd,+,nd,O=c1oc2cc(O)ccc2s1
+373,Selleck_L1300,Tioxolone,Tioxolone,S2603,tsm,17,41_1,,,I,M,,,,,,,,,,,,,,Q,-,-,+,100,O=c1oc2cc(O)ccc2s1
+199,LATCA,Thioxolone,Tioxolone,1503094,dsm,17,5,,,L,,,,,,,,,,,,,,,,-,-,+,100,O=c1oc2cc(O)ccc2s1
+249,Selleck_L1300,Ketoprofen,Ketoprofen,S1645,shuffle,18,2,,R,L,,,,,,,,,Q,,V,,,,,-,-,+,100,CC(C(=O)O)c1cccc(C(=O)c2ccccc2)c1
+248,Selleck_L1300,Ketoprofen,Ketoprofen,S1645,shuffle,18,1,,R,M,,,,,,,,,,,I,,,,,-,-,+,100,CC(C(=O)O)c1cccc(C(=O)c2ccccc2)c1
+250,Selleck_L1300,Ketoprofen,Ketoprofen,S1645,shuffle,18,3,,R,M,,,,,,,,,,,I,,,,,-,-,+,100,CC(C(=O)O)c1cccc(C(=O)c2ccccc2)c1
+251,Selleck_L1300,Ketoprofen,Ketoprofen,S1645,shuffle,18,4,,R,M,,,,,,,,,,,V,,,,,-,-,+,100,CC(C(=O)O)c1cccc(C(=O)c2ccccc2)c1
+319,Selleck_L1300,Pranoprofen,Pranoprofen,S1960,tsm,18,19_2,L,,I,,,,,,,,,,,V,,,,,-,+,+,10,CC(C(=O)O)c1ccc2c(c1)Cc1cccnc1O2
+320,Selleck_L1300,Pranoprofen,Pranoprofen,S1960,tsm,18,19_3,,,,,,,,N,,,,,,V,V,,,,-,+,+,10,CC(C(=O)O)c1ccc2c(c1)Cc1cccnc1O2
+26,Selleck_L1300,Pranoprofen,Pranoprofen,S1960,dsm,18,3,,,,,,,,Q,,,,,,V,,,,,-,+,+,10,CC(C(=O)O)c1ccc2c(c1)Cc1cccnc1O2
+322,Selleck_L1300,Pranoprofen,Pranoprofen,S1960,tsm,18,19_8,,,,,,,,,,,W,,,T,,,E,,-,+,+,10,CC(C(=O)O)c1ccc2c(c1)Cc1cccnc1O2
+321,Selleck_L1300,Pranoprofen,Pranoprofen,S1960,tsm,18,19_6,,,,,,,,,,,W,,,T,,,,,-,+,+,10,CC(C(=O)O)c1ccc2c(c1)Cc1cccnc1O2
+27,Selleck_L1300,Pranoprofen,Pranoprofen,S1960,dsm,18,4,,,,,,,,,,,,,,T,,,,,-,+,+,10,CC(C(=O)O)c1ccc2c(c1)Cc1cccnc1O2
+323,Selleck_L1300,Pranoprofen,Pranoprofen,S1960,tsm,18,19_10,,,,,,,,,,,,,,V,,W,G,,-,+,+,10,CC(C(=O)O)c1ccc2c(c1)Cc1cccnc1O2
+483,Selleck_L1300,Tolmetin,Tolmetin,S4832,tsm,18,88_1,,,,,,,,,,,,,,V,,W,G,,-,-,+,100,Cc1ccc(C(=O)c2ccc(CC(=O)O)n2C)cc1
+567,Selleck_L1300,Tolmetin Sodium,Tolmetin,S4360,tsm,18,125_10,,,,,,,,,,,,,,V,,W,G,,-,-,+,100,Cc1ccc(C(=O)c2ccc(CC(=O)O)n2C)cc1
+57,Selleck_L1300,Zaltoprofen,Zaltoprofen,S3008,dsm,18,1,,,H,,,,,K,,,,,,V,,,,,-,-,+,100,CC(C(=O)O)c1ccc2c(c1)CC(=O)c1ccccc1S2
+101,Selleck_L1300,Flufenamic acid,Flufenamic acid,S4268,dsm,19,1,,,,,,,,,,,H,,V,,,,,,-,+,+,10,O=C(O)c1ccccc1Nc1cccc(C(F)(F)F)c1
+102,Selleck_L1300,Flufenamic acid,Flufenamic acid,S4268,dsm,19,2,,,,,,,,,,,,,,,,,L,V,-,+,+,10,O=C(O)c1ccccc1Nc1cccc(C(F)(F)F)c1
+340,Selleck_L1300,Flunixin Meglumin,Flunixin,S2108,tsm,19,25_3,,Y,A,,,,,,,,,,,,,,,,-,-,+,100,Cc1c(Nc2ncccc2C(=O)O)cccc1C(F)(F)F
+341,Selleck_L1300,Flunixin Meglumin,Flunixin,S2108,tsm,19,25_12,,Y,,,G,,,,,,,,,,V,,,,-,-,+,100,Cc1c(Nc2ncccc2C(=O)O)cccc1C(F)(F)F
+37,Selleck_L1300,Flunixin meglumin,Flunixin,S2108,dsm,19,1,,Y,,,G,,,,,,,,,,,,,,-,-,+,100,Cc1c(Nc2ncccc2C(=O)O)cccc1C(F)(F)F
+410,Selleck_L1300,Mefenamic acid,Mefenamic acid,S4078,tsm,19,62_3,,R,,I,G,,,,,,,,,,,,,,-,+,+,10,Cc1cccc(Nc2ccccc2C(=O)O)c1C
+62,Selleck_L1300,Niflumic acid,Niflumic acid,S3018,dsm,19,1,,,,,,,,,,,,,,T,,,,H,-,-,+,100,O=C(O)c1cccnc1Nc1cccc(C(F)(F)F)c1
+427,Selleck_L1300,Cyclandelate,Cyclandelate,S4189,tsm,20,69_4,,T,,,,,,,,,G,,,,L,,,,+,+,+,1,CC1CC(OC(=O)C(O)c2ccccc2)CC(C)(C)C1
+428,Selleck_L1300,Cyclandelate,Cyclandelate,S4189,tsm,20,69_5,,Y,,,,,,,,,G,,,,,,T,,+,+,+,1,CC1CC(OC(=O)C(O)c2ccccc2)CC(C)(C)C1
+100,Selleck_L1300,Cyclandelate,Cyclandelate,S4189,dsm,20,7,,Y,,,,,,,,,G,,,,,,,,+,+,+,1,CC1CC(OC(=O)C(O)c2ccccc2)CC(C)(C)C1
+97,Selleck_L1300,Cyclandelate,Cyclandelate,S4189,dsm,20,1,,Y,,,,,,,,,S,,,,,,,,-,+,+,10,CC1CC(OC(=O)C(O)c2ccccc2)CC(C)(C)C1
+432,Selleck_L1300,Cyclandelate,Cyclandelate,S4189,tsm,20,69_11,,,,V,,,,,,,A,,,,,,,D,-,+,+,10,CC1CC(OC(=O)C(O)c2ccccc2)CC(C)(C)C1
+433,Selleck_L1300,Cyclandelate,Cyclandelate,S4189,tsm,20,69_12,,,,,,,,A,,,A,,,,L,,,,+,+,+,1,CC1CC(OC(=O)C(O)c2ccccc2)CC(C)(C)C1
+99,Selleck_L1300,Cyclandelate,Cyclandelate,S4189,dsm,20,6,,,,,,,,W,,,A,,,,,,,,-,+,+,10,CC1CC(OC(=O)C(O)c2ccccc2)CC(C)(C)C1
+430,Selleck_L1300,Cyclandelate,Cyclandelate,S4189,tsm,20,69_7,,,,,,,,,,M,G,T,,,,,,,-,+,+,10,CC1CC(OC(=O)C(O)c2ccccc2)CC(C)(C)C1
+426,Selleck_L1300,Cyclandelate,Cyclandelate,S4189,tsm,20,69_3,,,,,,,,,,,A,,,,V,,,S,+,+,+,1,CC1CC(OC(=O)C(O)c2ccccc2)CC(C)(C)C1
+429,Selleck_L1300,Cyclandelate,Cyclandelate,S4189,tsm,20,69_6,,,,,,,,,,,A,,,,,,,H,-,+,+,10,CC1CC(OC(=O)C(O)c2ccccc2)CC(C)(C)C1
+98,Selleck_L1300,Cyclandelate,Cyclandelate,S4189,dsm,20,2,,,,,,,,,,,G,T,,,,,,,-,+,+,10,CC1CC(OC(=O)C(O)c2ccccc2)CC(C)(C)C1
+431,Selleck_L1300,Cyclandelate,Cyclandelate,S4189,tsm,20,69_10,,,,,,,,,,,G,,,,L,,,S,+,+,+,1,CC1CC(OC(=O)C(O)c2ccccc2)CC(C)(C)C1
+227,LATCA,"1,8-Dihydroxyanthraquinone","1,8-Dihydroxyanthraquinone",D108103,dsm,21,8,,,,,,,,,,,,,,I,,,,T,+,+,+,1,O=C1c2cccc(O)c2C(=O)c2c(O)cccc21
+226,LATCA,"1,8-Dihydroxyanthraquinone","1,8-Dihydroxyanthraquinone",D108103,dsm,21,6,,,,,,,,,,,,,,I,,,,,+,+,+,1,O=C1c2cccc(O)c2C(=O)c2c(O)cccc21
+225,LATCA,"1,8-Dihydroxyanthraquinone","1,8-Dihydroxyanthraquinone",D108103,dsm,21,1,,,,,,,,,,,,,,T,,,,,+,+,+,1,O=C1c2cccc(O)c2C(=O)c2c(O)cccc21
+716,LATCA,2-Hydroxy-9-fluorenone,2-Hydroxy-9-fluorenone,H31328,tsm,21,3,,L,L,,,,,,,,,,,G,,,,,nd,nd,+,nd,O=C1c2ccccc2-c2ccc(O)cc21
+245,LATCA,2-Hydroxy-9-fluorenone,2-Hydroxy-9-fluorenone,H31328,dsm,21,6,,,,,,,,,,,,,,I,,,D,,-,-,+,100,O=C1c2ccccc2-c2ccc(O)cc21
+715,LATCA,2-Hydroxy-9-fluorenone,2-Hydroxy-9-fluorenone,H31328,tsm,21,6,,,,,,,,,,,,,,M,I,,,Q,nd,nd,+,nd,O=C1c2ccccc2-c2ccc(O)cc21
+243,LATCA,2-Hydroxy-9-fluorenone,2-Hydroxy-9-fluorenone,H31328,dsm,21,3,,,,,,,,,,,,,,M,,,D,,-,-,+,100,O=C1c2ccccc2-c2ccc(O)cc21
+242,LATCA,2-Hydroxy-9-fluorenone,2-Hydroxy-9-fluorenone,H31328,dsm,21,2,,,,,,,,,,,,,,M,,,L,,-,+,+,10,O=C1c2ccccc2-c2ccc(O)cc21
+241,LATCA,2-Hydroxy-9-fluorenone,2-Hydroxy-9-fluorenone,H31328,dsm,21,1,,,,,,,,,,,,,,,,,L,V,-,+,+,10,O=C1c2ccccc2-c2ccc(O)cc21
+244,LATCA,2-Hydroxy-9-fluorenone,2-Hydroxy-9-fluorenone,H31328,dsm,21,5,,,,,,,,,,,,,,,,,,K,-,-,+,100,O=C1c2ccccc2-c2ccc(O)cc21
+222,LATCA,2-Hydroxybenzophenone (10X),2-Hydroxybenzophenone,103160,dsm,21,1,,,,,,,,,,,F,,,M,,,,,-,-,+,100,O=C(c1ccccc1)c1ccccc1O
+224,LATCA,2-Hydroxybenzophenone (10X),2-Hydroxybenzophenone,103160,dsm,21,4,,,,,,,,,,,,,,L,S,,,,-,-,+,100,O=C(c1ccccc1)c1ccccc1O
+223,LATCA,2-Hydroxybenzophenone (10X),2-Hydroxybenzophenone,103160,dsm,21,3,,,,,,,,,,,,,,L,,,,,-,-,+,100,O=C(c1ccccc1)c1ccccc1O
+703,LATCA,2-Hydroxybenzophenone (10X),2-Hydroxybenzophenone,103160,tsm,21,3,,,,,,,,,,,,,,V,,W,G,,nd,nd,+,nd,O=C(c1ccccc1)c1ccccc1O
+229,LATCA,2-Hydroxychalcone,2-Hydroxychalcone,"51,306-7",dsm,21,1,N,,,,,,,,,,,,,,,,,,-,+,+,10,O=C(/C=C/c1ccccc1)c1ccccc1O
+144,Selleck_L1300,2-naphthol,2-naphthol,S6035,dsm,21,2,,,,,D,,,,,,,,,,,,,,-,-,+,100,Oc1ccc2ccccc2c1
+145,Selleck_L1300,2-naphthol,2-naphthol,S6035,dsm,21,3,,,,,F,,,,,,,,,,,,,,-,-,+,100,Oc1ccc2ccccc2c1
+146,Selleck_L1300,2-naphthol,2-naphthol,S6035,dsm,21,8,,,,,L,,,,,,,,,,,,,,-,-,+,100,Oc1ccc2ccccc2c1
+143,Selleck_L1300,2-naphthol,2-naphthol,S6035,dsm,21,1,,,,,,,,,,,,,,M,,,,H,-,-,+,100,Oc1ccc2ccccc2c1
+459,Selleck_L1300,"2,2′-Dihydroxy-4-methoxybenzophenone","2,2'-Dihydroxy-4-methoxybenzophenone",S4607,tsm,21,80_12,M,,,,M,,,,,,L,,,,,,,,-,+,+,10,COc1ccc(C(=O)c2ccccc2O)c(O)c1
+458,Selleck_L1300,"2,2′-Dihydroxy-4-methoxybenzophenone","2,2'-Dihydroxy-4-methoxybenzophenone",S4607,tsm,21,80_11,,,,I,M,,,,,,V,,,,,,,,-,+,+,10,COc1ccc(C(=O)c2ccccc2O)c(O)c1
+247,LATCA,3-Phenylphenol,3-Phenylphenol,262250,dsm,21,2,,T,,,M,,,,,,,,,,,,,,-,-,+,100,Oc1cccc(-c2ccccc2)c1
+246,LATCA,3-Phenylphenol,3-Phenylphenol,262250,dsm,21,1,,,,,M,,,,,,,,,,,,,,-,+,+,10,Oc1cccc(-c2ccccc2)c1
+233,LATCA,4-Hydroxybenzophenone,4-Hydroxybenzophenone,H20202,dsm,21,6,,,,M,,,,,,,,,,,,,,,-,-,+,100,O=C(c1ccccc1)c1ccc(O)cc1
+705,LATCA,4-Hydroxybenzophenone,4-Hydroxybenzophenone,H20202,tsm,21,1,,,,,,,,,,,W,,,T,,W,,,nd,nd,+,nd,O=C(c1ccccc1)c1ccc(O)cc1
+706,LATCA,4-Hydroxybenzophenone,4-Hydroxybenzophenone,H20202,tsm,21,4,,,,,,,,,,,,,,I,N,W,,,nd,nd,+,nd,O=C(c1ccccc1)c1ccc(O)cc1
+230,LATCA,4-Hydroxybenzophenone,4-Hydroxybenzophenone,H20202,dsm,21,1,,,,,,,,,,,,,,T,,W,,,-,+,+,10,O=C(c1ccccc1)c1ccc(O)cc1
+232,LATCA,4-Hydroxybenzophenone,4-Hydroxybenzophenone,H20202,dsm,21,3,,,,,,,,,,,,,,T,,,,G,-,+,+,10,O=C(c1ccccc1)c1ccc(O)cc1
+231,LATCA,4-Hydroxybenzophenone,4-Hydroxybenzophenone,H20202,dsm,21,2,,,,,,,,,,,,,,T,,,,H,-,+,+,10,O=C(c1ccccc1)c1ccc(O)cc1
+714,LATCA,6-Benzoyl-2-naphthol,6-Benzoyl-2-naphthol,190608,tsm,21,1,,T,,,,,,Y,,,,E,,I,,,,,nd,nd,+,nd,O=C(c1ccccc1)c1ccc2cc(O)ccc2c1
+711,LATCA,6-Benzoyl-2-naphthol,6-Benzoyl-2-naphthol,190608,tsm,21,7,,T,,,,,,,,,,E,,I,,,,,nd,nd,+,nd,O=C(c1ccccc1)c1ccc2cc(O)ccc2c1
+713,LATCA,6-Benzoyl-2-naphthol,6-Benzoyl-2-naphthol,190608,tsm,21,2,,,W,,,,,,,,,,,A,L,,,,nd,nd,+,nd,O=C(c1ccccc1)c1ccc2cc(O)ccc2c1
+238,LATCA,6-Benzoyl-2-naphthol,6-Benzoyl-2-naphthol,190608,dsm,21,4,,,,,,,,N,,,,,,V,,,,,-,+,+,10,O=C(c1ccccc1)c1ccc2cc(O)ccc2c1
+712,LATCA,6-Benzoyl-2-naphthol,6-Benzoyl-2-naphthol,190608,tsm,21,6,,,,,,,,Y,,,,,,,,W,F,,nd,nd,+,nd,O=C(c1ccccc1)c1ccc2cc(O)ccc2c1
+239,LATCA,6-Benzoyl-2-naphthol,6-Benzoyl-2-naphthol,190608,dsm,21,5,,,,,,,,,,,,,,A,,,D,,-,-,+,100,O=C(c1ccccc1)c1ccc2cc(O)ccc2c1
+710,LATCA,6-Benzoyl-2-naphthol,6-Benzoyl-2-naphthol,190608,tsm,21,8,,,,,,,,,,,,,,I,N,W,,,nd,nd,+,nd,O=C(c1ccccc1)c1ccc2cc(O)ccc2c1
+237,LATCA,6-Benzoyl-2-naphthol,6-Benzoyl-2-naphthol,190608,dsm,21,3,,,,,,,,,,,,,,L,,Q,,,-,+,+,10,O=C(c1ccccc1)c1ccc2cc(O)ccc2c1
+236,LATCA,6-Benzoyl-2-naphthol,6-Benzoyl-2-naphthol,190608,dsm,21,1,,,,,,,,,,,,,,S,,,,,-,-,+,100,O=C(c1ccccc1)c1ccc2cc(O)ccc2c1
+240,LATCA,6-Benzoyl-2-naphthol,6-Benzoyl-2-naphthol,190608,dsm,21,6,,,,,,,,,,,,,,T,,,,Q,-,+,+,10,O=C(c1ccccc1)c1ccc2cc(O)ccc2c1
+211,LATCA,Anthracene-9-carboxylic acid,Anthracene-9-carboxylic acid,1502068,dsm,21,2,,R,,,,,,,,,,,,V,,,,,-,-,+,100,O=C(O)c1c2ccccc2cc2ccccc12
+213,LATCA,Anthracene-9-carboxylic acid,Anthracene-9-carboxylic acid,1502068,dsm,21,6,,Y,,,,,,,,,,,,V,,,,,-,-,+,100,O=C(O)c1c2ccccc2cc2ccccc12
+200,LATCA,Anthracene-9-carboxylic acid,Anthracene-9-carboxylic acid,1502068,dsm,21,1,,,,,,,,,,,,,,I,,,,,-,-,+,100,O=C(O)c1c2ccccc2cc2ccccc12
+201,LATCA,Anthracene-9-carboxylic acid,Anthracene-9-carboxylic acid,1502068,dsm,21,3,,,,,,,,,,,,,,L,,,,,-,-,+,100,O=C(O)c1c2ccccc2cc2ccccc12
+212,LATCA,Anthracene-9-carboxylic acid,Anthracene-9-carboxylic acid,1502068,dsm,21,4,,,,,,,,,,,,,,M,,,L,,-,-,+,100,O=C(O)c1c2ccccc2cc2ccccc12
+214,LATCA,Anthrone,Anthrone,A-836,dsm,21,1,,R,,,,,,,,,,,,V,,,,,+,+,+,1,O=C1c2ccccc2Cc2ccccc21
+700,LATCA,Anthrone,Anthrone,A-836,tsm,21,3,,Y,,,,,,Y,,,,,,I,,,,,nd,nd,+,nd,O=C1c2ccccc2Cc2ccccc21
+215,LATCA,Anthrone,Anthrone,A-836,dsm,21,3,,,,,,,,M,,,,,,M,,,,,+,+,+,1,O=C1c2ccccc2Cc2ccccc21
+186,Selleck_L1300,Benzophenone,Benzophenone,S4438,dsm,21,6,,Y,,,,,,,,,,E,,V,,,,,-,-,+,100,O=C(c1ccccc1)c1ccccc1
+185,Selleck_L1300,Benzophenone,Benzophenone,S4438,dsm,21,1,,Y,,,,,,,,,,,,V,,,,,-,-,+,100,O=C(c1ccccc1)c1ccccc1
+436,Selleck_L1300,Cinchophen,Cinchophen,S4190,tsm,21,70_12,,L,,,,,D,,,,A,,,,,,,,-,+,+,10,O=C(O)c1cc(-c2ccccc2)nc2ccccc12
+434,Selleck_L1300,Cinchophen,Cinchophen,S4190,tsm,21,70_2,,Y,,I,,,,,,,A,,,,,,,,-,-,+,100,O=C(O)c1cc(-c2ccccc2)nc2ccccc12
+435,Selleck_L1300,Cinchophen,Cinchophen,S4190,tsm,21,70_5,,,,,,,,,,,G,,,,L,,,,-,-,+,100,O=C(O)c1cc(-c2ccccc2)nc2ccccc12
+109,Selleck_L1300,Danthron,Danthron,S4561,dsm,21,3,,Y,,,,,,,,,,,,V,,,,,+,+,+,1,O=C1c2cccc(O)c2C(=O)c2c(O)cccc21
+107,Selleck_L1300,Danthron,Danthron,S4561,dsm,21,1,,,,,,,,,,,,,,T,M,,,,+,+,+,1,O=C1c2cccc(O)c2C(=O)c2c(O)cccc21
+108,Selleck_L1300,Danthron,Danthron,S4561,dsm,21,2,,,,,,,,,,,,,,V,,,Y,,+,+,+,1,O=C1c2cccc(O)c2C(=O)c2c(O)cccc21
+404,Selleck_L1300,Flavone,Flavone,S3967,tsm,21,60_1,D,,,,,,,,,,,,I,,V,,,,-,+,+,10,O=c1cc(-c2ccccc2)oc2ccccc12
+406,Selleck_L1300,Flavone,Flavone,S3967,tsm,21,60_10,N,,,I,,,,,,,,,,T,,,,,-,-,+,100,O=c1cc(-c2ccccc2)oc2ccccc12
+407,Selleck_L1300,Flavone,Flavone,S3967,tsm,21,60_11,,,,,,,,Q,,,,,,,,M,,G,-,-,+,100,O=c1cc(-c2ccccc2)oc2ccccc12
+88,Selleck_L1300,Flavone,Flavone,S3967,dsm,21,1,,,,,,,,,,,,,,I,,,F,,-,+,+,10,O=c1cc(-c2ccccc2)oc2ccccc12
+89,Selleck_L1300,Flavone,Flavone,S3967,dsm,21,6,,,,,,,,,,,,,,I,,,,S,-,-,+,100,O=c1cc(-c2ccccc2)oc2ccccc12
+405,Selleck_L1300,Flavone,Flavone,S3967,tsm,21,60_4,,,,,,,,,,,,,,V,,W,G,,-,+,+,10,O=c1cc(-c2ccccc2)oc2ccccc12
+408,Selleck_L1300,Flavone,Flavone,S3967,tsm,21,60_12,,,,,,,,,,,,,,V,,,,V,-,-,+,100,O=c1cc(-c2ccccc2)oc2ccccc12
+278,Selleck_L1300,Oxcarbazepine,Oxcarbazepine,S1391,tsm,21,5_7,D,,,,,,,,,,,,,,,W,H,,-,-,+,100,NC(=O)N1c2ccccc2CC(=O)c2ccccc21
+136,Selleck_L1300,Phenazine methosulfate,Phenazine,S5037,dsm,21,1,,R,,,,,,,,,,,,V,,,,,-,-,+,100,C[N+]1=C2C=CC=CC2=NC3=CC=CC=C31
+104,Selleck_L1300,Etofibrate,Etofibrate,S4264,dsm,22,2,,,,,,,D,,,,,,,,,,H,,-,+,+,10,CC(C)(Oc1ccc(Cl)cc1)C(=O)OCCOC(=O)c1cccnc1
+103,Selleck_L1300,Etofibrate,Etofibrate,S4264,dsm,22,1,,,,,,,,,,,,,,S,I,,,,-,-,+,100,CC(C)(Oc1ccc(Cl)cc1)C(=O)OCCOC(=O)c1cccnc1
+4,Selleck_L1300,2-Methoxyestradiol (2-MeOE2),2-Methoxyestradiol,S1233,dsm,23,1,,,,,,,,,,,,,,S,I,,,,-,-,+,100,COc1cc2c(cc1O)CC[C@@H]1[C@@H]2CC[C@]2(C)[C@@H](O)CC[C@@H]12
+493,Selleck_L1300,Boldenone,Boldenone,S5225,tsm,23,98_1,S,T,,,,,,,,,,,,,,,,D,-,+,+,10,C[C@]12C=CC(=O)C=C1CC[C@@H]1[C@@H]2CC[C@]2(C)[C@@H](O)CC[C@@H]12
+494,Selleck_L1300,Boldenone,Boldenone,S5225,tsm,23,98_11,,,,,,,,,,A,,T,,I,,,,,-,-,+,100,C[C@]12C=CC(=O)C=C1CC[C@@H]1[C@@H]2CC[C@]2(C)[C@@H](O)CC[C@@H]12
+495,Selleck_L1300,Boldenone,Boldenone,S5225,tsm,23,98_12,,,,,,,,,,,S,,,L,V,,,,-,-,+,100,C[C@]12C=CC(=O)C=C1CC[C@@H]1[C@@H]2CC[C@]2(C)[C@@H](O)CC[C@@H]12
+67,Selleck_L1300,Dehydroandrographolide,Dehydroandrographolide,S3807,dsm,23,1,,,,,,,,,,,,,,S,,,,D,-,-,+,100,C=C1CC[C@H]2[C@@](C)(CC[C@@H](O)[C@@]2(C)CO)[C@@H]1C/C=C1\C=COC1=O
+15,Selleck_L1300,Estradiol,Estradiol,S1709,dsm,23,1,,,,,,,,,,,,,,M,M,,,,-,+,+,10,C[C@]12CC[C@@H]3c4ccc(O)cc4CC[C@H]3[C@@H]1CC[C@@H]2O
+674,LATCA,Estradiol methyl ether,Estradiol methyl ether,1501183,tsm,23,1,,,,,,,,,,,A,,,V,,,W,,nd,nd,+,nd,COc1ccc2c(c1)CC[C@@H]1[C@@H]2CC[C@]2(C)[C@@H](O)CC[C@@H]12
+198,LATCA,Estradiol methyl ether,Estradiol methyl ether,1501183,dsm,23,1,,,,,,,,,,,,,,G,,,,M,-,-,+,100,COc1ccc2c(c1)CC[C@@H]1[C@@H]2CC[C@]2(C)[C@@H](O)CC[C@@H]12
+11,Selleck_L1300,Ethinyl Estradiol,Ethinyl estradiol,1501183,dsm,23,6,,,,,,,,,,,,,,G,,,G,,-,+,+,10,COc1ccc2c(c1)CC[C@@H]1[C@@H]2CC[C@]2(C)[C@@H](O)CC[C@@H]12
+10,Selleck_L1300,Ethinyl Estradiol,Ethinyl estradiol,1501183,dsm,23,1,,,,,,,,,,,,,,H,I,,,,-,+,+,10,COc1ccc2c(c1)CC[C@@H]1[C@@H]2CC[C@]2(C)[C@@H](O)CC[C@@H]12
+344,Selleck_L1300,Mestranol,Mestranol,S2125,tsm,23,27_9,,,,,,,,,,,F,,,G,,,M,,-,+,+,10,C#C[C@]1(O)CC[C@H]2[C@@H]3CCc4cc(OC)ccc4[C@H]3CC[C@@]21C
+14,Selleck_L1300,Mestranol,Mestranol,S2125,dsm,23,1,,,,,,,,,,,,,,G,V,,,,+,+,+,1,C#C[C@]1(O)CC[C@H]2[C@@H]3CCc4cc(OC)ccc4[C@H]3CC[C@@]21C
+470,Selleck_L1300,Methandrostenolone,Methandrostenolone,S4796,tsm,23,84_10,N,Y,,,,,,,,,,,,,,M,,,-,-,+,100,C[C@]12C=CC(=O)C=C1CC[C@@H]1[C@@H]2CC[C@@]2(C)[C@H]1CC[C@]2(C)O
+469,Selleck_L1300,Methandrostenolone,Methandrostenolone,S4796,tsm,23,84_2,S,,,,,,,,,,,Q,,,,,,D,-,+,+,10,C[C@]12C=CC(=O)C=C1CC[C@@H]1[C@@H]2CC[C@@]2(C)[C@H]1CC[C@]2(C)O
+258,Selleck_L1300,Methandrostenolone,Methandrostenolone,S4796,shuffle,23,3,,Y,,,G,,,,,,,,,,I,,,,-,-,+,100,C[C@]12C=CC(=O)C=C1CC[C@@H]1[C@@H]2CC[C@@]2(C)[C@H]1CC[C@]2(C)O
+257,Selleck_L1300,Methandrostenolone,Methandrostenolone,S4796,shuffle,23,1,,Y,,,G,,,,,,,,,,L,,,,-,-,+,100,C[C@]12C=CC(=O)C=C1CC[C@@H]1[C@@H]2CC[C@@]2(C)[C@H]1CC[C@]2(C)O
+123,Selleck_L1300,alpha-Asarone,alpha-Asarone,S4772,dsm,24,1,,,,,,,,,,,,,,I,L,,,,-,-,+,100,C/C=C/c1cc(OC)c(OC)cc1OC
+124,Selleck_L1300,alpha-Asarone,alpha-Asarone,S4772,dsm,24,2,,,,,,,,,,,,,,L,M,,,,-,-,+,100,C/C=C/c1cc(OC)c(OC)cc1OC
+95,Selleck_L1300,Bergapten,Bergapten,300546,dsm,24,1,L,,,,W,,,,,,,,,T,,,,,-,+,+,10,COc1c2ccoc2cc2oc(=O)ccc12
+504,Selleck_L1300,Carbaryl,Carbaryl,S5424,tsm,24,104_11,,,,,,,,,,,A,,,V,,,F,,-,-,+,100,CNC(=O)Oc1cccc2ccccc12
+260,Selleck_L1300,citropten,citropten,S5143,shuffle,24,2,,Y,,,G,,,,,,,,,S,I,,,,-,-,+,100,COc1cc(OC)c2ccc(=O)oc2c1
+259,Selleck_L1300,citropten,citropten,S5143,shuffle,24,1,,Y,,,G,,,,,,,,,,I,,,,-,-,+,100,COc1cc(OC)c2ccc(=O)oc2c1
+387,Selleck_L1300,Imperatorin,Imperatorin,102076,tsm,24,54_5,A,,,,,,,,,,,,,,G,W,,,-,-,+,100,CC(C)=CCOc1c2occc2cc2ccc(=O)oc12
+388,Selleck_L1300,Imperatorin,Imperatorin,102076,tsm,24,54_6,A,,,,,,,,,,,,,,,W,M,,-,+,+,10,CC(C)=CCOc1c2occc2cc2ccc(=O)oc12
+385,Selleck_L1300,Imperatorin,Imperatorin,102076,tsm,24,54_2,D,,,,,,,,,,,,T,,I,,,,-,-,+,100,CC(C)=CCOc1c2occc2cc2ccc(=O)oc12
+391,Selleck_L1300,Imperatorin,Imperatorin,102076,tsm,24,54_11,E,,,,M,,,,,,A,V,,,,,,,-,-,+,100,CC(C)=CCOc1c2occc2cc2ccc(=O)oc12
+390,Selleck_L1300,Imperatorin,Imperatorin,102076,tsm,24,54_10,Q,M,,,,,,,,,,,,V,,W,,,-,+,+,10,CC(C)=CCOc1c2occc2cc2ccc(=O)oc12
+386,Selleck_L1300,Imperatorin,Imperatorin,102076,tsm,24,54_3,Q,,Y,,,,,,,H,,,,,,,,,-,-,+,100,CC(C)=CCOc1c2occc2cc2ccc(=O)oc12
+66,Selleck_L1300,Imperatorin,Imperatorin,102076,dsm,24,7,,I,,,,,,,,,,,,H,,,,,-,-,+,100,CC(C)=CCOc1c2occc2cc2ccc(=O)oc12
+389,Selleck_L1300,Imperatorin,Imperatorin,102076,tsm,24,54_8,,L,L,,,,,,,,,,,I,,,G,,-,-,+,100,CC(C)=CCOc1c2occc2cc2ccc(=O)oc12
+65,Selleck_L1300,Imperatorin,Imperatorin,102076,dsm,24,2,,,W,,,,,,,,,,,H,,,,,-,+,+,10,CC(C)=CCOc1c2occc2cc2ccc(=O)oc12
+384,Selleck_L1300,Imperatorin,Imperatorin,102076,tsm,24,54_1,,,,,,,,Y,,,,,,,,W,,D,-,-,+,100,CC(C)=CCOc1c2occc2cc2ccc(=O)oc12
+392,Selleck_L1300,Imperatorin,Imperatorin,102076,tsm,24,54_12,,,,,,,,,,,,G,,,,W,,D,-,-,+,100,CC(C)=CCOc1c2occc2cc2ccc(=O)oc12
+64,Selleck_L1300,Imperatorin,Imperatorin,102076,dsm,24,1,,,,,,,,,,,,,,,I,,T,,-,+,+,10,CC(C)=CCOc1c2occc2cc2ccc(=O)oc12
+72,Selleck_L1300,Isopsoralen,Isopsoralen,S3892,dsm,24,4,,I,,,,,,,,,,,,,,,N,,-,-,+,100,O=c1ccc2ccc3occc3c2o1
+74,Selleck_L1300,Isopsoralen,Isopsoralen,S3892,dsm,24,8,,R,L,,,,,,,,,,,,,,,,-,-,+,100,O=c1ccc2ccc3occc3c2o1
+71,Selleck_L1300,Isopsoralen,Isopsoralen,S3892,dsm,24,3,,Y,,,,,,,,,,,,,I,,,,-,-,+,100,O=c1ccc2ccc3occc3c2o1
+73,Selleck_L1300,Isopsoralen,Isopsoralen,S3892,dsm,24,7,,Y,,,,,,,,,,,,,,,,,-,-,+,100,O=c1ccc2ccc3occc3c2o1
+70,Selleck_L1300,Isopsoralen,Isopsoralen,S3892,dsm,24,1,,,L,,,,,,,,,,,,,,,,-,-,+,100,O=c1ccc2ccc3occc3c2o1
+395,Selleck_L1300,Isopsoralen,Isopsoralen,S3892,tsm,24,56_2,,,,,,,,,,,A,,,V,,,F,,-,-,+,100,O=c1ccc2ccc3occc3c2o1
+510,Selleck_L1300,Khellin,Khellin,S5887,tsm,24,110_7,,L,L,,,,,,,,,,,G,,,,,-,-,+,100,COc1c2occc2c(OC)c2c(=O)cc(C)oc12
+509,Selleck_L1300,Khellin,Khellin,S5887,tsm,24,110_1,,,,,,,,,,,,Q,T,M,,,,,-,-,+,100,COc1c2occc2c(OC)c2c(=O)cc(C)oc12
+511,Selleck_L1300,Khellin,Khellin,S5887,tsm,24,110_8,,,,,,,,,,,,,I,T,,,F,,-,-,+,100,COc1c2occc2c(OC)c2c(=O)cc(C)oc12
+153,Selleck_L1300,Khellin,Khellin,S5887,dsm,24,7,,,,,,,,,,,,,,,,,G,K,-,-,+,100,COc1c2occc2c(OC)c2c(=O)cc(C)oc12
+152,Selleck_L1300,Khellin,Khellin,S5887,dsm,24,6,,,,,,,,,,,,,,,,,S,K,-,-,+,100,COc1c2occc2c(OC)c2c(=O)cc(C)oc12
+151,Selleck_L1300,Khellin,Khellin,S5887,dsm,24,1,,,,,,,,,,,,,,,,,T,,-,-,+,100,COc1c2occc2c(OC)c2c(=O)cc(C)oc12
+480,Selleck_L1300,Menadiol Diacetate,Menadiol Diacetate,S4779,tsm,24,87_10,,L,,,,,,,,,,,,S,V,,,,-,-,+,100,CC(=O)Oc1cc(C)c(OC(C)=O)c2ccccc12
+481,Selleck_L1300,Menadiol Diacetate,Menadiol Diacetate,S4779,tsm,24,87_11,,M,,,,,,,,,,,,T,L,,,,-,-,+,100,CC(=O)Oc1cc(C)c(OC(C)=O)c2ccccc12
+478,Selleck_L1300,Menadiol Diacetate,Menadiol Diacetate,S4779,tsm,24,87_6,,Y,,M,,,,,,,,,,L,,,,,-,-,+,100,CC(=O)Oc1cc(C)c(OC(C)=O)c2ccccc12
+482,Selleck_L1300,Menadiol Diacetate,Menadiol Diacetate,S4779,tsm,24,87_12,,Y,,,,,,Y,,,,,,I,,,,,-,-,+,100,CC(=O)Oc1cc(C)c(OC(C)=O)c2ccccc12
+477,Selleck_L1300,Menadiol Diacetate,Menadiol Diacetate,S4779,tsm,24,87_4,,,,I,,,,,,,,,,A,L,,,,-,-,+,100,CC(=O)Oc1cc(C)c(OC(C)=O)c2ccccc12
+476,Selleck_L1300,Menadiol Diacetate,Menadiol Diacetate,S4779,tsm,24,87_3,,,,,F,,,W,T,,,,,,,,,,-,-,+,100,CC(=O)Oc1cc(C)c(OC(C)=O)c2ccccc12
+479,Selleck_L1300,Menadiol Diacetate,Menadiol Diacetate,S4779,tsm,24,87_8,,,,,F,,,,T,,,T,,,,,,,-,-,+,100,CC(=O)Oc1cc(C)c(OC(C)=O)c2ccccc12
+127,Selleck_L1300,Menadiol Diacetate,Menadiol Diacetate,S4779,dsm,24,1,,,,,M,,,,,,,,,,,,,,-,+,+,10,CC(=O)Oc1cc(C)c(OC(C)=O)c2ccccc12
+475,Selleck_L1300,Menadiol Diacetate,Menadiol Diacetate,S4779,tsm,24,87_2,,,,,,,,N,,,,,,V,L,,,,-,-,+,100,CC(=O)Oc1cc(C)c(OC(C)=O)c2ccccc12
+129,Selleck_L1300,Menadiol Diacetate,Menadiol Diacetate,S4779,dsm,24,6,,,,,,,,,,,,,,I,L,,,,-,-,+,100,CC(=O)Oc1cc(C)c(OC(C)=O)c2ccccc12
+128,Selleck_L1300,Menadiol Diacetate,Menadiol Diacetate,S4779,dsm,24,3,,,,,,,,,,,,,,I,,,,,-,-,+,100,CC(=O)Oc1cc(C)c(OC(C)=O)c2ccccc12
+338,Selleck_L1300,Methoxsalen,Methoxsalen,S1952,tsm,24,23_12,A,,,,,,,,,,,,F,,,,S,,-,+,+,10,COc1c2occc2cc2ccc(=O)oc12
+337,Selleck_L1300,Methoxsalen,Methoxsalen,S1952,tsm,24,23_6,R,,,,,,,,,,,,,,,,I,H,-,-,+,100,COc1c2occc2cc2ccc(=O)oc12
+336,Selleck_L1300,Methoxsalen,Methoxsalen,S1952,tsm,24,23_4,S,I,,,,,,L,,,,,,,,,,,-,-,+,100,COc1c2occc2cc2ccc(=O)oc12
+36,Selleck_L1300,Methoxsalen,Methoxsalen,S1952,dsm,24,?,,,L,,,,,,V,,,,,,,,,,-,+,+,10,COc1c2occc2cc2ccc(=O)oc12
+270,Selleck_L1300,Methoxsalen,Methoxsalen,S1952,dsm,24,1,,,L,,,,,,V,,,,,,,,,,-,+,+,10,COc1c2occc2cc2ccc(=O)oc12
+335,Selleck_L1300,Methoxsalen,Methoxsalen,S1952,tsm,24,23_2,,,L,,,,,,,,T,,,,,,F,,-,-,+,100,COc1c2occc2cc2ccc(=O)oc12
+358,Selleck_L1300,Osthole,Osthole,S2337,tsm,24,36_5,,,,,,,,W,,,M,,,,,W,,,-,-,+,100,COc1ccc2ccc(=O)oc2c1CC=C(C)C
+357,Selleck_L1300,Osthole,Osthole,S2337,tsm,24,36_4,,,,,,,,,,,,E,,,V,W,,,-,-,+,100,COc1ccc2ccc(=O)oc2c1CC=C(C)C
+359,Selleck_L1300,Osthole,Osthole,S2337,tsm,24,36_6,,,,,,,,,,,,G,,,M,W,,,-,-,+,100,COc1ccc2ccc(=O)oc2c1CC=C(C)C
+361,Selleck_L1300,Osthole,Osthole,S2337,tsm,24,36_12,,,,,,,,,,,,N,,I,,,F,,-,-,+,100,COc1ccc2ccc(=O)oc2c1CC=C(C)C
+46,Selleck_L1300,Osthole,Osthole,S2337,dsm,24,1,,,,,,,,,,,,,,I,,,F,,-,+,+,10,COc1ccc2ccc(=O)oc2c1CC=C(C)C
+48,Selleck_L1300,Osthole,Osthole,S2337,dsm,24,7,,,,,,,,,,,,,,I,,,S,,-,+,+,10,COc1ccc2ccc(=O)oc2c1CC=C(C)C
+47,Selleck_L1300,Osthole,Osthole,S2337,dsm,24,3,,,,,,,,,,,,,,I,,,,,-,+,+,10,COc1ccc2ccc(=O)oc2c1CC=C(C)C
+360,Selleck_L1300,Osthole,Osthole,S2337,tsm,24,36_10,,,,,,,,,,,,,,,,W,,D,-,+,+,10,COc1ccc2ccc(=O)oc2c1CC=C(C)C
+130,Selleck_L1300,Psoralen,Psoralen,S4737,dsm,24,1,,,L,,,,,,,,,,,,,,,,-,-,+,100,O=c1ccc2cc3ccoc3cc2o1
+85,Selleck_L1300,Scopoletin,Scopoletin,S3881,dsm,24,1,,,L,,,,,,,,,,,,,,,,-,-,+,100,COc1cc2ccc(=O)oc2cc1O
+530,Selleck_L1300,Yangonin,Yangonin,S9413,tsm,24,117_6,,,,,,,,,,,,,,,M,W,,D,-,+,+,10,COc1ccc(/C=C/c2cc(OC)cc(=O)o2)cc1
+531,Selleck_L1300,Yangonin,Yangonin,S9413,tsm,24,117_11,,,,,,,,,,,,,,,,M,,Q,-,-,+,100,COc1ccc(/C=C/c2cc(OC)cc(=O)o2)cc1
+440,Selleck_L1300,Hexylresorcinol,Hexylresorcinol,S4571,tsm,25,74_11,A,,,,,,,,,,,,,,G,W,,,-,+,+,10,CCCCCCc1ccc(O)cc1O
+438,Selleck_L1300,Hexylresorcinol,Hexylresorcinol,S4571,tsm,25,74_1,,,,,,,,,,W,,,,T,,,G,,-,-,+,100,CCCCCCc1ccc(O)cc1O
+441,Selleck_L1300,Hexylresorcinol,Hexylresorcinol,S4571,tsm,25,74_12,,,,,,,,,,,,I,,,S,W,,,-,+,+,10,CCCCCCc1ccc(O)cc1O
+439,Selleck_L1300,Hexylresorcinol,Hexylresorcinol,S4571,tsm,25,74_6,,,,,,,,,,,,,,,,W,S,,-,-,+,100,CCCCCCc1ccc(O)cc1O
+489,Selleck_L1300,Olivetol,Olivetol,S5119,tsm,25,94_9,,M,,,,,,,,,G,,,,,,L,,-,-,+,100,CCCCCc1cc(O)cc(O)c1
+132,Selleck_L1300,Olivetol,Olivetol,S5119,dsm,25,4,,,L,,,,,,,,,,,,,,,,-,-,+,100,CCCCCc1cc(O)cc(O)c1
+487,Selleck_L1300,Olivetol,Olivetol,S5119,tsm,25,94_6,,,,I,,,,,,,,,,M,,,H,,-,+,+,10,CCCCCc1cc(O)cc(O)c1
+488,Selleck_L1300,Olivetol,Olivetol,S5119,tsm,25,94_7,,,,,,,,,,,,E,,I,,,H,,-,-,+,100,CCCCCc1cc(O)cc(O)c1
+131,Selleck_L1300,Olivetol,Olivetol,S5119,dsm,25,2,,,,,,,,,,,,,,T,,,N,,-,-,+,100,CCCCCc1cc(O)cc(O)c1
+133,Selleck_L1300,Olivetol,Olivetol,S5119,dsm,25,7,,,,,,,,,,,,,,,,,H,,-,-,+,100,CCCCCc1cc(O)cc(O)c1
+507,Selleck_L1300,Oxantel Pamoate,Oxantel,S5722,tsm,25,107_2,,,L,,,,Q,,,,V,,,,,,,,-,-,+,100,CN1CCCN=C1/C=C/c1cccc(O)c1
+508,Selleck_L1300,Oxantel Pamoate,Oxantel,S5722,tsm,25,107_3,,,Y,,,,,,,,V,V,,,,,,,-,-,+,100,CN1CCCN=C1/C=C/c1cccc(O)c1
+154,Selleck_L1300,Metronidazole Benzoate,Metronidazole,S5863,dsm,26,1,,I,,,,,,,,,,,,,L,,,,-,-,+,100,Cc1ncc([N+](=O)[O-])n1CCOC(=O)c1ccccc1
+159,Selleck_L1300,Sodium dehydroacetate,Dehydroacetic acid,S6235,dsm,27,4,,R,I,,,,,,,,,,,,,,,,-,-,+,100,CC(=O)C1C(=O)C=C(C)OC1=O
+158,Selleck_L1300,Sodium dehydroacetate,Dehydroacetic acid,S6235,dsm,27,1,,R,,M,,,,,,,,,,,,,,,-,-,+,100,CC(=O)C1C(=O)C=C(C)OC1=O
+447,Selleck_L1300,Dehydroacetic acid,Dehydroacetic acid,S4522,tsm,27,76_6,,R,,,,,D,,,M,,,,,,,,,-,-,+,100,CC(=O)C1C(=O)C=C(C)OC1=O
+522,Selleck_L1300,Sodium dehydroacetate,Dehydroacetic acid,S6235,tsm,27,112_7,,R,,,,,D,,,M,,,,,,,,,-,-,+,100,CC(=O)C1C(=O)C=C(C)OC1=O
+160,Selleck_L1300,Sodium dehydroacetate,Dehydroacetic acid,S6235,dsm,27,7,,R,,,,,,Y,,,,,,,,,,,-,-,+,100,CC(=O)C1C(=O)C=C(C)OC1=O
+521,Selleck_L1300,Sodium dehydroacetate,Dehydroacetic acid,S6235,tsm,27,112_2,,,W,,,,Q,,,H,,,,,G,,,,-,+,+,10,CC(=O)C1C(=O)C=C(C)OC1=O
+302,Selleck_L1300,Diethylstilbestrol,Diethylstilbestrol,101560,tsm,28,14_1,,,,,,,,,,,,,,I,,W,S,,-,+,+,10,CCC(=C(CC)c1ccc(O)cc1)c1ccc(O)cc1
+365,Selleck_L1300,Equol,Equol,S2450,tsm,28,39_3,,,,,,,,,,,,,,V,,W,G,,-,-,+,100,Oc1ccc([C@H]2COc3cc(O)ccc3C2)cc1
+678,LATCA,Hexestrol,Hexestrol,1500632,tsm,28,1,,,,,,,,,,M,,,,I,,W,,,nd,nd,+,nd,CCC(c1ccc(O)cc1)C(CC)c1ccc(O)cc1
+688,LATCA,"2,4-Dinitrophenol","2,4-Dinitrophenol",330008,tsm,29,3,,,,,,,Q,,,,,E,,,,,,,nd,nd,+,nd,O=[N+]([O-])c1ccc(O)c([N+](=O)[O-])c1
+687,LATCA,"2,4-Dinitrophenol","2,4-Dinitrophenol",330008,tsm,29,2,,,,,,,Q,,,,,,T,,,,N,,nd,nd,+,nd,O=[N+]([O-])c1ccc(O)c([N+](=O)[O-])c1
+708,LATCA,"2,4,6-Trihydroxybenzoic acid","2,4,6-Trihydroxybenzoic acid",91942,tsm,29,8,,,F,I,M,G,,,,,,,,,,,,,nd,nd,+,nd,O=C(O)c1c(O)cc(O)cc1O
+707,LATCA,"2,6-Dihydroxybenzoic acid","2,6-Dihydroxybenzoic acid",D109606,tsm,29,4,R,,,,,,,,,A,W,,,,,,,,nd,nd,+,nd,O=C(O)c1c(O)cccc1O
+686,LATCA,Amfonelic acid,Amfonelic acid,D-044,tsm,30,1,,R,,,,L,,,,,,,,I,,,,,nd,nd,+,nd,CCn1cc(C(=O)O)c(=O)c2ccc(Cc3ccccc3)nc21
+460,Selleck_L1300,Lesinurad,Lesinurad,S4640,tsm,30,81_5,N,,L,,,,Q,,,,,,,,,,M,,-,-,+,100,O=C(O)CSc1nnc(Br)n1-c1ccc(C2CC2)c2ccccc12
+697,LATCA,S-(-)-Lisuride,S-(-)-Lisuride,L-122,tsm,31,1,,Y,,,,,,,,,,E,,,,,,,nd,nd,+,nd,CCN(CC)C(=O)N[C@H]1C=C2c3cccc4[nH]cc(c34)C[C@H]2N(C)C1
+699,LATCA,S-(-)-Lisuride,S-(-)-Lisuride,L-122,tsm,31,3,,Y,,,,,,,,,,Q,,V,,,,,nd,nd,+,nd,CCN(CC)C(=O)N[C@H]1C=C2c3cccc4[nH]cc(c34)C[C@H]2N(C)C1
+216,LATCA,S-(-)-Lisuride,S-(-)-Lisuride,L-122,dsm,31,1,,Y,,,,,,,,,,,,T,,,,,-,-,+,100,CCN(CC)C(=O)N[C@H]1C=C2c3cccc4[nH]cc(c34)C[C@H]2N(C)C1
+219,LATCA,S-(-)-Lisuride,S-(-)-Lisuride,L-122,dsm,31,6,,Y,,,,,,,,,,,,T,,,,,-,-,+,100,CCN(CC)C(=O)N[C@H]1C=C2c3cccc4[nH]cc(c34)C[C@H]2N(C)C1
+218,LATCA,S-(-)-Lisuride,S-(-)-Lisuride,L-122,dsm,31,3,,,,,,,,,,,A,,,,,,,,-,-,+,100,CCN(CC)C(=O)N[C@H]1C=C2c3cccc4[nH]cc(c34)C[C@H]2N(C)C1
+698,LATCA,S-(-)-Lisuride,S-(-)-Lisuride,L-122,tsm,31,2,,,,,,,,,,,G,Q,,A,,,,,nd,nd,+,nd,CCN(CC)C(=O)N[C@H]1C=C2c3cccc4[nH]cc(c34)C[C@H]2N(C)C1
+217,LATCA,S-(-)-Lisuride,S-(-)-Lisuride,L-122,dsm,31,2,,,,,,,,,,,S,V,,,,,,,-,-,+,100,CCN(CC)C(=O)N[C@H]1C=C2c3cccc4[nH]cc(c34)C[C@H]2N(C)C1
+220,LATCA,S-(-)-Lisuride,S-(-)-Lisuride,L-122,dsm,31,7,,,,,,,,,,,T,V,,,,,,,-,-,+,100,CCN(CC)C(=O)N[C@H]1C=C2c3cccc4[nH]cc(c34)C[C@H]2N(C)C1
+719,LATCA,7-Nitroindazole,7-Nitroindazole,N 7778,tsm,32,1,,,,,,,,,,,,,,S,,Q,,,nd,nd,+,nd,O=[N+]([O-])c1cccc2cn[nH]c12
+694,LATCA,"( R)-(+)-Win 55,212-2 Mesylate","(R)-(+)-Win 55,212-2",W-102,tsm,33,4,,,,,,,,,,,M,,,G,I,,,,nd,nd,+,nd,Cc1c(C(=O)c2cccc3ccccc23)c2cccc3c2n1[C@H](CN1CCOCC1)CO3
+207,LATCA,"( R)-(+)-Win 55,212-2 Mesylate","(R)-(+)-Win 55,212-2",W-102,dsm,33,2,,,,,,,,,,,,,,G,V,,,,+,+,+,1,Cc1c(C(=O)c2cccc3ccccc23)c2cccc3c2n1[C@H](CN1CCOCC1)CO3
+693,LATCA,"( R)-(+)-Win 55,212-2 Mesylate","(R)-(+)-Win 55,212-2",W-102,tsm,33,1,,,,,,,,,,,,,,S,L,,,T,nd,nd,+,nd,Cc1c(C(=O)c2cccc3ccccc23)c2cccc3c2n1[C@H](CN1CCOCC1)CO3
+206,LATCA,"( R)-(+)-Win 55,212-2 Mesylate","(R)-(+)-Win 55,212-2",W-102,dsm,33,1,,,,,,,,,,,,,,S,L,,,,+,+,+,1,Cc1c(C(=O)c2cccc3ccccc23)c2cccc3c2n1[C@H](CN1CCOCC1)CO3
+209,LATCA,"( R)-(+)-Win 55,212-2 Mesylate","(R)-(+)-Win 55,212-2",W-102,dsm,33,6,,,,,,,,,,,,,,S,M,,,,+,+,+,1,Cc1c(C(=O)c2cccc3ccccc23)c2cccc3c2n1[C@H](CN1CCOCC1)CO3
+208,LATCA,"( R)-(+)-Win 55,212-2 Mesylate","(R)-(+)-Win 55,212-2",W-102,dsm,33,3,,,,,,,,,,,,,,T,,,N,,-,+,+,10,Cc1c(C(=O)c2cccc3ccccc23)c2cccc3c2n1[C@H](CN1CCOCC1)CO3
+345,Selleck_L1300,Dexmedetomidine HCl,Dexmedetomidine,S2090,tsm,34,28_3,D,L,,,,,,,,,,,,,,,L,,-,+,+,10,Cc1cccc([C@H](C)c2c[nH]cn2)c1C
+346,Selleck_L1300,Dexmedetomidine HCl,Dexmedetomidine,S2090,tsm,34,28_6,D,,,I,,,,,,,,,,,I,,,,-,-,+,100,Cc1cccc([C@H](C)c2c[nH]cn2)c1C
+38,Selleck_L1300,Dexmedetomidine,Dexmedetomidine,S3075,dsm,34,1,D,,,,I,,,,,,,,,,,,,,-,+,+,10,Cc1cccc([C@H](C)c2c[nH]cn2)c1C
+347,Selleck_L1300,Dexmedetomidine HCl,Dexmedetomidine,S2090,tsm,34,28_11,D,,,,,,,,,,,,,,V,,,,-,+,+,10,Cc1cccc([C@H](C)c2c[nH]cn2)c1C
+557,Selleck_L1300,Etomidate hydrochloride,Etomidate,S4724,tsm,34,122_10,A,M,,F,,,D,,,,,,,,L,,,,+,+,+,1,CCOC(=O)c1cncn1[C@H](C)c1ccccc1
+275,Selleck_L1300,Etomidate,Etomidate,S1329,tsm,34,4_5,M,,,,,,D,,,,,,,,L,,,,-,-,+,100,CCOC(=O)c1cncn1[C@H](C)c1ccccc1
+556,Selleck_L1300,Etomidate hydrochloride,Etomidate,S4724,tsm,34,122_9,M,,,,,,,Y,,,,,,I,,,,,-,+,+,10,CCOC(=O)c1cncn1[C@H](C)c1ccccc1
+276,Selleck_L1300,Etomidate,Etomidate,S1329,tsm,34,4_10,S,,,F,,,,,,,,,,,L,,,,-,+,+,10,CCOC(=O)c1cncn1[C@H](C)c1ccccc1
+274,Selleck_L1300,Etomidate,Etomidate,S1329,tsm,34,4_2,,L,,F,,,,,,,,V,,,,,,,-,-,+,100,CCOC(=O)c1cncn1[C@H](C)c1ccccc1
+555,Selleck_L1300,Etomidate hydrochloride,Etomidate,S4724,tsm,34,122_5,,Y,,,,,,,A,,,,,V,,,,,-,+,+,10,CCOC(=O)c1cncn1[C@H](C)c1ccccc1
+184,Selleck_L1300,Etomidate hydrochloride,Etomidate,S4724,dsm,34,3,,Y,,,,,,,,,,Q,,V,,,,,-,-,+,100,CCOC(=O)c1cncn1[C@H](C)c1ccccc1
+183,Selleck_L1300,Etomidate hydrochloride,Etomidate,S4724,dsm,34,1,,Y,,,,,,,,,,,,V,,,,,-,+,+,10,CCOC(=O)c1cncn1[C@H](C)c1ccccc1
+277,Selleck_L1300,Etomidate,Etomidate,S1329,tsm,34,4_12,,,A,,,,,,,,,,,L,,W,,,-,+,+,10,CCOC(=O)c1cncn1[C@H](C)c1ccccc1
+554,Selleck_L1300,Etomidate hydrochloride,Etomidate,S4724,tsm,34,122_2,,,,F,,,,,,,T,,,V,,,,,-,+,+,10,CCOC(=O)c1cncn1[C@H](C)c1ccccc1
+83,Selleck_L1300,Vanillyl Butyl Ether,Vanillyl Butyl Ether,S3965,dsm,35,5,R,,,,,,,,,,,,,H,,,,,-,-,+,100,CCCCOCC1=CC(=C(C=C1)O)OC
+82,Selleck_L1300,Vanillyl Butyl Ether,Vanillyl Butyl Ether,S3965,dsm,35,1,,,,,,,,,,,,,,H,,,,T,-,-,+,100,CCCCOCC1=CC(=C(C=C1)O)OC
+272,Selleck_L1300,Bicalutamide,Bicalutamide,S1190,tsm,36,1_1,D,,,,,,,,,,,,I,,V,,,,-,-,+,100,CC(O)(CS(=O)(=O)c1ccc(F)cc1)C(=O)Nc1ccc(C#N)c(C(F)(F)F)c1
+2,Selleck_L1300,Bicalutamide,Bicalutamide,S1190,dsm,36,2,,,,,,,,,,,,,,,I,,F,,-,+,+,10,CC(O)(CS(=O)(=O)c1ccc(F)cc1)C(=O)Nc1ccc(C#N)c(C(F)(F)F)c1
+1,Selleck_L1300,Bicalutamide,Bicalutamide,S1190,dsm,36,1,,,,,,,,,,,,,,,I,,W,,-,-,+,100,CC(O)(CS(=O)(=O)c1ccc(F)cc1)C(=O)Nc1ccc(C#N)c(C(F)(F)F)c1
+464,Selleck_L1300,Efavirenz,Efavirenz,S4685,tsm,36,82_8,S,T,,,,,,,,,,,,,,W,,,-,+,+,10,O=C1Nc2ccc(Cl)cc2[C@@](C#CC2CC2)(C(F)(F)F)O1
+465,Selleck_L1300,Efavirenz,Efavirenz,S4685,tsm,36,82_10,S,,,,,,,,,,,,,,,W,S,,-,+,+,10,O=C1Nc2ccc(Cl)cc2[C@@](C#CC2CC2)(C(F)(F)F)O1
+462,Selleck_L1300,Efavirenz,Efavirenz,S4685,tsm,36,82_3,T,,,M,,,,,,,,,,,G,,,,-,-,+,100,O=C1Nc2ccc(Cl)cc2[C@@](C#CC2CC2)(C(F)(F)F)O1
+461,Selleck_L1300,Efavirenz,Efavirenz,S4685,tsm,36,82_1,,,I,,,,,L,,,,,,,,,H,,-,+,+,10,O=C1Nc2ccc(Cl)cc2[C@@](C#CC2CC2)(C(F)(F)F)O1
+467,Selleck_L1300,Efavirenz,Efavirenz,S4685,tsm,36,82_12,,,,,,,,,,,,,,N,,M,,Y,-,+,+,10,O=C1Nc2ccc(Cl)cc2[C@@](C#CC2CC2)(C(F)(F)F)O1
+463,Selleck_L1300,Efavirenz,Efavirenz,S4685,tsm,36,82_6,,,,,,,,,,,,,,Q,,,,Y,-,+,+,10,O=C1Nc2ccc(Cl)cc2[C@@](C#CC2CC2)(C(F)(F)F)O1
+120,Selleck_L1300,Efavirenz,Efavirenz,S4685,dsm,36,1,,,,,,,,,,,,,,,,,L,V,-,+,+,10,O=C1Nc2ccc(Cl)cc2[C@@](C#CC2CC2)(C(F)(F)F)O1
+466,Selleck_L1300,Efavirenz,Efavirenz,S4685,tsm,36,82_11,,,,,,,,,,,,,,,,,T,V,-,+,+,10,O=C1Nc2ccc(Cl)cc2[C@@](C#CC2CC2)(C(F)(F)F)O1
+325,Selleck_L1300,Flutamide,Flutamide,1500995,tsm,36,21_4,A,I,,,,,,,,,,,,,,,,S,-,+,+,10,CC(C)C(=O)Nc1ccc([N+](=O)[O-])c(C(F)(F)F)c1
+676,LATCA,Flutamide,Flutamide,1500995,tsm,36,1,A,,,,,,,,,,,,F,,,,S,,nd,nd,+,nd,CC(C)C(=O)Nc1ccc([N+](=O)[O-])c(C(F)(F)F)c1
+691,LATCA,Flutamide,Flutamide,F 9397,tsm,36,1,A,,,,,,,,,,,,F,,,,S,,nd,nd,+,nd,CC(C)C(=O)Nc1ccc([N+](=O)[O-])c(C(F)(F)F)c1
+324,Selleck_L1300,Flutamide,Flutamide,1500995,tsm,36,21_3,A,,,,,,,,,,,,F,,,,S,,-,+,+,10,CC(C)C(=O)Nc1ccc([N+](=O)[O-])c(C(F)(F)F)c1
+31,Selleck_L1300,Flutamide,Flutamide,1500995,dsm,36,4,A,,,,,,,,,,,,,,,,,,-,-,+,100,CC(C)C(=O)Nc1ccc([N+](=O)[O-])c(C(F)(F)F)c1
+326,Selleck_L1300,Flutamide,Flutamide,1500995,tsm,36,21_5,D,,,,,,,,,,,,I,,V,,,,-,+,+,10,CC(C)C(=O)Nc1ccc([N+](=O)[O-])c(C(F)(F)F)c1
+28,Selleck_L1300,Flutamide,Flutamide,1500995,dsm,36,1,L,,,,,,,,,,,,,,,,,,-,-,+,100,CC(C)C(=O)Nc1ccc([N+](=O)[O-])c(C(F)(F)F)c1
+34,Selleck_L1300,Flutamide,Flutamide,1500995,dsm,36,8,V,,,,,,,,,,,,,,,,,,-,-,+,100,CC(C)C(=O)Nc1ccc([N+](=O)[O-])c(C(F)(F)F)c1
+692,LATCA,Flutamide,Flutamide,F 9397,tsm,36,5,,I,,,,,,,,,M,,,,,,,G,nd,nd,+,nd,CC(C)C(=O)Nc1ccc([N+](=O)[O-])c(C(F)(F)F)c1
+328,Selleck_L1300,Flutamide,Flutamide,1500995,tsm,36,21_11,,,I,,,,,,,,L,,,,,,M,,-,+,+,10,CC(C)C(=O)Nc1ccc([N+](=O)[O-])c(C(F)(F)F)c1
+327,Selleck_L1300,Flutamide,Flutamide,1500995,tsm,36,21_6,,,I,,,,,,,,,,,,M,,M,,-,+,+,10,CC(C)C(=O)Nc1ccc([N+](=O)[O-])c(C(F)(F)F)c1
+30,Selleck_L1300,Flutamide,Flutamide,1500995,dsm,36,3,,,,,,,,,,,H,,V,,,,,,-,-,+,100,CC(C)C(=O)Nc1ccc([N+](=O)[O-])c(C(F)(F)F)c1
+32,Selleck_L1300,Flutamide,Flutamide,1500995,dsm,36,5,,,,,,,,,,,,M,,,,,,,-,-,+,100,CC(C)C(=O)Nc1ccc([N+](=O)[O-])c(C(F)(F)F)c1
+29,Selleck_L1300,Flutamide,Flutamide,1500995,dsm,36,2,,,,,,,,,,,,,I,,,,,,-,-,+,100,CC(C)C(=O)Nc1ccc([N+](=O)[O-])c(C(F)(F)F)c1
+33,Selleck_L1300,Flutamide,Flutamide,1500995,dsm,36,6,,,,,,,,,,,,,T,,,,,,-,-,+,100,CC(C)C(=O)Nc1ccc([N+](=O)[O-])c(C(F)(F)F)c1
+284,Selleck_L1300,Riluzole,Riluzole,R-116,tsm,36,9_4,E,,M,,,,,,,,A,,,,,,,,-,-,+,100,Nc1nc2ccc(OC(F)(F)F)cc2s1
+702,LATCA,Riluzole,Riluzole,R-116,tsm,36,1,Q,L,,,,,,,,,,,,L,,,,,nd,nd,+,nd,Nc1nc2ccc(OC(F)(F)F)cc2s1
+285,Selleck_L1300,Riluzole,Riluzole,R-116,tsm,36,9_6,Q,,,,,,,,,,,,,L,,,E,,-,-,+,100,Nc1nc2ccc(OC(F)(F)F)cc2s1
+287,Selleck_L1300,Riluzole,Riluzole,R-116,tsm,36,9_9,S,,,I,,,,,,,,,,I,,,,,-,-,+,100,Nc1nc2ccc(OC(F)(F)F)cc2s1
+288,Selleck_L1300,Riluzole,Riluzole,R-116,tsm,36,9_12,S,,,,,,,,,,,G,,I,,,,,-,-,+,100,Nc1nc2ccc(OC(F)(F)F)cc2s1
+286,Selleck_L1300,Riluzole,Riluzole,R-116,tsm,36,9_8,S,,,,,,,,,,,,I,L,,,,,-,+,+,10,Nc1nc2ccc(OC(F)(F)F)cc2s1
+221,LATCA,Riluzole,Riluzole,R-116,dsm,36,1,S,,,,,,,,,,,,,I,,,,,-,+,+,10,Nc1nc2ccc(OC(F)(F)F)cc2s1
+16,Selleck_L1300,Riluzole,Riluzole,R-116,dsm,36,1,,,,,,,,,,,,,,L,M,,,,-,-,+,100,Nc1nc2ccc(OC(F)(F)F)cc2s1
+306,Selleck_L1300,Capsaicin(Vanilloid),Capsaicin,S1990,tsm,37,16_5,M,L,,,,,,,,,,,,A,,,,,-,-,+,100,COc1cc(CNC(=O)CCCC/C=C/C(C)C)ccc1O
+310,Selleck_L1300,Capsaicin(Vanilloid),Capsaicin,S1990,tsm,37,16_11,M,,,,,,,,,,F,,,T,,,,,-,+,+,10,COc1cc(CNC(=O)CCCC/C=C/C(C)C)ccc1O
+311,Selleck_L1300,Capsaicin(Vanilloid),Capsaicin,S1990,tsm,37,16_12,,Y,,,,,,,,,,,,I,,,N,,-,-,+,100,COc1cc(CNC(=O)CCCC/C=C/C(C)C)ccc1O
+24,Selleck_L1300,Capsaicin(Vanilloid),Capsaicin,S1990,dsm,37,5,,Y,,,,,,,,,,,,T,,,,,-,-,+,100,COc1cc(CNC(=O)CCCC/C=C/C(C)C)ccc1O
+25,Selleck_L1300,Capsaicin(Vanilloid),Capsaicin,S1990,dsm,37,7,,Y,,,,,,,,,,,,V,,,,,-,-,+,100,COc1cc(CNC(=O)CCCC/C=C/C(C)C)ccc1O
+308,Selleck_L1300,Capsaicin(Vanilloid),Capsaicin,S1990,tsm,37,16_9,,,,,D,,,,A,,,V,,,,,,,-,+,+,10,COc1cc(CNC(=O)CCCC/C=C/C(C)C)ccc1O
+23,Selleck_L1300,Capsaicin(Vanilloid),Capsaicin,S1990,dsm,37,1,,,,,,,,,,,A,,,,,,,,-,-,+,100,COc1cc(CNC(=O)CCCC/C=C/C(C)C)ccc1O
+307,Selleck_L1300,Capsaicin(Vanilloid),Capsaicin,S1990,tsm,37,16_8,,,,,,,,,,,G,,,T,,,,,-,-,+,100,COc1cc(CNC(=O)CCCC/C=C/C(C)C)ccc1O
+305,Selleck_L1300,Capsaicin(Vanilloid),Capsaicin,S1990,tsm,37,16_2,,,,,,,,,,,M,,,A,,,M,,-,-,+,100,COc1cc(CNC(=O)CCCC/C=C/C(C)C)ccc1O
+309,Selleck_L1300,Capsaicin(Vanilloid),Capsaicin,S1990,tsm,37,16_10,,,,,,,,,,,S,I,,,,,F,,-,+,+,10,COc1cc(CNC(=O)CCCC/C=C/C(C)C)ccc1O
+548,Selleck_L1300,Dihydrocapsaicin,Dihydrocapsaicin,S9086,tsm,37,120_9,A,,,,,,,,,,,,,H,M,,,,-,-,+,100,COc1cc(CNC(=O)CCCCCCC(C)C)ccc1O
+550,Selleck_L1300,Dihydrocapsaicin,Dihydrocapsaicin,S9086,tsm,37,120_11,M,T,,,,,,,,,,,,A,,,,,-,+,+,10,COc1cc(CNC(=O)CCCCCCC(C)C)ccc1O
+541,Selleck_L1300,Dihydrocapsaicin,Dihydrocapsaicin,S9086,tsm,37,120_2,Q,,,,,,,,,,,,,T,,,H,,-,+,+,10,COc1cc(CNC(=O)CCCCCCC(C)C)ccc1O
+547,Selleck_L1300,Dihydrocapsaicin,Dihydrocapsaicin,S9086,tsm,37,120_8,R,,,,,,,,,,S,I,,,,,,,+,+,+,1,COc1cc(CNC(=O)CCCCCCC(C)C)ccc1O
+545,Selleck_L1300,Dihydrocapsaicin,Dihydrocapsaicin,S9086,tsm,37,120_6,,I,,,,,,,,,T,,,,,,I,,-,+,+,10,COc1cc(CNC(=O)CCCCCCC(C)C)ccc1O
+543,Selleck_L1300,Dihydrocapsaicin,Dihydrocapsaicin,S9086,tsm,37,120_4,,L,,,,,D,,,,,,,H,,,,,-,+,+,10,COc1cc(CNC(=O)CCCCCCC(C)C)ccc1O
+540,Selleck_L1300,Dihydrocapsaicin,Dihydrocapsaicin,S9086,tsm,37,120_1,,L,,,,,,,,,A,,,,,,M,,-,+,+,10,COc1cc(CNC(=O)CCCCCCC(C)C)ccc1O
+549,Selleck_L1300,Dihydrocapsaicin,Dihydrocapsaicin,S9086,tsm,37,120_10,,Y,,,,,,M,,,,,,V,,,,,-,+,+,10,COc1cc(CNC(=O)CCCCCCC(C)C)ccc1O
+177,Selleck_L1300,Dihydrocapsaicin,Dihydrocapsaicin,S9086,dsm,37,4,,Y,,,,,,,,,,,,S,,,,,-,-,+,100,COc1cc(CNC(=O)CCCCCCC(C)C)ccc1O
+176,Selleck_L1300,Dihydrocapsaicin,Dihydrocapsaicin,S9086,dsm,37,3,,Y,,,,,,,,,,,,V,,,,,+,+,+,1,COc1cc(CNC(=O)CCCCCCC(C)C)ccc1O
+542,Selleck_L1300,Dihydrocapsaicin,Dihydrocapsaicin,S9086,tsm,37,120_3,,,,,L,,,L,,,A,,,,,,,,-,+,+,10,COc1cc(CNC(=O)CCCCCCC(C)C)ccc1O
+544,Selleck_L1300,Dihydrocapsaicin,Dihydrocapsaicin,S9086,tsm,37,120_5,,,,,,,,L,,,A,N,,,,,,,-,+,+,10,COc1cc(CNC(=O)CCCCCCC(C)C)ccc1O
+546,Selleck_L1300,Dihydrocapsaicin,Dihydrocapsaicin,S9086,tsm,37,120_7,,,,,,,,,,,A,,,S,,,,,-,+,+,10,COc1cc(CNC(=O)CCCCCCC(C)C)ccc1O
+174,Selleck_L1300,Dihydrocapsaicin,Dihydrocapsaicin,S9086,dsm,37,1,,,,,,,,,,,A,,,,,,,,-,+,+,10,COc1cc(CNC(=O)CCCCCCC(C)C)ccc1O
+551,Selleck_L1300,Dihydrocapsaicin,Dihydrocapsaicin,S9086,tsm,37,120_12,,,,,,,,,,,G,,,T,,,,,-,+,+,10,COc1cc(CNC(=O)CCCCCCC(C)C)ccc1O
+175,Selleck_L1300,Dihydrocapsaicin,Dihydrocapsaicin,S9086,dsm,37,2,,,,,,,,,,,G,,,,,,,,-,-,+,100,COc1cc(CNC(=O)CCCCCCC(C)C)ccc1O
+178,Selleck_L1300,Dihydrocapsaicin,Dihydrocapsaicin,S9086,dsm,37,5,,,,,,,,,,,T,I,,,,,,,-,+,+,10,COc1cc(CNC(=O)CCCCCCC(C)C)ccc1O
+63,Selleck_L1300,Moguisteine,Moguisteine,S3104,dsm,37,1,,Y,,,,,,,,,,,,V,,,,,-,+,+,10,CCOC(=O)CC(=O)N1CCSC1COc1ccccc1OC
+396,Selleck_L1300,Nonivamide,Nonivamide,S3935,tsm,37,57_3,R,I,,,,,,,,,,,,S,,,,,-,-,+,100,CCCCCCCCC(=O)NCc1ccc(O)c(OC)c1
+80,Selleck_L1300,Nonivamide,Nonivamide,S3935,dsm,37,7,,Y,,,,,,,,,,,,S,,,,,-,-,+,100,CCCCCCCCC(=O)NCc1ccc(O)c(OC)c1
+81,Selleck_L1300,Nonivamide,Nonivamide,S3935,dsm,37,8,,Y,,,,,,,,,,,,T,,,,,-,+,+,10,CCCCCCCCC(=O)NCc1ccc(O)c(OC)c1
+76,Selleck_L1300,Nonivamide,Nonivamide,S3935,dsm,37,2,,Y,,,,,,,,,,,,V,,,,,-,+,+,10,CCCCCCCCC(=O)NCc1ccc(O)c(OC)c1
+398,Selleck_L1300,Nonivamide,Nonivamide,S3935,tsm,37,57_12,,,,I,,,,,,,,,,,,,H,,-,-,+,100,CCCCCCCCC(=O)NCc1ccc(O)c(OC)c1
+77,Selleck_L1300,Nonivamide,Nonivamide,S3935,dsm,37,3,,,,,,,,,,,A,,,,,,,,-,-,+,100,CCCCCCCCC(=O)NCc1ccc(O)c(OC)c1
+397,Selleck_L1300,Nonivamide,Nonivamide,S3935,tsm,37,57_6,,,,,,,,,,,F,,,A,,,,S,-,-,+,100,CCCCCCCCC(=O)NCc1ccc(O)c(OC)c1
+78,Selleck_L1300,Nonivamide,Nonivamide,S3935,dsm,37,4,,,,,,,,,,,T,V,,,,,,,-,+,+,10,CCCCCCCCC(=O)NCc1ccc(O)c(OC)c1
+79,Selleck_L1300,Nonivamide,Nonivamide,S3935,dsm,37,6,,,,,,,,,,,,,,,V,,H,,-,-,+,100,CCCCCCCCC(=O)NCc1ccc(O)c(OC)c1
+75,Selleck_L1300,Nonivamide,Nonivamide,S3935,dsm,37,1,,,,,,,,,,,,,,,,,H,,-,+,+,10,CCCCCCCCC(=O)NCc1ccc(O)c(OC)c1
+147,Selleck_L1300,Olanexidine Hydrochloride semihydrate,Olanexidine,S5924,dsm,37,1,,,,,,,,,,,,,,L,,,,D,-,+,tox,10,CCCCCCCC/N=C(N)/N=C(\N)NCc1ccc(Cl)c(Cl)c1
+150,Selleck_L1300,Olanexidine Hydrochloride semihydrate,Olanexidine,S5924,dsm,37,8,,,,,,,,,,,,,,,,,H,D,-,+,tox,10,CCCCCCCC/N=C(N)/N=C(\N)NCc1ccc(Cl)c(Cl)c1
+149,Selleck_L1300,Olanexidine Hydrochloride semihydrate,Olanexidine,S5924,dsm,37,6,,,,,,,,,,,,,,,,,I,E,-,+,tox,10,CCCCCCCC/N=C(N)/N=C(\N)NCc1ccc(Cl)c(Cl)c1
+148,Selleck_L1300,Olanexidine Hydrochloride semihydrate,Olanexidine,S5924,dsm,37,2,,,,,,,,,,,,,,,,,,D,-,+,tox,10,CCCCCCCC/N=C(N)/N=C(\N)NCc1ccc(Cl)c(Cl)c1
+8,Selleck_L1300,Ramelteon,Ramelteon,S1259,dsm,37,1,,Y,,,,,,,,,,,,,I,,,,-,-,+,100,CCC(=O)NCC[C@@H]1CCc2ccc3c(c21)CCO3
+9,Selleck_L1300,Ramelteon,Ramelteon,S1259,dsm,37,3,,,,,G,,,W,,,,,,,,,,,-,-,+,100,CCC(=O)NCC[C@@H]1CCc2ccc3c(c21)CCO3
+39,Selleck_L1300,S- (+)-Rolipram,S-(+)-Rolipram,S2127,dsm,37,1,,,F,,,,,,,,,,,G,,,,,-,-,+,100,COc1ccc([C@H]2CNC(=O)C2)cc1OC1CCCC1
+351,Selleck_L1300,S- (+)-Rolipram,S-(+)-Rolipram,S2127,tsm,37,30_2,,,W,,,,,,,,,,,A,,,F,,-,-,+,100,COc1ccc([C@H]2CNC(=O)C2)cc1OC1CCCC1
+563,Selleck_L1300,Cinacalcet,Cinacalcet,S5191,tsm,38,123_11,D,,,,,,,,T,,,V,,,,,,,+,+,+,1,C[C@@H](NCCCc1cccc(C(F)(F)F)c1)c1cccc2ccccc12
+282,Selleck_L1300,Cinacalcet HCl,Cinacalcet,S1260,tsm,38,6_12,D,,,,,,,,,A,,,,I,,,,,-,+,+,10,C[C@@H](NCCCc1cccc(C(F)(F)F)c1)c1cccc2ccccc12
+280,Selleck_L1300,Cinacalcet HCl,Cinacalcet,S1260,tsm,38,6_3,D,,,,,,,,,M,,,,,,,I,,-,+,+,10,C[C@@H](NCCCc1cccc(C(F)(F)F)c1)c1cccc2ccccc12
+558,Selleck_L1300,Cinacalcet,Cinacalcet,S5191,tsm,38,123_2,D,,,,,,,,,,F,,,,,,I,,-,+,+,10,C[C@@H](NCCCc1cccc(C(F)(F)F)c1)c1cccc2ccccc12
+281,Selleck_L1300,Cinacalcet HCl,Cinacalcet,S1260,tsm,38,6_6,D,,,,,,,,,,F,,,,,,I,,-,+,+,10,C[C@@H](NCCCc1cccc(C(F)(F)F)c1)c1cccc2ccccc12
+560,Selleck_L1300,Cinacalcet,Cinacalcet,S5191,tsm,38,123_8,D,,,,,,,,,,G,M,,,,,,,-,-,+,100,C[C@@H](NCCCc1cccc(C(F)(F)F)c1)c1cccc2ccccc12
+564,Selleck_L1300,Cinacalcet,Cinacalcet,S5191,tsm,38,123_12,D,,,,,,,,,,G,,,,,,F,,-,+,+,10,C[C@@H](NCCCc1cccc(C(F)(F)F)c1)c1cccc2ccccc12
+561,Selleck_L1300,Cinacalcet,Cinacalcet,S5191,tsm,38,123_9,E,,,,,,,,,,A,,,I,,,,,-,+,+,10,C[C@@H](NCCCc1cccc(C(F)(F)F)c1)c1cccc2ccccc12
+279,Selleck_L1300,Cinacalcet HCl,Cinacalcet,S1260,tsm,38,6_2,E,,,,,,,,,,A,,,,,,,,+,+,+,1,C[C@@H](NCCCc1cccc(C(F)(F)F)c1)c1cccc2ccccc12
+562,Selleck_L1300,Cinacalcet,Cinacalcet,S5191,tsm,38,123_10,E,,,,,,,,,,S,,,,,,,,-,+,+,10,C[C@@H](NCCCc1cccc(C(F)(F)F)c1)c1cccc2ccccc12
+559,Selleck_L1300,Cinacalcet,Cinacalcet,S5191,tsm,38,123_5,M,,,,,,,,,,A,N,,,,,,,-,+,+,10,C[C@@H](NCCCc1cccc(C(F)(F)F)c1)c1cccc2ccccc12
+7,Selleck_L1300,Bumetanide,Bumetanide,S1287,dsm,39,1,,,Q,,,,,,,,,K,,,,,,,-,+,+,10,CCCCNc1cc(C(=O)O)cc(S(N)(=O)=O)c1Oc1ccccc1
+283,Selleck_L1300,Clopidogrel,Clopidogrel,S1415,tsm,40,7_4,,,,,,,,,,G,W,,,,G,,,,-,+,+,10,COC(=O)[C@H](c1ccccc1Cl)N1CCc2sccc2C1
+289,Selleck_L1300,Nitazoxanide,Nitazoxanide,S1627,tsm,41,10_1,,,M,,,,G,,,,,,,,L,,,,-,-,+,100,CC(=O)Oc1ccccc1C(=O)Nc1ncc([N+](=O)[O-])s1
+294,Selleck_L1300,Monobenzone,Monobenzone,S1652,tsm,42,12_4,N,,,,,,,,,,,M,,T,,,,,-,-,+,100,Oc1ccc(OCc2ccccc2)cc1
+296,Selleck_L1300,Monobenzone,Monobenzone,S1652,tsm,42,12_10,,,,,,,,M,,,,,,T,G,,,,-,-,+,100,Oc1ccc(OCc2ccccc2)cc1
+295,Selleck_L1300,Monobenzone,Monobenzone,S1652,tsm,42,12_5,,,,,,,,,,H,,M,,V,,,,,-,-,+,100,Oc1ccc(OCc2ccccc2)cc1
+20,Selleck_L1300,Monobenzone,Monobenzone,S1652,dsm,42,2,,,,,,,,,,,H,,,I,,,,,-,-,+,100,Oc1ccc(OCc2ccccc2)cc1
+292,Selleck_L1300,Monobenzone,Monobenzone,S1652,tsm,42,12_2,,,,,,,,,,,M,,,T,L,,,,-,-,+,100,Oc1ccc(OCc2ccccc2)cc1
+293,Selleck_L1300,Monobenzone,Monobenzone,S1652,tsm,42,12_3,,,,,,,,,,,V,,,A,G,,,,-,-,+,100,Oc1ccc(OCc2ccccc2)cc1
+297,Selleck_L1300,Monobenzone,Monobenzone,S1652,tsm,42,12_11,,,,,,,,,,,,I,,V,,,E,,-,-,+,100,Oc1ccc(OCc2ccccc2)cc1
+291,Selleck_L1300,Monobenzone,Monobenzone,S1652,tsm,42,12_1,,,,,,,,,,,,,T,T,,,K,,-,-,+,100,Oc1ccc(OCc2ccccc2)cc1
+19,Selleck_L1300,Monobenzone,Monobenzone,S1652,dsm,42,1,,,,,,,,,,,,,,I,,,F,,-,-,+,100,Oc1ccc(OCc2ccccc2)cc1
+21,Selleck_L1300,Monobenzone,Monobenzone,S1652,dsm,42,3,,,,,,,,,,,,,,T,,,,H,-,-,+,100,Oc1ccc(OCc2ccccc2)cc1
+22,Selleck_L1300,Monobenzone,Monobenzone,S1652,dsm,42,7,,,,,,,,,,,,,,V,,,,F,-,-,+,100,Oc1ccc(OCc2ccccc2)cc1
+299,Selleck_L1300,Praziquantel,Praziquantel,S1691,tsm,43,13_6,,L,F,,,,,,W,,M,,,,,,,,-,-,+,100,O=C(C1CCCCC1)N1CC(=O)N2CCc3ccccc3C2C1
+301,Selleck_L1300,Praziquantel,Praziquantel,S1691,tsm,43,13_12,,,Y,,,,,,,,H,,,I,,,,,-,-,+,100,O=C(C1CCCCC1)N1CC(=O)N2CCc3ccccc3C2C1
+298,Selleck_L1300,Praziquantel,Praziquantel,S1691,tsm,43,13_4,,,Y,,,,,,,,L,,,,G,,,,-,+,+,10,O=C(C1CCCCC1)N1CC(=O)N2CCc3ccccc3C2C1
+300,Selleck_L1300,Praziquantel,Praziquantel,S1691,tsm,43,13_10,,,,,,,,W,,,H,,,,G,,,,-,-,+,100,O=C(C1CCCCC1)N1CC(=O)N2CCc3ccccc3C2C1
+17,Selleck_L1300,Nevirapine,Nevirapine,S1742,dsm,44,1,,,,F,,,,,,,,,,Q,,,,,-,+,+,10,Cc1ccnc2c1NC(=O)c1cccnc1N2C1CC1
+313,Selleck_L1300,Diclazuril,Diclazuril,S2028,tsm,45,17_5,,I,,,,,G,,,,,,,,M,,,,+,+,+,1,N#CC(c1ccc(Cl)cc1)c1c(Cl)cc(-n2ncc(=O)[nH]c2=O)cc1Cl
+312,Selleck_L1300,Diclazuril,Diclazuril,S2028,tsm,45,17_4,,,,,,,G,,,,,,,,N,,,Y,+,+,+,1,N#CC(c1ccc(Cl)cc1)c1c(Cl)cc(-n2ncc(=O)[nH]c2=O)cc1Cl
+316,Selleck_L1300,Diclazuril,Diclazuril,S2028,tsm,45,17_11,,,,,,,G,,,,,,,,,,T,H,+,+,+,1,N#CC(c1ccc(Cl)cc1)c1c(Cl)cc(-n2ncc(=O)[nH]c2=O)cc1Cl
+314,Selleck_L1300,Diclazuril,Diclazuril,S2028,tsm,45,17_7,,,,,,,,,,,M,,,,I,,,I,+,+,+,1,N#CC(c1ccc(Cl)cc1)c1c(Cl)cc(-n2ncc(=O)[nH]c2=O)cc1Cl
+315,Selleck_L1300,Diclazuril,Diclazuril,S2028,tsm,45,17_8,,,,,,,,,,,,V,,,I,,,I,+,+,+,1,N#CC(c1ccc(Cl)cc1)c1c(Cl)cc(-n2ncc(=O)[nH]c2=O)cc1Cl
+417,Selleck_L1300,Triclabendazole,Triclabendazole,S4114,tsm,45,64_10,A,,,,,,,,,,F,,,V,,,,,-,-,+,100,CSc1nc2cc(Cl)c(Oc3cccc(Cl)c3Cl)cc2[nH]1
+416,Selleck_L1300,Triclabendazole,Triclabendazole,S4114,tsm,45,64_9,S,,,,,,,,,,,,,Q,I,,,,-,+,+,10,CSc1nc2cc(Cl)c(Oc3cccc(Cl)c3Cl)cc2[nH]1
+413,Selleck_L1300,Triclabendazole,Triclabendazole,S4114,tsm,45,64_4,,,L,,,,,,,,,D,,G,,,,,-,+,+,10,CSc1nc2cc(Cl)c(Oc3cccc(Cl)c3Cl)cc2[nH]1
+414,Selleck_L1300,Triclabendazole,Triclabendazole,S4114,tsm,45,64_5,,,L,,,,,,,,,,,G,,,T,,-,+,+,10,CSc1nc2cc(Cl)c(Oc3cccc(Cl)c3Cl)cc2[nH]1
+412,Selleck_L1300,Triclabendazole,Triclabendazole,S4114,tsm,45,64_1,,,,,,,,,,,F,,,H,,W,,,-,-,+,100,CSc1nc2cc(Cl)c(Oc3cccc(Cl)c3Cl)cc2[nH]1
+415,Selleck_L1300,Triclabendazole,Triclabendazole,S4114,tsm,45,64_7,,,,,,,,,,,,,,T,L,,W,,-,+,+,10,CSc1nc2cc(Cl)c(Oc3cccc(Cl)c3Cl)cc2[nH]1
+317,Selleck_L1300,Oxytetracycline Dihydrate,Oxytetracycline,S2052,tsm,46,18_3,R,,,,,,,,,,,,,I,,,M,,-,-,+,100,CN(C)[C@@H]1C(O)=C(C(N)=O)C(=O)[C@@]2(O)C(O)=C3C(=O)c4c(O)cccc4[C@@](C)(O)[C@H]3[C@H](O)[C@@H]12
+318,Selleck_L1300,Oxytetracycline Dihydrate,Oxytetracycline,S2052,tsm,46,18_10,,L,,,,L,,,,,G,,,,,,,G,-,-,+,100,CN(C)[C@@H]1C(O)=C(C(N)=O)C(=O)[C@@]2(O)C(O)=C3C(=O)c4c(O)cccc4[C@@](C)(O)[C@H]3[C@H](O)[C@@H]12
+339,Selleck_L1300,"Seratrodast(AA-2414, ABT-001)",Seratrodast,S2072,tsm,47,24_11,,,M,,,,,,,G,,,,M,,,,,-,+,+,10,CC1=C(C)C(=O)C(C(CCCCCC(=O)O)c2ccccc2)=C(C)C1=O
+342,Selleck_L1300,Artemether,Artemether,S2264,tsm,48,26_1,R,L,,,L,,,,,,,,,Q,,,,,-,-,+,100,CO[C@H]1O[C@@H]2O[C@@]3(C)CC[C@H]4[C@H](C)CC[C@@H]([C@H]1C)[C@]42OO3
+343,Selleck_L1300,Artemether,Artemether,S2264,tsm,48,26_12,,Y,,V,,,,,,,,,,,I,,,,-,-,+,100,CO[C@H]1O[C@@H]2O[C@@]3(C)CC[C@H]4[C@H](C)CC[C@@H]([C@H]1C)[C@]42OO3
+362,Selleck_L1300,Tolbutamide,Tolbutamide,S2443,tsm,49,37_1,,R,F,,,,,,,,S,,,,,,,,-,-,+,100,CCCCNC(=O)NS(=O)(=O)c1ccc(C)cc1
+363,Selleck_L1300,Tolbutamide,Tolbutamide,S2443,tsm,49,37_3,,,,,,L,G,,,,,,,,,,,D,-,-,+,100,CCCCNC(=O)NS(=O)(=O)c1ccc(C)cc1
+49,Selleck_L1300,Tolbutamide,Tolbutamide,S2443,dsm,49,1,,,,,,,G,,,,,,,,,,N,,-,-,+,100,CCCCNC(=O)NS(=O)(=O)c1ccc(C)cc1
+364,Selleck_L1300,Clomipramine HCl,Clomipramine,S2541,tsm,50,38_2,Q,,A,,,,,,,,,,,L,,,,,-,+,+,10,CN(C)CCCN1c2ccccc2CCc2ccc(Cl)cc21
+492,Selleck_L1300,Melitracen hydrochloride,Melitracen,S5034,tsm,50,95_9,L,,,,,,,,,,,,,V,M,,,,-,-,+,100,CN(C)CCC=C1c2ccccc2C(C)(C)c2ccccc21
+491,Selleck_L1300,Melitracen hydrochloride,Melitracen,S5034,tsm,50,95_6,,Y,,,,,,,,,,,,V,,,E,,-,-,+,100,CN(C)CCC=C1c2ccccc2C(C)(C)c2ccccc21
+490,Selleck_L1300,Melitracen hydrochloride,Melitracen,S5034,tsm,50,95_1,,,,,,,,,,,,E,,I,,,H,,-,-,+,100,CN(C)CCC=C1c2ccccc2C(C)(C)c2ccccc21
+135,Selleck_L1300,Melitracen hydrochloride,Melitracen,S5034,dsm,50,5,,,,,,,,,,,,,,I,,,F,,-,-,+,100,CN(C)CCC=C1c2ccccc2C(C)(C)c2ccccc21
+134,Selleck_L1300,Melitracen hydrochloride,Melitracen,S5034,dsm,50,1,,,,,,,,,,,,,,T,,,H,,-,-,+,100,CN(C)CCC=C1c2ccccc2C(C)(C)c2ccccc21
+119,Selleck_L1300,Desogestrel,Desogestrel,S4638,dsm,51,1,,,,,,,,,T,,,,,I,,,,,-,+,+,10,C#C[C@]1(O)CC[C@H]2[C@@H]3CCC4=CCCC[C@@H]4[C@H]3C(=C)C[C@@]21CC
+375,Selleck_L1300,Ethisterone,Ethisterone,S2611,tsm,51,42_6,,,,,G,,,,,,,M,,,L,,,,+,+,+,1,C#C[C@]1(O)CC[C@H]2[C@@H]3CCC4=CC(=O)CC[C@]4(C)[C@H]3CC[C@@]21C
+12,Selleck_L1300,Lynestrenol,Lynestrenol,S4883,dsm,51,1,,,,,,,,,,,W,,,,,,,Q,+,+,+,1,C#C[C@]1(O)CC[C@H]2[C@@H]3CCC4=CCCC[C@@H]4[C@H]3CC[C@@]21C
+13,Selleck_L1300,Lynestrenol,Lynestrenol,S4883,dsm,51,2,,,,,,,,,,,,,,G,,,S,,+,+,+,1,C#C[C@]1(O)CC[C@H]2[C@@H]3CCC4=CCCC[C@@H]4[C@H]3CC[C@@]21C
+681,LATCA,Norethindrone,Norethindrone,1500437,tsm,51,1,N,T,,,,,,,,,,,,I,,,,,nd,nd,+,nd,C#CC1(O)CCC2C3CCC4=CC(=O)CCC4C3CCC21C
+682,LATCA,Norethindrone,Norethindrone,1500437,tsm,51,2,R,T,,,,,,,,,,,,,,,,T,nd,nd,+,nd,C#CC1(O)CCC2C3CCC4=CC(=O)CCC4C3CCC21C
+680,LATCA,Norethindrone acetate,Norethindrone,1500437,tsm,51,2,S,T,,,,,,,,,,,,L,,,,,nd,nd,+,nd,C#CC1(O)CCC2C3CCC4=CC(=O)CCC4C3CCC21C
+679,LATCA,Norethindrone acetate,Norethindrone,1500437,tsm,51,1,S,T,,,,,,,,,,,,,L,,,,nd,nd,+,nd,C#CC1(O)CCC2C3CCC4=CC(=O)CCC4C3CCC21C
+90,Selleck_L1300,Norethindrone,Norethindrone,1500437,dsm,51,1,S,T,,,,,,,,,,,,,,,,,-,+,+,10,C#CC1(O)CCC2C3CCC4=CC(=O)CCC4C3CCC21C
+683,LATCA,Norethindrone,Norethindrone,1500437,tsm,51,3,T,T,,,,,,,,,,,,L,,,,,nd,nd,+,nd,C#CC1(O)CCC2C3CCC4=CC(=O)CCC4C3CCC21C
+382,Selleck_L1300,Linagliptin,Linagliptin,S3031,tsm,52,49_4,S,,,,,,,,,,,,V,,,,H,,-,-,+,100,CC#CCn1c(N2CCC[C@@H](N)C2)nc2c1c(=O)n(Cc1nc(C)c3ccccc3n1)c(=O)n2C
+383,Selleck_L1300,Medroxyprogesterone,Medroxyprogesterone,S3635,tsm,53,53_12,,,,,,,,,,A,,,,L,,,G,,-,-,+,100,CC(=O)[C@@]1(O)CC[C@H]2[C@@H]3C[C@H](C)C4=CC(=O)CC[C@]4(C)[C@H]3CC[C@@]21C
+393,Selleck_L1300,Calcipotriene,Calcipotriene,S3739,tsm,54,55_10,,,,,,,,,,,L,N,,,,,,,-,+,+,10,C=C1/C(=C\C=C2/CCC[C@@]3(C)[C@H]2CC[C@@H]3[C@H](C)/C=C/[C@@H](O)C2CC2)C[C@@H](O)C[C@@H]1O
+394,Selleck_L1300,Calcipotriene,Calcipotriene,S3739,tsm,54,55_11,,,,,,,,,,,T,,,,V,,,,-,-,+,100,C=C1/C(=C\C=C2/CCC[C@@]3(C)[C@H]2CC[C@@H]3[C@H](C)/C=C/[C@@H](O)C2CC2)C[C@@H](O)C[C@@H]1O
+472,Selleck_L1300,Latanoprost,Latanoprost,S4709,tsm,54,86_4,,,Q,,,,,,,,A,,,I,,,,,-,-,+,100,CC(C)OC(=O)CCC/C=C\C[C@H]1[C@@H](O)C[C@@H](O)[C@@H]1CC[C@@H](O)CCc1ccccc1
+473,Selleck_L1300,Latanoprost,Latanoprost,S4709,tsm,54,86_5,,,,,,,,,,,H,,,V,,,E,,-,-,+,100,CC(C)OC(=O)CCC/C=C\C[C@H]1[C@@H](O)C[C@@H](O)[C@@H]1CC[C@@H](O)CCc1ccccc1
+474,Selleck_L1300,Latanoprost,Latanoprost,S4709,tsm,54,86_12,,,,,,,,,,,H,,,,G,,,H,-,-,+,100,CC(C)OC(=O)CCC/C=C\C[C@H]1[C@@H](O)C[C@@H](O)[C@@H]1CC[C@@H](O)CCc1ccccc1
+485,Selleck_L1300,Tafluprost,Tafluprost,S4851,tsm,54,89_6,,,,M,,,,,,,G,,,,,,E,,-,-,+,100,CC(C)OC(=O)CCC/C=C\C[C@H]1[C@@H](O)C[C@@H](O)[C@@H]1/C=C/C(F)(F)COc1ccccc1
+484,Selleck_L1300,Tafluprost,Tafluprost,S4851,tsm,54,89_3,,,,,,,,,,,G,,,I,L,,,,-,-,+,100,CC(C)OC(=O)CCC/C=C\C[C@H]1[C@@H](O)C[C@@H](O)[C@@H]1/C=C/C(F)(F)COc1ccccc1
+254,Selleck_L1300,Lathyrol,Lathyrol,S3921,shuffle,55,4,N,,L,,,,M,,,,,,,L,,,D,,-,-,+,100,C=C1CC[C@H]2[C@@H](/C=C(\C)C(=O)[C@@]3(O)C[C@H](C)[C@H](O)[C@@H]3[C@H]1O)C2(C)C
+253,Selleck_L1300,Lathyrol,Lathyrol,S3921,shuffle,55,1,,,L,,,,M,,,,,,,L,,,N,,-,-,+,100,C=C1CC[C@H]2[C@@H](/C=C(\C)C(=O)[C@@]3(O)C[C@H](C)[C@H](O)[C@@H]3[C@H]1O)C2(C)C
+255,Selleck_L1300,Guanabenz acetate,Guanabenz,S4065,shuffle,56,1,Q,,,,,,,,,,,,,A,,M,,,-,-,+,100,N=C(N)N/N=C/c1c(Cl)cccc1Cl
+256,Selleck_L1300,Guanabenz acetate,Guanabenz,S4065,shuffle,56,2,Q,,,,,,,,,,,,,V,,,,,-,-,+,100,N=C(N)N/N=C/c1c(Cl)cccc1Cl
+552,Selleck_L1300,GUANABENZ,Guanbenz,S4481,tsm,56,121_1,A,,,,D,,,,,,,,,,I,,,,-,+,+,10,N=C(N)N/N=C/c1c(Cl)cccc1Cl
+553,Selleck_L1300,GUANABENZ,Guanbenz,S4481,tsm,56,121_4,E,,,,D,,,,,,,,,,,,,,-,+,+,10,N=C(N)N/N=C/c1c(Cl)cccc1Cl
+182,Selleck_L1300,GUANABENZ,Guanbenz,S4481,dsm,56,1,Q,,,,,,,,,,,,,,,,F,,-,-,+,100,N=C(N)N/N=C/c1c(Cl)cccc1Cl
+411,Selleck_L1300,Loxapine Succinate,Loxapine,S4086,tsm,57,63_5,,,L,,,,,,T,,A,,,,,,,,-,-,+,100,CN1CCN(C2=Nc3ccccc3Oc3ccc(Cl)cc32)CC1
+424,Selleck_L1300,Mezlocillin Sodium,Mezlocillin,S4179,tsm,58,68_9,,Y,,,,,,Y,,,A,,,,,,,,-,-,+,100,CC1(C)S[C@@H]2[C@H](NC(=O)[C@H](NC(=O)N3CCN(S(C)(=O)=O)C3=O)c3ccccc3)C(=O)N2[C@H]1C(=O)O
+425,Selleck_L1300,Mezlocillin Sodium,Mezlocillin,S4179,tsm,58,68_10,,,,,,,,,,,A,T,,,,,,,-,-,+,100,CC1(C)S[C@@H]2[C@H](NC(=O)[C@H](NC(=O)N3CCN(S(C)(=O)=O)C3=O)c3ccccc3)C(=O)N2[C@H]1C(=O)O
+423,Selleck_L1300,Mezlocillin Sodium,Mezlocillin,S4179,tsm,58,68_5,,,,,,,,,,,A,,,,V,,,,-,-,+,100,CC1(C)S[C@@H]2[C@H](NC(=O)[C@H](NC(=O)N3CCN(S(C)(=O)=O)C3=O)c3ccccc3)C(=O)N2[C@H]1C(=O)O
+418,Selleck_L1300,Liothyronine Sodium,Liothyronine,S4217,tsm,59,65_6,,I,,,,,,,,A,,,,,,,L,,-,-,+,100,N[C@@H](Cc1cc(I)c(Oc2ccc(O)c(I)c2)c(I)c1)C(=O)O
+94,Selleck_L1300,Liothyronine sodium,Liothyronine,S4217,dsm,59,3,,,L,,,,,,,M,,,,,,,,,-,-,+,100,N[C@@H](Cc1cc(I)c(Oc2ccc(O)c(I)c2)c(I)c1)C(=O)O
+419,Selleck_L1300,Liothyronine Sodium,Liothyronine,S4217,tsm,59,65_9,,,,,,,,,,M,F,,,,,,I,,-,+,+,10,N[C@@H](Cc1cc(I)c(Oc2ccc(O)c(I)c2)c(I)c1)C(=O)O
+677,LATCA,Tetrac,Tetrac,1500775,tsm,59,1,,,,,,,,,,,W,,,L,M,,,,nd,nd,+,nd,O=C(O)Cc1cc(I)c(Oc2cc(I)c(O)c(I)c2)c(I)c1
+202,LATCA,Tetrac,Tetrac,1500775,dsm,59,1,,,,,,,,,,,,,,L,F,,,,+,+,+,1,O=C(O)Cc1cc(I)c(Oc2cc(I)c(O)c(I)c2)c(I)c1
+265,Selleck_L1300,Phenazopyridine HCl,Phenazopyridine,S4235,shuffle,60,2,D,,,,I,,,,,,,Q,,V,,,,,+,+,+,1,Nc1ccc(/N=N/c2ccccc2)c(N)n1
+266,Selleck_L1300,Phenazopyridine HCl,Phenazopyridine,S4235,shuffle,60,6,D,,,,I,,,,,,,,,T,,,,,-,+,+,10,Nc1ccc(/N=N/c2ccccc2)c(N)n1
+437,Selleck_L1300,Phenazopyridine HCl,Phenazopyridine,S4235,tsm,60,71_11,D,,,,I,,,,,,,,,V,,,,,-,+,+,10,Nc1ccc(/N=N/c2ccccc2)c(N)n1
+264,Selleck_L1300,Phenazopyridine HCl,Phenazopyridine,S4235,shuffle,60,1,S,,L,,,,,,,,,,,T,,,,Q,-,+,+,10,Nc1ccc(/N=N/c2ccccc2)c(N)n1
+444,Selleck_L1300,Chloroxylenol,Chloroxylenol,S4518,tsm,61,75_9,D,,,,,,,,,,,,I,,V,,,,-,-,+,100,Cc1cc(O)cc(C)c1Cl
+443,Selleck_L1300,Chloroxylenol,Chloroxylenol,S4518,tsm,61,75_7,M,,,,,,,,,,F,,,,,,S,,-,-,+,100,Cc1cc(O)cc(C)c1Cl
+442,Selleck_L1300,Chloroxylenol,Chloroxylenol,S4518,tsm,61,75_3,N,I,,,,,,,,,,,,T,,M,,,-,-,+,100,Cc1cc(O)cc(C)c1Cl
+445,Selleck_L1300,Chloroxylenol,Chloroxylenol,S4518,tsm,61,75_10,N,,,,,,,,,W,,,,,,,K,,-,+,+,10,Cc1cc(O)cc(C)c1Cl
+446,Selleck_L1300,Chloroxylenol,Chloroxylenol,S4518,tsm,61,75_12,,,I,M,,,,,,,,,,,,,,Q,-,+,+,10,Cc1cc(O)cc(C)c1Cl
+113,Selleck_L1300,Chloroxylenol,Chloroxylenol,S4518,dsm,61,8,,,I,,,,,,,,,,,,,,,,-,-,+,100,Cc1cc(O)cc(C)c1Cl
+111,Selleck_L1300,Chloroxylenol,Chloroxylenol,S4518,dsm,61,3,,,,,,,,,,,,,,,,,L,V,-,-,+,100,Cc1cc(O)cc(C)c1Cl
+112,Selleck_L1300,Chloroxylenol,Chloroxylenol,S4518,dsm,61,6,,,,,,,,,,,,,,,,,S,Q,-,-,+,100,Cc1cc(O)cc(C)c1Cl
+110,Selleck_L1300,Chloroxylenol,Chloroxylenol,S4518,dsm,61,2,,,,,,,,,,,,,,,,,,Q,-,-,+,100,Cc1cc(O)cc(C)c1Cl
+271,Selleck_L1300,Metyrapone,Metyrapone,S5416,shuffle,62,5,,Y,,,,,,,,,,Q,,V,,,,,-,+,+,10,CC(C)(C(=O)c1cccnc1)c1cccnc1
+267,Selleck_L1300,Metyrapone,Metyrapone,S5416,shuffle,62,1,,Y,,,,,,,,,,,,I,,,,,-,-,+,100,CC(C)(C(=O)c1cccnc1)c1cccnc1
+269,Selleck_L1300,Metyrapone,Metyrapone,S5416,shuffle,62,3,,Y,,,,,,,,,,,,I,,,,,-,+,+,10,CC(C)(C(=O)c1cccnc1)c1cccnc1
+268,Selleck_L1300,Metyrapone,Metyrapone,S5416,shuffle,62,2,,Y,,,,,,,,,,,,V,,,,,-,-,+,100,CC(C)(C(=O)c1cccnc1)c1cccnc1
+262,Selleck_L1300,Hydroxyzine pamoate,Hydroxyzine,S5649,shuffle,63,6,,,L,,,,Q,,,,H,,,,,,,,-,-,+,100,OCCOCCN1CCN(C(c2ccccc2)c2ccc(Cl)cc2)CC1
+261,Selleck_L1300,Hydroxyzine pamoate,Hydroxyzine,S5649,shuffle,63,1,,,L,,,,Q,,,,,,,,,,,,-,-,+,100,OCCOCCN1CCN(C(c2ccccc2)c2ccc(Cl)cc2)CC1
+422,Selleck_L1300,Benzbromarone,Benzbromarone,S4221,tsm,64,67_10,L,,,F,,L,G,,,,,,,,,,,,-,-,+,100,CCc1oc2ccccc2c1C(=O)c1cc(Br)c(O)c(Br)c1
+420,Selleck_L1300,Benzbromarone,Benzbromarone,S4221,tsm,64,67_1,,T,,,G,,Q,,,,,,,,,,,,-,+,+,10,CCc1oc2ccccc2c1C(=O)c1cc(Br)c(O)c(Br)c1
+96,Selleck_L1300,Benzbromarone,Benzbromarone,S4221,dsm,64,1,,,L,,,,M,,,,,,,,,,,,-,+,+,10,CCc1oc2ccccc2c1C(=O)c1cc(Br)c(O)c(Br)c1
+421,Selleck_L1300,Benzbromarone,Benzbromarone,S4221,tsm,64,67_7,,,,,,,Q,,,,,,,H,L,,,,-,+,+,10,CCc1oc2ccccc2c1C(=O)c1cc(Br)c(O)c(Br)c1
+471,Selleck_L1300,Ibudilast,Ibudilast,S4837,tsm,65,85_9,R,I,,,,,,,,,,,,S,,,,,-,+,+,10,CC(C)C(=O)c1c(C(C)C)nn2ccccc12
+126,Selleck_L1300,Ibudilast,Ibudilast,S4837,dsm,65,4,,,,,,,,,,,,,,M,,,L,,-,-,+,100,CC(C)C(=O)c1c(C(C)C)nn2ccccc12
+125,Selleck_L1300,Ibudilast,Ibudilast,S4837,dsm,65,1,,,,,,,,,,,,,,,,H,,Y,-,+,+,10,CC(C)C(=O)c1c(C(C)C)nn2ccccc12
+523,Selleck_L1300,Ibuprofen piconol,Ibuprofen piconol,S6448,tsm,66,114_1,,M,,,,,,,,,L,,,I,,,,,-,+,+,10,CC(C)Cc1ccc(C(C)C(=O)OCc2ccccn2)cc1
+162,Selleck_L1300,Ibuprofen piconol,Ibuprofen piconol,S6448,dsm,66,2,,M,,,,,,,,,,,,I,,,,,-,+,+,10,CC(C)Cc1ccc(C(C)C(=O)OCc2ccccn2)cc1
+525,Selleck_L1300,Ibuprofen piconol,Ibuprofen piconol,S6448,tsm,66,114_12,,,Y,,,,,,,,,,,G,,,,Y,-,+,+,10,CC(C)Cc1ccc(C(C)C(=O)OCc2ccccn2)cc1
+524,Selleck_L1300,Ibuprofen piconol,Ibuprofen piconol,S6448,tsm,66,114_8,,,,,,,,,,,L,E,,T,,,,,-,+,+,10,CC(C)Cc1ccc(C(C)C(=O)OCc2ccccn2)cc1
+163,Selleck_L1300,Ibuprofen piconol,Ibuprofen piconol,S6448,dsm,66,3,,,,,,,,,,,,,,I,,,,,-,-,+,100,CC(C)Cc1ccc(C(C)C(=O)OCc2ccccn2)cc1
+161,Selleck_L1300,Ibuprofen piconol,Ibuprofen piconol,S6448,dsm,66,1,,,,,,,,,,,,,,T,,,,,-,-,+,100,CC(C)Cc1ccc(C(C)C(=O)OCc2ccccn2)cc1
+527,Selleck_L1300,Combretastatin A4,Combretastatin A4,S7783,tsm,67,116_10,N,,,F,,,,,,,,,,T,,,,,-,-,+,100,COc1ccc(/C=C\c2cc(OC)c(OC)c(OC)c2)cc1O
+528,Selleck_L1300,Combretastatin A4,Combretastatin A4,S7783,tsm,67,116_11,,Y,,,,,D,,,,,,,H,,,,,-,-,+,100,COc1ccc(/C=C\c2cc(OC)c(OC)c(OC)c2)cc1O
+529,Selleck_L1300,Combretastatin A4,Combretastatin A4,S7783,tsm,67,116_12,,,,,,,,,,,,,,H,,,,G,-,+,+,10,COc1ccc(/C=C\c2cc(OC)c(OC)c(OC)c2)cc1O
+165,Selleck_L1300,Combretastatin A4,Combretastatin A4,S7783,dsm,67,5,,,,,,,,,,,,,,I,,,,,-,-,+,100,COc1ccc(/C=C\c2cc(OC)c(OC)c(OC)c2)cc1O
+164,Selleck_L1300,Combretastatin A4,Combretastatin A4,S7783,dsm,67,1,,,,,,,,,,,,,,L,M,,,,-,+,+,10,COc1ccc(/C=C\c2cc(OC)c(OC)c(OC)c2)cc1O
+526,Selleck_L1300,Combretastatin A4,Combretastatin A4,S7783,tsm,67,116_4,,,,,,,,,,,,,,T,M,,,T,-,+,+,10,COc1ccc(/C=C\c2cc(OC)c(OC)c(OC)c2)cc1O
+696,LATCA,2-Aminopyrimidine,2-Aminopyrimidine,A78608,tsm,68,3,,,,I,,,,,,W,,,,Q,,,,,nd,nd,+,nd,Nc1ncccn1
+695,LATCA,2-Aminopyrimidine,2-Aminopyrimidine,A78608,tsm,68,1,,,,,,,,M,,W,,,,L,,,,,nd,nd,+,nd,Nc1ncccn1
+210,LATCA,2-Aminopyrimidine,2-Aminopyrimidine,A78608,dsm,68,1,,,,,,,,,,,,,,L,,,,,-,-,+,100,Nc1ncccn1
+701,LATCA,"3-Amino-1,2,4-Triazole carboxylic acid","3-Amino-1,2,4-triazole carboxylic acid",282073,tsm,68,8,,Y,,,,,M,,A,,,,,,,,,,nd,nd,+,nd,C1(=NC(=NN1)N)C(=O)O
+704,LATCA,Dihydroxyacetone,Dihydroxyacetone,D-7753,tsm,69,1,,,,,,,,,,,,,F,,,,I,,nd,nd,+,nd,O=C(CO)CO
+356,Selleck_L1300,Honokiol,Honokiol,S2310,tsm,70,35_1,,L,,,,,,,,,G,,,,,,,G,+,+,tox,1,C=CCc1ccc(O)c(-c2ccc(O)c(CC=C)c2)c1
+354,Selleck_L1300,Magnolol,Magnolol,S2321,tsm,70,34_1,,L,,,,,,,,,G,,,,,,,G,+,+,tox,1,C=CCc1ccc(O)c(-c2cc(CC=C)ccc2O)c1
+40,Selleck_L1300,Magnolol,Magnolol,S2321,dsm,70,1,,,,,,,,,,,H,,,L,,,,,-,+,tox,10,C=CCc1ccc(O)c(-c2cc(CC=C)ccc2O)c1
+44,Selleck_L1300,Magnolol,Magnolol,S2321,dsm,70,6,,,,,,,,,,,H,,,,,,,,-,+,tox,10,C=CCc1ccc(O)c(-c2cc(CC=C)ccc2O)c1
+355,Selleck_L1300,Magnolol,Magnolol,S2321,tsm,70,34_12,,,,,,,,,,,M,T,,,,,,Y,-,+,tox,10,C=CCc1ccc(O)c(-c2cc(CC=C)ccc2O)c1
+45,Selleck_L1300,Magnolol,Magnolol,S2321,dsm,70,7,,,,,,,,,,,M,,,,,,,,-,+,tox,10,C=CCc1ccc(O)c(-c2cc(CC=C)ccc2O)c1
+42,Selleck_L1300,Magnolol,Magnolol,S2321,dsm,70,4,,,,,,,,,,,T,,,,,,,,+,+,tox,1,C=CCc1ccc(O)c(-c2cc(CC=C)ccc2O)c1
+43,Selleck_L1300,Magnolol,Magnolol,S2321,dsm,70,5,,,,,,,,,,,V,D,,,,,,,+,+,tox,1,C=CCc1ccc(O)c(-c2cc(CC=C)ccc2O)c1
+41,Selleck_L1300,Magnolol,Magnolol,S2321,dsm,70,2,,,,,,,,,,,V,,,,,,,,+,+,tox,1,C=CCc1ccc(O)c(-c2cc(CC=C)ccc2O)c1
+353,Selleck_L1300,Evodiamine,Evodiamine,S2382,tsm,71,33_5,,T,,,,,,,,,,E,,I,,,,,+,+,+,1,CN1c2ccccc2C(=O)N2CCc3c([nH]c4ccccc34)[C@@H]21
+190,Selleck_L1300,Benzyl cinnamate,Benzyl cinnamate,S5167,dsm,72,2,,L,,,,,,,,,,,,,,,,V,-,+,+,10,O=C(/C=C/c1ccccc1)OCc1ccccc1
+486,Selleck_L1300,Benzyl cinnamate,Benzyl cinnamate,S5167,tsm,72,93_4,,,,,,,,Y,,,,,,,G,,F,,-,+,+,10,O=C(/C=C/c1ccccc1)OCc1ccccc1
+191,Selleck_L1300,Benzyl cinnamate,Benzyl cinnamate,S5167,dsm,72,3,,,,,,,,,,,,,,H,,,,T,-,+,+,10,O=C(/C=C/c1ccccc1)OCc1ccccc1
+189,Selleck_L1300,Benzyl cinnamate,Benzyl cinnamate,S5167,dsm,72,1,,,,,,,,,,,,,,,,,,N,-,+,+,10,O=C(/C=C/c1ccccc1)OCc1ccccc1
+228,LATCA,5-Bromo-2-Hydroxybenzophenone,5-Bromo-2-Hydroxybenzophenone,542016,dsm,73,1,,,,,,,,,,,,,,,,,L,V,-,+,+,10,Cc1nc2cccnc2c(=O)n1O
+455,Selleck_L1300,Atipamezole hydrochloride,Atipamezole,S4649,tsm,74,78_7,D,,,M,,,D,W,,,,,,,,,,,+,+,+,1,CCC1(c2cnc[nH]2)Cc2ccccc2C1

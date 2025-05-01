@@ -1,0 +1,5 @@
+CC1=C(C=C(C=C1[N+](=O)[O-])[N+](=O)[O-])[N+](=O)[O-]
+CC1=C(C=C(C=C1)[N+](=O)[O-])[N+](=O)[O-]
+CC1=C(C=C(C=C1[N+](=O)[O-])N)[N+](=O)[O-]
+CC1=CC=C(C=C1)O
+CC1=C(C=C(C=C1[N+](=O)[O-])[N+](=O)[O-])N
