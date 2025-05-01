@@ -40,8 +40,11 @@ The general workflow for designing to generate PYR1 mutant libraries is as follo
 
   Finally make sure to download both the `Oligos.fasta` file and `Oligo summary data` file in the from the sidebar once all tabs have been opened and the library is to your liking. The oligos fasta file will generate a list of oligos that can be submitted to Twist bioscience orders and have the naming convention of >LIBRARY\_`input library name`\_PYR1\_`PYR1 type`\_FRAG\_`Block number`\_mutation1:mutation2:mutation3:mutation4_PRI\_`barcode primers`. The `Oligo summary data` will download an excel file that contains sheets including the sequence profile used to generate the library, oligo summary information, and a table of the oligos and the barcodes used. 
 
-## App Citations 
+## License & DOI
 
+This project is licensed under the GNU General Public License, version 3 (GPLv3) - see the LICENSE file for details, and the DOI for the app is [![DOI](https://zenodo.org/badge/969746437.svg)](https://doi.org/10.5281/zenodo.15319591).  
+
+## App Citations 
 
 We used R version 4.4.3 (R Core Team 2025) and the following R packages: bioseq v. 0.1.4 (Keck 2020), doParallel v. 1.0.17 (Corporation and Weston 2022), DT v. 0.33 (Xie, Cheng, and Tan 2024), openxlsx v. 4.2.8 (Schauberger and Walker 2025), shiny v. 1.10.0 (Chang et al. 2024), shinyjs v. 2.1.0 (Attali 2021), shinythemes v. 1.2.0 (Chang 2021), spatstat.utils v. 3.1.3 (Baddeley, Turner, and Rubak 2025), tidyverse v. 2.0.0 (Wickham et al. 2019).
 
