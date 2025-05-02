@@ -114,7 +114,7 @@ my_ui <- fluidPage(
                               div(
                                 style = "flex: 1;",
                                 h4("Barcoding oligo blocks:"),
-                                p("    The third step is to use the `Oligo barcoding` tab to select the barcodes and cut sites you want to use to flank each oligo block. This allows you to make multiple libraries and order them with a single oligo pool order from Twist biosciences, cutting down on library costs. Typically each block in a library gets a unique oligo barcode which we have defaulted to “set####” primers which we use in our own lab. These primer sequences will be in the downloadable report, and additionally can be browsed in the `pop_experiment.xlsx - 10K_primers.csv` file (Not all of these primers have been tested). Barcodes can also be entered manually if your lab has existing primers commonly used. Our library approach clones into the pBD-PYR1-153bp-F1 backbone using golden gate assembly; other cutsites can be selected but only BsaI cut sites will work with this backbone.  ")
+                                p("    The third step is to use the `Oligo barcoding` tab to select the barcodes and cut sites you want to use to flank each oligo block. This allows you to make multiple libraries and order them with a single oligo pool order from Twist biosciences, cutting down on library costs. Typically each block in a library gets a unique oligo barcode which we have defaulted to “set####” primers which we use in our own lab. These primer sequences will be in the downloadable report, and additionally can be browsed in the `pop_experiment.xlsx - 10K_primers.csv` file (Not all of these primers have been tested). The primers are designed to be amplifeid using Q5 polymerase at an annealing temp of 60C. Barcodes can also be entered manually if your lab has existing primers commonly used. Our library approach clones into the pBD-PYR1-153bp-F1 backbone using golden gate assembly; other cutsites can be selected but only BsaI cut sites will work with this backbone.  ")
                               ),
                               
                               # Right side: image
@@ -193,25 +193,25 @@ my_ui <- fluidPage(
                    tabPanel("Oligo barcoding",
                             h3("Flanking barcoding primer selection"),
                             p("    Use this tab to select and create flanking sequence information to append to your oligo blocks. The flanking sequences can be used to uniquely amplify your oligos from the Twist oligo pool, and allow for ordering of multiple libraries at once, while still selecting what blocks to amplify out from the pool. Additionally this section will append BsaI restriction sites to the sequence so that the PYR1 blocks can be assembled into the pBD-PYR1-151bp-F1 backbone forming the unique PYR1s that make up your designed library. "),
-                            p("    Simply use the dropdown to select what barcode to add to your oligo sequence, or manually enter a sequence and sequence name. "),
+                            p("    Simply use the dropdown to select what barcode to add to your oligo sequence, or manually enter a sequence and sequence name. If using the \"set\" primers they are designed to be amplifeid using Q5 polymerase at an annealing temp of 60C. "),
                             p("
                               "),
                             h4("Block 1 Barcode"),
-                            selectInput(inputId = "block1_set",label = "Pre-made set primer", choices = barcoding_primers$set_name),
+                            selectInput(inputId = "block1_set",label = "Pre-made set primer", choices = barcoding_primers$set_name, selected = "set00001"),
                             tags$div(uiOutput("barcode_block1_name"),style="display:inline-block"),
                             tags$div(uiOutput("barcode_block1_forward_primer"),style="display:inline-block"),
                             tags$div(uiOutput("barcode_block1_reverse_primer"),style="display:inline-block"),
                             p("
                               "),
                             h4("Block 2 Barcode"),
-                            selectInput(inputId = "block2_set",label = "Pre-made set primer", choices = barcoding_primers$set_name),
+                            selectInput(inputId = "block2_set",label = "Pre-made set primer", choices = barcoding_primers$set_name, selected = "set00002"),
                             tags$div(uiOutput("barcode_block2_name"),style="display:inline-block"),
                             tags$div(uiOutput("barcode_block2_forward_primer"),style="display:inline-block"),
                             tags$div(uiOutput("barcode_block2_reverse_primer"),style="display:inline-block"),
                             p("
                               "),
                             h4("Block 3 Barcode"),
-                            selectInput(inputId = "block3_set",label = "Pre-made set primer", choices = barcoding_primers$set_name),
+                            selectInput(inputId = "block3_set",label = "Pre-made set primer", choices = barcoding_primers$set_name, selected = "set00003"),
                             tags$div(uiOutput("barcode_block3_name"),style="display:inline-block"),
                             tags$div(uiOutput("barcode_block3_forward_primer"),style="display:inline-block"),
                             tags$div(uiOutput("barcode_block3_reverse_primer"),style="display:inline-block"),
