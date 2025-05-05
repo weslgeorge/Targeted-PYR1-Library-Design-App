@@ -4,7 +4,7 @@ Targeted-PYR1-Library-Design-App is an App that allows for the generation of oli
 
 ## Using the app online
 
-If you want to use the app online simply go to [https://weslgeorge.shinyapps.io/project-oysters/](https://weslgeorge.shinyapps.io/project-oysters/) shinyapps.io link and get started! 
+If you want to use the app online simply go to [https://weslgeorge.shinyapps.io/targeted-pyr1-library-design-app/](https://weslgeorge.shinyapps.io/targeted-pyr1-library-design-app/) shinyapps.io link and get started! 
 
 
 ## Getting setup locally:
