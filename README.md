@@ -2,6 +2,11 @@
 
 Targeted-PYR1-Library-Design-App is an App that allows for the generation of oligos to make PYR1 protein libraries using general screen datasets to inform those libraries. 
 
+## Using the app online
+
+If you want to use the app online simply go to [https://weslgeorge.shinyapps.io/project-oysters/](https://weslgeorge.shinyapps.io/project-oysters/) shinyapps.io link and get started! 
+
+
 ## Getting setup locally:
 
 If you want to use the app locally on your computer simply clone the repository into your local files. Make sure to have R and Rstudio installed on your computer and open the app.R file using Rstudio.
