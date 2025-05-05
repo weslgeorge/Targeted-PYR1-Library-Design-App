@@ -30,15 +30,10 @@ yeast_favored_codons <-   read.csv("data_files/yeast_codons.csv") %>%
 example_good_aas <- read.csv(file = "data_files/example_input_file.csv")
 
 # next barcoding primer set options (only validated ones for now)
-barcoding_primers<-read.csv(file = "data_files/pop_experiment.xlsx - 10K_primers.csv") %>% 
-                  # filter(str_detect(`validated.`, "ok|OK|Ok") ) %>% 
-  mutate(set_number = str_extract(X,"(\\d)+")) %>% 
-  mutate(set_number = str_pad(set_number,width = 5,pad = "0",side = "left")) %>% 
-  mutate(set_name = paste0("set",set_number)) %>% 
-  dplyr::select(!c("X","set_number","validated.")) %>% 
-  arrange(set_name)
+barcoding_primers<-read.csv(file = "data_files/indexsets.csv") %>% 
+  arrange(name)
 
-manual_option<- tibble(F_seq = "", R_seq ="",R_seq_rc="",F_Tm="",R_Tm="",Tm_avg="",F_Dg="",R_Dg="",Dg_avg="",set_name="Manual Entry")
+manual_option<- tibble(name="Manual Entry",F_seq = "", R_seq ="",R_seq_rc="",F_Tm="",R_Tm="",Tm_avg="",indset_cross_binding="",contaminant_binding="",validated.="untested")
 barcoding_primers <- rbind(manual_option,barcoding_primers)
 
 # now lets load in a list of pyr1 mutatnts that are known to be constitutive in expression
@@ -2366,21 +2361,21 @@ my_server <- function(input,output,session) {
   # block 1
   output$barcode_block1_name <- renderUI({
     barcode_used<-input$block1_set 
-    y<-barcoding_primers$set_name[barcode_used]
+    y<-barcoding_primers$name[barcode_used]
     return(textInput(inputId = "block1_barcode_name",
                        label = "Block 1 set name",
                        value = barcode_used))
   })
   output$barcode_block1_forward_primer <- renderUI({
     barcode_used<-input$block1_set 
-    y<-barcoding_primers$F_seq[barcoding_primers$set_name ==barcode_used]
+    y<-barcoding_primers$F_seq[barcoding_primers$name ==barcode_used]
     return(textInput(inputId = "block1_barcode_F",
                      label = "Block 1 forward barcode primer 5'-3'",
                      value = y))
   })
   output$barcode_block1_reverse_primer <- renderUI({
     barcode_used<-input$block1_set 
-    y<-barcoding_primers$R_seq[barcoding_primers$set_name ==barcode_used]
+    y<-barcoding_primers$R_seq[barcoding_primers$name ==barcode_used]
     return(textInput(inputId = "block1_barcode_R",
                      label = "Block 1 reverse barcode primer 5'-3'",
                      value = y))
@@ -2388,21 +2383,21 @@ my_server <- function(input,output,session) {
   # block 2
   output$barcode_block2_name <- renderUI({
     barcode_used<-input$block2_set 
-    y<-barcoding_primers$set_name[barcode_used]
+    y<-barcoding_primers$name[barcode_used]
     return(textInput(inputId = "block2_barcode_name",
                      label = "Block 2 set name",
                      value = barcode_used))
   })
   output$barcode_block2_forward_primer <- renderUI({
     barcode_used<-input$block2_set 
-    y<-barcoding_primers$F_seq[barcoding_primers$set_name ==barcode_used]
+    y<-barcoding_primers$F_seq[barcoding_primers$name ==barcode_used]
     return(textInput(inputId = "block2_barcode_F",
                      label = "Block 2 forward barcode primer 5'-3'",
                      value = y))
   })
   output$barcode_block2_reverse_primer <- renderUI({
     barcode_used<-input$block2_set 
-    y<-barcoding_primers$R_seq[barcoding_primers$set_name ==barcode_used]
+    y<-barcoding_primers$R_seq[barcoding_primers$name ==barcode_used]
     return(textInput(inputId = "block2_barcode_R",
                      label = "Block 2 reverse barcode primer 5'-3'",
                      value = y))
@@ -2410,21 +2405,21 @@ my_server <- function(input,output,session) {
   # block 3
   output$barcode_block3_name <- renderUI({
     barcode_used<-input$block3_set 
-    y<-barcoding_primers$set_name[barcode_used]
+    y<-barcoding_primers$name[barcode_used]
     return(textInput(inputId = "block3_barcode_name",
                      label = "Block 3 set name",
                      value = barcode_used))
   })
   output$barcode_block3_forward_primer <- renderUI({
     barcode_used<-input$block3_set 
-    y<-barcoding_primers$F_seq[barcoding_primers$set_name ==barcode_used]
+    y<-barcoding_primers$F_seq[barcoding_primers$name ==barcode_used]
     return(textInput(inputId = "block3_barcode_F",
                      label = "Block 3 forward barcode primer 5'-3'",
                      value = y))
   })
   output$barcode_block3_reverse_primer <- renderUI({
     barcode_used<-input$block3_set 
-    y<-barcoding_primers$R_seq[barcoding_primers$set_name ==barcode_used]
+    y<-barcoding_primers$R_seq[barcoding_primers$name ==barcode_used]
     return(textInput(inputId = "block3_barcode_R",
                      label = "Block 3 reverse barcode primer 5'-3'",
                      value = y))
@@ -2531,7 +2526,7 @@ my_server <- function(input,output,session) {
       fasta_file_df <- fasta_file_df %>%
         mutate(fasta_name = paste0(">","LIBRARY_",library_name,"_",
                                    "PYR1","_WT","_FRAG_",block,":",mutation_1,":",mutation_2,":",mutation_3,":",
-                                   mutation_4,"_PRI_",str_extract(oligo_barcode_set,"set"),
+                                   mutation_4,"_PRI_",str_extract(oligo_barcode_set,"ind"),
                                    extract_numbers(oligo_barcode_set) )) %>%
         dplyr::select(fasta_name, oligo) %>%
         rowwise() %>%
@@ -2540,7 +2535,7 @@ my_server <- function(input,output,session) {
       fasta_file_df <- fasta_file_df %>%
         mutate(fasta_name = paste0(">","LIBRARY_",library_name,"_",
                                    "PYR1","_STAR","_FRAG_",block,":",mutation_1,":",mutation_2,":",mutation_3,
-                                   ":",mutation_4,"_PRI_",str_extract(oligo_barcode_set,"set"),extract_numbers(oligo_barcode_set) )) %>%
+                                   ":",mutation_4,"_PRI_",str_extract(oligo_barcode_set,"ind"),extract_numbers(oligo_barcode_set) )) %>%
         dplyr::select(fasta_name, oligo) %>%
         rowwise() %>%
         reframe(fasta_name = c(fasta_name,oligo))
@@ -2548,7 +2543,7 @@ my_server <- function(input,output,session) {
       fasta_file_df <- fasta_file_df %>%
         mutate(fasta_name = paste0(">","LIBRARY_",library_name,"_",
                                    "PYR1","_DOUBLE_DAGGAR","_FRAG_",block,":",mutation_1,":",mutation_2,":",
-                                   mutation_3,":",mutation_4,"_PRI_",str_extract(oligo_barcode_set,"set",extract_numbers(oligo_barcode_set) ))) %>%
+                                   mutation_3,":",mutation_4,"_PRI_",str_extract(oligo_barcode_set,"ind",extract_numbers(oligo_barcode_set) ))) %>%
         dplyr::select(fasta_name, oligo) %>%
         rowwise() %>%
         reframe(fasta_name = c(fasta_name,oligo))
@@ -2582,18 +2577,7 @@ my_server <- function(input,output,session) {
     bc_primers <- bc_df %>% 
       dplyr::select(block,oligo_barcode_set,oligo_barcode_primer_F,oligo_barcode_primer_R) %>% 
       distinct(block,.keep_all = T) %>%
-      add_column(restriction_site = input$restriction_site) %>% 
-      add_column(notes = "") 
-      
-      # group_by(oligo_barcode_set) %>% 
-      # mutate(number_of_nuc_F = as.double(str_count(oligo_barcode_primer_F,"A|T|C|G"))) %>% 
-      # mutate(number_of_gc_F = as.double(str_count(oligo_barcode_primer_F,"C|G"))) %>% 
-      # mutate(number_of_nuc_R = as.double(str_count(oligo_barcode_primer_R,"A|T|C|G"))) %>% 
-      # mutate(number_of_gc_R = as.double(str_count(oligo_barcode_primer_R,"C|G"))) %>% 
-      # mutate(forward_primer_tm = (64.9+41*((number_of_gc_F)-16.4)/(number_of_nuc_F))) %>% 
-      # mutate(reverse_primer_tm = (64.9+prod(41,((number_of_gc_R)-16.4))/(number_of_nuc_R))) %>% 
-      # mutate(average_primer_tm = mean(c(forward_primer_tm,reverse_primer_tm),na.rm=T)) %>% 
-      # mutate(test_count = str_count(oligo_barcode_primer_R,"G"))
+      add_column(restriction_site = input$restriction_site)
   })
   
   ##### Oligo Summary Download #####
