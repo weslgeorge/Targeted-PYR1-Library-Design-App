@@ -20,7 +20,7 @@ my_ui <- fluidPage(
                 placeholder = "custom_sequence_profile.csv"
                 
       ),
-      selectInput(inputId = "pyr1_type",label = "PYR1 type", choices = c("PYR1 WT","PYR1*","PYR1*mandi","PYR1doubledaggar","PYR1doubledaggar-mandi")), # adds in pyr1_cds information
+      selectInput(inputId = "pyr1_type",label = "PYR1 type", choices = c("PYR1 WT","PYR1*","PYR1*mandi")), # adds in pyr1_cds information ##c("PYR1doubledaggar","PYR1doubledaggar-mandi")
       checkboxInput("pyr1_constitutive_filter", "PYR1 Constitutive mutations filter", TRUE), # uncomment to add option to not apply constitutive filter
       # h4("Block 1"), # uncomment to add option to change block positions
       # uiOutput("box_block1_start"), # numbox reactive in server # uncomment to add option to change block positions
