@@ -74,7 +74,7 @@ my_server <- function(input,output,session) {
         sensors_table_filtered <- sensors_table %>% 
           filter( chem_cluster %in% input$cluster_choices)
         binding_table_filtered<-sensors_table %>%
-          filter(chem_name %in% input$chemname_choices)
+          filter(act_ingr %in% input$chemname_choices)
         sensors_table_filtered<-sensors_table_filtered %>%
           rbind(binding_table_filtered) %>%
           distinct(.keep_all = T)
@@ -83,7 +83,7 @@ my_server <- function(input,output,session) {
           filter( chem_cluster %in% input$cluster_choices)
       }else if (is.null(input$chemname_choices) == F &is.null(input$cluster_choices) == T){
         sensors_table_filtered <- sensors_table %>% 
-          filter( chem_name %in% input$chemname_choices)
+          filter( act_ingr %in% input$chemname_choices)
       }else if (is.null(input$chemname_choices) == T &is.null(input$cluster_choices) == T){
         sensors_table_filtered <- sensors_table
       }
@@ -91,7 +91,7 @@ my_server <- function(input,output,session) {
       
       # pulls amino acid changes out 
       sensors_table_filtered_long<- sensors_table_filtered %>%
-        group_by(clone,chem_name) %>%
+        group_by(clone,act_ingr) %>%
         pivot_longer(cols = colnames(sensors_table_filtered)[9:26],names_to = "aa_position") %>%
         filter(value!="") %>%
         mutate(aa_position_mutation = paste0(aa_position,value)) %>%
@@ -129,7 +129,7 @@ my_server <- function(input,output,session) {
       sensors_table_filtered <- sensors_table %>% 
         filter( chem_cluster %in% input$cluster_choices)
       binding_table_filtered<-sensors_table %>%
-        filter(chem_name %in% input$chemname_choices)
+        filter(act_ingr %in% input$chemname_choices)
       sensors_table_filtered<-sensors_table_filtered %>%
         rbind(binding_table_filtered) %>%
         distinct(.keep_all = T)
@@ -138,13 +138,13 @@ my_server <- function(input,output,session) {
         filter( chem_cluster %in% input$cluster_choices)
     }else if (is.null(input$chemname_choices) == F &is.null(input$cluster_choices) == T){
       sensors_table_filtered <- sensors_table %>% 
-        filter( chem_name %in% input$chemname_choices)
+        filter( act_ingr %in% input$chemname_choices)
     }else if (is.null(input$chemname_choices) == T &is.null(input$cluster_choices) == T){
       sensors_table_filtered <- sensors_table
     }
       # pulls amino acid changes out 
       sensors_table_filtered_long<- sensors_table_filtered %>%
-        group_by(clone,chem_name) %>%
+        group_by(clone,act_ingr) %>%
         pivot_longer(cols = colnames(sensors_table_filtered)[9:26],names_to = "aa_position") %>%
         filter(value!="") %>%
         mutate(aa_position_mutation = paste0(aa_position,value)) %>%
@@ -286,6 +286,12 @@ my_server <- function(input,output,session) {
       return("ATGCCTTCGGAGTTAACACCAGAAGAACGATCGGAACTAAAAAACTCAATCGCCGAGTTCCACACATACCAACTCGATCCAGGAAGCTGTTCATCACTCCACGCGCAACGAATCCACGCGCCTCCGGAACTCGTCTGGTCAATCGTACGACGATTCGACAAACCACAAACATACAAACACTTCATCAAATCCTGCTCCGTCGAACAAAACTTCGAGATGCGCGTCGGATGCACGCGCGACGTGATCGTCATCAGTGGATTACCGGCGAACACATCAACGGAAAGACTCGATATACTCGACGACGAACGGAGAGTTACCGGATTCAGTATCATCGGAGGCGAACATAGGCTGACGAATTACAAATCCGTTACGACGGTGCATCGGTTCGAGAAAGAGAATCGGATCTGGACGGTGGTTTTGGAATCTTACGTCGTTGATATGCCGGAAGGTAACTCGGAGGATGATACTCGTATGTTTGCTGATACGGTTGTGAAGCTTAATTTGCAGAAACTCGCGACGGTTGCTGAAGCTATGGCTCGTAACTCCGGTGACGGAAGTGGTTCTCAGGTGACGTGAGGTCGA")
     }else if (input$pyr1_type == "PYR1*"){
       return("ATGCCTTCGGAGTTAACACCAGAAGAACGATCGGAACTAAAAAACTCAATCGCCGAGTTCCACACATACCAACTCGATCCAGGAAGCTGTTCATCACTCCACGCGCAACGAATCCACGCGCCTCCGGAACTCGTCTGGTCAATCGTACGACGATTCGACAAACCACAAACATACAAACACTTCATCAAATCCTGCTCCGTCGAACAAAACTTCGAGATGCGCGTCGGATGCACGCGCGACGTGATCGTCATCAGTGGATTACCGGCGAACACATCAACGGAAAGACTCGATATACTCGACGACGAACGGAGAGTTACCGGATTCAGTATCATCGGAGGCGAACATAGGCTGACGAATTACAAATCCGTTACGACGGTGCATCGGTTCGAGAAAGAGAATCGGATCTGGACGGTGGTTTTGGAATCTTACGTCGTTGATATGCCGGAAGGTAACTCGGAGGATGATACTCGTATGTTTGCTGATGATGTTGTGAAGCTTAATTTGCAGAAACTCGCGACGGTTGCTGAAGCTATGGCTCGTAACTCCGGTGACGGAAGTGGTTCTCAGGTGACGTGAGGTCGA")
+    }else if (input$pyr1_type == "PYR1*mandi"){
+      return("ATGCCTTCGGAGTTAACACCAGAAGAACGATCGGAACTAAAAAACTCAATCGCCGAGTTCCACACATACCAACTCGATCCAGGAAGCTGTTCATCACTCCACGCGCAACGAATCCACGCGCCTCCGGAACTCGTCTGGTCAATCGTACGACGATTCGACAAACCACAAACACATCGTCACTTCATCAAATCCTGCTCCGTCGAACAAAACTTCGAGATGCGCGTCGGATGCACGCGCGACATTATCGTCATCAGTGGATTACCGGCGAACACATCAACGGAAAGACTCGATATACTCGACGACGAACGGAGAGTTACCGGAGCTAGTATCATCGGAGGCGAACATAGGCTGACGAATTACAAAGGTGTTACGACGGTGCATCGGTTCGAGAAAGAGAATCGGATCTGGACGGTGGTTTTGGAATCTTACGTCGTTGATATGCCGGAAGGTAACTCGGAGGATGATACTCGTATTGTTGTTGATGATGTTGTGAAGCTTAATTTGCAGAAACTCGCGACGGTTGCTGAAGCTATGGCTCGTAACTCCGGTGACGGAAGTGGTTCTCAGGTGACGTGAGGTCGA")
+    }else if (input$pyr1_type == "PYR1doubledaggar"){
+      return("ATGCCTTCGGAGTTAACACCAGAAGAACGATCGGAACTAAAAAACTCAATCGCCGAGTTCCACACATACCAACTCGATCCAGGAAGCTGTTCATCACTCCACGCGCAACGAATCCACGCGCCTCCGGAACTCGTCTGGTCAATCGTACGACGATTCGACAAACCACAAACATACAAACACTTCATCAAATCCTGCTCCGTCGAACAAAACTTCGAGATGCGCGTCGGATGCACGCGCGACGTGATCGTCATCAGTGGATTACCGGCGAACACATCAACGGAAAGACTCGATATACTCGACGACGAACGGAGAGTTACCGGATTCAGTATCATCGGAGGCGAACATAGGCTGACGAATTACAAATCCGTTACGACGGTGCATCGGTTCGAGAAAGAGAATCGGATCTGGACGGTGGTTTTGGAATCTTACGTCGTTGATATGCCGGAAGGTAACTCGGAGGATGATACTCGTATGTTTGCTGATAGAGTTGTGAAGCTTAATTTGCAGAAACTCGCGACGGTTGCTGAAGCTATGGCTCGTAACTCCGGTGACGGAAGTGGTTCTCAGGTGACGTGAGGTCGA")
+    }else if (input$pyr1_type == "PYR1doubledaggar-mandi"){
+      return("ATGCCTTCGGAGTTAACACCAGAAGAACGATCGGAACTAAAAAACTCAATCGCCGAGTTCCACACATACCAACTCGATCCAGGAAGCTGTTCATCACTCCACGCGCAACGAATCCACGCGCCTCCGGAACTCGTCTGGTCAATCGTACGACGATTCGACAAACCACAAACACATCGTCACTTCATCAAATCCTGCTCCGTCGAACAAAACTTCGAGATGCGCGTCGGATGCACGCGCGACATTATCGTCATCAGTGGATTACCGGCGAACACATCAACGGAAAGACTCGATATACTCGACGACGAACGGAGAGTTACCGGAGCTAGTATCATCGGAGGCGAACATAGGCTGACGAATTACAAAGGTGTTACGACGGTGCATCGGTTCGAGAAAGAGAATCGGATCTGGACGGTGGTTTTGGAATCTTACGTCGTTGATATGCCGGAAGGTAACTCGGAGGATGATACTCGTATTGTTGTTGATAGAGTTGTGAAGCTTAATTTGCAGAAACTCGCGACGGTTGCTGAAGCTATGGCTCGTAACTCCGGTGACGGAAGTGGTTCTCAGGTGACGTGAGGTCGA")
     }
   })
   
@@ -2539,11 +2545,27 @@ my_server <- function(input,output,session) {
         dplyr::select(fasta_name, oligo) %>%
         rowwise() %>%
         reframe(fasta_name = c(fasta_name,oligo))
-    }else if(pyr1_type == "double_daggar"){
+    }else if(pyr1_type == "PYR1*mandi"){
+      fasta_file_df <- fasta_file_df %>%
+        mutate(fasta_name = paste0(">","LIBRARY_",library_name,"_",
+                                   "PYR1","_STAR_mandi","_FRAG_",block,":",mutation_1,":",mutation_2,":",mutation_3,
+                                   ":",mutation_4,"_PRI_",str_extract(oligo_barcode_set,"ind"),extract_numbers(oligo_barcode_set) )) %>%
+        dplyr::select(fasta_name, oligo) %>%
+        rowwise() %>%
+        reframe(fasta_name = c(fasta_name,oligo))
+    }else if(pyr1_type == "PYR1doubledaggar"){
       fasta_file_df <- fasta_file_df %>%
         mutate(fasta_name = paste0(">","LIBRARY_",library_name,"_",
                                    "PYR1","_DOUBLE_DAGGAR","_FRAG_",block,":",mutation_1,":",mutation_2,":",
-                                   mutation_3,":",mutation_4,"_PRI_",str_extract(oligo_barcode_set,"ind",extract_numbers(oligo_barcode_set) ))) %>%
+                                   mutation_3,":",mutation_4,"_PRI_",str_extract(oligo_barcode_set,"ind"),extract_numbers(oligo_barcode_set) )) %>%
+        dplyr::select(fasta_name, oligo) %>%
+        rowwise() %>%
+        reframe(fasta_name = c(fasta_name,oligo))
+    }else if(pyr1_type == "PYR1doubledaggar-mandi"){
+      fasta_file_df <- fasta_file_df %>%
+        mutate(fasta_name = paste0(">","LIBRARY_",library_name,"_",
+                                   "PYR1","_DOUBLE_DAGGAR_MANDI","_FRAG_",block,":",mutation_1,":",mutation_2,":",
+                                   mutation_3,":",mutation_4,"_PRI_",str_extract(oligo_barcode_set,"ind"),extract_numbers(oligo_barcode_set) )) %>%
         dplyr::select(fasta_name, oligo) %>%
         rowwise() %>%
         reframe(fasta_name = c(fasta_name,oligo))
